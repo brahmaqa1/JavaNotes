@@ -579,10 +579,8 @@ HW Create 2 packages,2 classes , 2 interfaces
          Package : MySeleniumPrograms  --> Create   some classes(C1,C2) +  interfaces (I5,I6)
 
 
-
-
 *********************************************
-
+	 9-Oct-2025
 **********************************************
 Comments:
 ---------
@@ -599,31 +597,37 @@ Comments:
 2.Multi Line Comment
 
 
-package Package1;
+package CommentsBasics;
 
-public class CommentsProgram
+public class MyComments 
 {
-          Program name :  Writing comments 
-	   Developed Date:  6-Apr-2023	
-	   Comments will not be executed .. and it will be ignored 
+
+	
+     //  Program name :  Writing comments 
+	 //  Developed Date:  9-Oct-2025
+	 // Comments will not be executed .. and it will be ignored 
 	
 //	Note:  Single line comments :  
 //	select line->     Press Ctrl + / == to comment lines
 //	uncomment line -> Press Ctrl + /
 	
-	stmt1
-	stmt2	
-	stmt3
+//	stmt1
+//	stmt2	
+//	stmt3
 	
 //	note2  : 
 //select multiple lines  and Press ctrl +  / -- it comments selected  lines
 //	select multiple lines and Press ctrl +  / -- it uncomments selected  lines
 	
-	stmt1
-	stmt2	
-	stmt3
+//	stmt1
+//	stmt2	
+//	stmt3
 
+	
+	
+	
 }
+
 
 2. Multi line comments :
 --------------------
@@ -636,27 +640,28 @@ public class CommentsProgram
 
  */
 	
-package Package1;
+package CommentsBasics;
 
-public class MultiLineComments
+public class MultiLineComments 
+
 {
 
-
-	//	Multi Lines : starts with /*      */
+//	Multi Lines : starts with /*      */
 
 	// add Multi line comments for below 
 
-	   Author : Brahma  
+	/*  
+	Author : Brahma  
 	     Program name :  Writing comments 
 	    Devleoped Date:  6-Apr-2023
-
+ */
 
 	// add Multi line comments for below 
 
-	  stmt-1
+	/*  stmt-1
 	   stm-2
 	   stm-3	
-	 
+	 */
 
 
 	//	Note : select multiple lines - Press  ctrl+ shft + /
@@ -664,53 +669,59 @@ public class MultiLineComments
 
 
 	
-	  Author : Brahma 
-	 Program name : Writing comments Devleoped Date: 6-Apr-2023
-	 
-	  stmt-1 stm2 stm-2
-	 
+	/*
+	 * Author : Brahma Program name : Writing comments Devleoped Date: 6-Apr-2023
+	 * 
+	 * stmt-1 stm2 stm-2
+	 */
 
-
-	  stmt-1
-	   stm-2
-	   stm-3	
-	  
-
+		
+		  stmt-1 stm-2 stm-3
+		  
+		 	
 }
+
 
 
 First Java program in Eclipse:
 ------------------------------
 
+package CommentsBasics;
 
-package Package1;
+public class FirstJavaProgram 
+{
 
-public class FirstJavaProgram {
 	// we have to write main() 
-
-	
- //  special method in java
-		// program execution always starts from main() method only
-		
-		// stmt :  collection of words +   syntax rules 
-		// display some msg "Hi Java"   in console window/ monitor
-		
-		// print given msg  and it goes to new line
-		
-		//println() :  predefined method in java
-		// can be used to display given  msg in console window/ o/p window/ monitor
-		// what ever we write in dbl quotes -- it displays as it is ..
-
-		//		Semicolon ;   is  stmt terminator 
-		// Every stmt must end with  semi colon;	
-		
-	//  to display   msg  How are you?
-		
+		public static void main(String args[])
+		{
+			 //  special method in java
+			// program execution always starts from main() method only
+			
+			// stmt :  collection of words +   syntax rules 
+			// display some msg "Hi Java"   in console window/ monitor
+			System.out.println("Hi Java");
+			
 			// print given msg  and it goes to new line
-		
-	}
+			
+			//println() :  predefined method in java
+			// can be used to display given  msg in console window/ o/p window/ monitor
+			// what ever we write in dbl quotes -- it displays as it is ..
 
+			//		Semicolon ;   is  stmt terminator 
+			// Every stmt must end with  semi colon;	
+			
+		//  to display   msg  How are you?
+			System.out.println("How are you?");
+			
+				// print given msg  and it goes to new line
+
+			
+		}
+	
+	
+	
 }
+
 
 
 run java :
@@ -729,25 +740,42 @@ package Package1;
 
 public class JavaProgram2 
 {
+package CommentsBasics;
+
+public class JavaProgram2 
+{
+	
+	public static void main(String args[])
+	{
 	//  write main ()  -special  method -- 
-	///when we run java,   JVM or o/s Calls main- method  by default
-	// Execution starts from main - method
+		///when we run java,   JVM or o/s Calls main- method  by default
+		// Execution starts from main - method
 
-		// Display msg in stmt-1
+			// Display msg in stmt-1
+			System.out.println("stmt-1");
+		
+			// Display msg in stmt-2
+			System.out.println("stmt-2");
 
+			// Display msg in stmt-3
+			System.out.println("stmt-3");
 
-		// Display msg in stmt-2
+			// Short cut :   
+			//	to write println () --  
+			//type syso +  Press  -(ctrl +  space) and press enter- it displays println() stmt  fully
+			//   Display msg in stmt-4
+			System.out.println("stmt-4");
 
+			//   Display msg in stmt-5
+			System.out.println("stmt-5");
 
-		// Display msg in stmt-3
+		
+	}
 
+	
 
-		// Short cut :   
-		//	to write println () --  
-		//type syso +  Press  -(ctrl +  space) and press enter- it displays println() stmt  fully
-		//   Display msg in stmt-4
+}
 
-		//   Display msg in stmt-5
 
 		
 
@@ -768,7 +796,7 @@ HW print the given msgs in the new line
 
 If we don't have laptop, We can write and run java program in "online java -compiler" from browser
 
-Searh in google  -->  superfast online java compiler (Prefer this one ) and Open "superfast online java compiler" link > Write java program and run it
+Search in google  -->  superfast online java compiler (Prefer this one ) and Open "superfast online java compiler" link > Write java program and run it
 
 Refer:  https://www.programiz.com/java-programming/online-c
 
@@ -843,9 +871,9 @@ public class MixingPrintlnAndPrint
 /*      ctrl +  /  or    ctrl+ shft +/
  * o/p:
  	
- * I am fine
- * What about you.
- * 
+Hi JavaHow are you
+I am fine
+What about you.
  * 
  */
 
@@ -886,13 +914,23 @@ I am fine
 What about you.
 
 -------------------------------------
-HW in the above program replave \n  by \t write the o/p?
+HW in the above program replace \n  by \t write the o/p?
 \t -represents tab (Enter 5 spaces)
 	.
 
+A	is	good	boy	
 
 
-create class with public static void main() through options
+
+************************************************
+	10-Oct-2025
+************************************************
+create class with public static void main() through Eclipse options:
+
+File> New > Class > Give some class name > Select the option" public static void main ()  "> Finish
+> it creates class with main()
+
+
 
 Different ways to run Java Program:
 ------------------------------------
@@ -911,7 +949,7 @@ We can write java program in notepad/txt file
 
 steps to create java file in notepad:
 ------------------------------------
-open note pad >  type Java Program >  Go to file menu > Save as >  Give  File name as same as class name   with extension .java (SampleJava.java) > Save >  it creates 'Sample.java' file 
+open note pad >  type Java Program >  Go to file menu > Save as >  Give  File name as same as class name   with extension .java (FirstJavaProgram.java) > Save >  it creates 'FirstJavaProgram.java' file 
 
 
 cmds :
@@ -988,13 +1026,14 @@ Note :   every java program, first we must compile and then Run Java program.
 compile :  javac  filename.java
 Run	:   java filename
 
-java Filename.java --  error - dont use it    i.e  .java 
+java Filename.java --    i.e  .java  -->  Ok working  fine
 java Filename.class -->  error - donot use it i.e .class
 eX:
 
 C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SimpleJava.class
 Error: Could not find or load main class SimpleJava.class
 Caused by: java.lang.ClassNotFoundException: SimpleJava.class
+  or some times we get this error 
 
 C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SimpleJava.java
 error: class found on application class path: SimpleJava
@@ -1065,6 +1104,9 @@ eX:    10.34  -  if we don't write f,  it will consider as double value
 float	4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
 double	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal dig
 
+***********************************************************
+	13-Oct-2025
+***********************************************************
 
 char:
 -----------
@@ -1185,17 +1227,17 @@ datatype somevarname;
 ex:   store numbers
  
 
- // declaring var i.e a of type int --> 
+ // declaring var i.e a of type int -->  int a;
 
 //   a is var , which is of type - int . so in var i.e a ,  we can store integer numbers
 
 
-Declare var (esal)  and store decimal no's --> 
+Declare var (esal)  and store decimal no's --> float esal;
 
 //   esal is var  of type float data type- so esal var we can store only decimal no's
 
 
-Declare byte var -->  
+Declare byte var -->  byte b; 
 b is var  , which is of type - byte- so in var b, we can store integer numbers.
 
 
@@ -1212,12 +1254,15 @@ Syntax :
 
   1. varname= val;
 
+      a  =10;
 	  we need = operator - assignment operator 
 // store 10  in variable 'a'
 
       10 val is assigned to left side var i.e a  contains 10
 
+
 // store 20  in variable 'b'
+    b = 20;
 
      20  val.....                            b contains 20
 
@@ -1228,10 +1273,10 @@ Syntax :
        b = 
 
 3.  varName = Expression;
-     c = 
-      c=  
-   
-     c  =     rt side expression is evaluated/calculated first  and result will be stored in left  side var i.e c
+     c =  a +  b ;
+      c=  10 +  20
+   	    30
+     c  =  30    rt side expression is evaluated/calculated first  and result will be stored in left  side var i.e c
    so C contains 30 val.
 
 Note:
@@ -1262,44 +1307,68 @@ Check below are valid and invalid:
  ----------------------------------
 Int basic program:
 -----------------
-package DataTypes;
+package DataTypeBasics;
 
-public class IntBasicsProgram 
+public class IntBasicsProgram
 {
-	public static void main(String[] args) 
+
+	// main()
+	public static void main(String [] args)
 	{
-		// int :
-				//		   a =10
-				//	       b=20
-				//	        c= a+b
-//		  a= 10;
-//				   b= 20;
-//				   c  = a+b;
-				//   If we want to use some var i,e a , so first we must declare var 
-				// with out declaring var name , we cannnot use var in program
-				// datatype varName; 
-				// Declare var's a,b,c
-				
-				
-// store 10  in var a
 
+	
+		// int :  int no's 
+		
+			
+//				   a =10
+//			       b=20
+//			        c= a+b
+		
+		
+			        
+		//  a= 10;
+		//		   b= 20;
+		//		   c  = a+b;
+		//   If we want to use some var i,e a , so first we must declare var 
+		// with out declaring var name , we cannnot use var in program
+		// datatype varName; 
+		// Declare var's a,b,c
+		    int a;
+			int b;
+			int c;
 
-// store 20  in var b
+		//store 10  in var a
+			a = 10;
 
+		//store 20  in var b
+         b =  20;
 
-// store a+b  in var c
-					
-				 
-				/// c = 
-				// print the val of a, ,b ,c
-				
+		//store a+b  in var c
+         c =  a + b;
+         //   10 +  20
+         //         30
+		/// c =  30
+		// print the val of a, ,b ,c
+         System.out.println("a"); //  a
+         System.out.println("b"); //   b  
+         
+         System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+
 
 	}
 
 }
 
+
 o/p:
 ---
+a
+b
+10
+20
+30
 
 
 ---------------------
@@ -1308,34 +1377,36 @@ HW  Declare  variables for byte data type and store some values  and display o/p
 HW  Declare  variables for short data type  and store some values  and display o/p ?
 HW  Declare  variables for long data type and store some values  and display o/p ?
 
-package DataTypes;
+package DataTypeBasics;
 
-public class IntBasicsProgram2 
-{
-	public static void main(String[] args) 
-	{
-Can We store decimal numbers in int variable ?
+public class IntBasicsProgram2 {
 
-		
-		// Error : Type mismatch: cannot convert from float to int
-		//				 we cannot store decimal no in int var
-		// int var-  we can store integer values but not decimal numbers
-
-
-		// Note :  
-		//Can We store char value into int variable ?
+	public static void main(String[] args) {
+//		Can We store decimal numbers in int variable ?
+			int a;
+//			 a  = 10.85f ;
 				
-			// value of  ASCii no A -65 , B -66, C-67
-		//     65
-		// a=  65
-		//    ascii    
-// display var  i.e a 		 
+				// Error : Type mismatch: cannot convert from float to int
+				//				 we cannot store decimal no in int var
+				// int var-  we can store integer values but not decimal numbers
 
-		                // 65 . Note:   it wont display 'a'
 
-//		Can We store true/ false value into int variable ? 
-		//	  a = true; ///Error: Type mismatch: cannot convert from boolean to int
-		
+				// Note :  
+				//Can We store char value into int variable ?
+			a = 'A';			
+					// value of  ASCii no A -65 , B -66, C-67
+				//     65
+				// a=  65
+				//    ascii    
+		// display var  i.e a 		 
+		System.out.println(a);
+				                // 65 . Note:   it wont display 'A'
+
+//				Can We store true/ false value into int variable ? 
+//					  a = true; ///Error: Type mismatch: cannot convert from boolean to int
+				
+
+
 	}
 
 }
@@ -1344,54 +1415,55 @@ Can We store decimal numbers in int variable ?
 
 Float basics:
 --------------
-package DataTypes;
+package DataTypeBasics;
 
 public class FloatBasics {
 
 	public static void main(String[] args) {
-
 		// float :   store decimal no's   10.45f, 2.34f
-		// at end of decimal no , we have to use 'f'   ex:  10.45f, 1.3f
-		//		Declare float var 
-		//		datatype varname;
+				// at end of decimal no , we have to use 'f'   ex:  10.45f, 1.3f
+				//		Declare float var 
+				//		datatype varname;   int a;
 
 
-		// Delcare float var f  and store 2.3 f
-		
-		
-		//  so we can store only decimal nos
-		System.out.println(f);
-		//                2.3   
-
-
-		//can we store  int value (4) into float var i.e f
-
-		//   4 --> 4.0  5 -> 5.0   8 --> 8.0
-		// f=   4.0
-		//       int val is converted to left side data type i.e float 
-		//   int val is converted to float val  
-		//   --->  
-		// display f var value
-
-		//                 4.0  but not 4
-
-		// can we store  char value ('A') into float var i.e f
+				// Delcare float var f  and store 2.3 f
+				float f;
 				
-				// A - 65
-		//        65
-		//  f = 65	        
-		//       65 --->  65.0
-			//  f  =  65.0
-		// display f var value
+				f = 2.3f;
+				
+				//  so we can store only decimal nos
+				System.out.println(f);
+				//                2.3   
 
-							// 65.0  but not 'A'   and not 65 
 
-			// left side float data type, it always o/p in the form float value only
-			
-		//HW  can we store  boolean vals (true, false) into float var
-			
-		//  Type mismatch: cannot convert from boolean to float
-			
+				//can we store  int value (4) into float var i.e f
+				f = 4;
+				//   4 --> 4.0  5 -> 5.0   8 --> 8.0
+				// f=   4.0
+				//       int val is converted to left side data type i.e float 
+				//   int val is converted to float val  
+				//   --->  
+				// display f var value
+				System.out.println(f);
+				//                 4.0  but not 4
+
+				// can we store  char value ('A') into float var i.e f
+				f = 'A';		
+						// A - 65
+				//        65
+				//  f = 65	        
+				//       65 --->  65.0
+					//  f  =  65.0
+				// display f var value
+				System.out.println(f);
+									// 65.0  but not 'A'   and not 65 
+
+					// left side float data type, it always o/p in the form float value only
+					
+				//HW  can we store  boolean vals (true, false) into float var
+					
+				//  Type mismatch: cannot convert from boolean to float
+					
 
 
 	}
@@ -1404,45 +1476,53 @@ o/p:
 4.0
 65.0
 
-
---------------------------
+**********************************************
+	 14-Oct-2025
+**********************************************
+--------------
 double basics:
 -------------
-package DataTypes;
+package DataTypeBasics;
 
 public class DoubleBasics {
 
 	public static void main(String[] args) {
-
 		// Double :   store decimal no  
-		//   declare var i.e x is of type  'double' data type   and  store 2.34
-		//  so we can store dec no
+				//   declare var i.e x is of type  'double' data type   and  store 2.34
+				//  so we can store dec no  datatype var;
+				double x;
+//				x  =  2.34d; //  d 
+					 // d- double. even if we dont write 'd' at end - it will be considered as double value
+				x = 2.34;// d is optional
 
-			 // d- double. even if we dont write 'd' at end - it will be considered as double value
-		//x = 3.45;// d is optional
+				//  display x
+				System.out.println(x);
+				//                2.34
 
-		//  display x
+				//  store 4.534d; into x
+				x  =  4.534d;
 
-		//                2.34
+				// display x var
+				System.out.println(x);
+				//              4.534
+				// note :  Select all lines >   ctrl + I  -  Indentation (or) allignment of lines proper
 
-		//  store 4.534d; into x
-
-
-		// display x var
-	
-		//              4.534
-		// note :  Select all lines >   ctrl + I  -  Indentation (or) allignment of lines proper
 
 	}
 
 }
+
+o/p:
+2.34
+4.534
+
 
 ********************************************
 
 ********************************************
 char basic program:
 ---------------------
-package DataTypes;
+package DataTypeBasics;
 
 public class CharBasics {
 
@@ -1451,12 +1531,12 @@ public class CharBasics {
 		// char :   'a', 'F'
 		//		Declare char var (ch) and store 'A'
 		// datatype someVarName;
-			
+			char ch;
 		// ch is var name, which is of type -char
 		//  so we can store char values only 'A', 'B'
 		// char value must be written in single quotes i.e 'A' , 'B'
 		// store 'A' into ch
-
+			ch  = 'A';
 
 //		ch = B;//Error :  B cannot be resolved to a variable
 		
@@ -1465,15 +1545,15 @@ public class CharBasics {
 //		ch = "B"; // "B" -- String 		
 		//Error : type mismatch: cannot convert from String to char
 
-//		ch  =  'ABC';//error:  Invalid character constant
+//		ch  =  'ABCD';//error:  Invalid character constant
 		// in single quotes , we have to write single char only  but not group of characters.
 
 		// display var ch 
-
+			System.out.println(ch);
 		//                  A
 
 		// Can  we store int number (66) in  char var ?	
-			
+			ch = 66;
 			// A - Ascci no - 65, B - 66, C - 67
 		//    66 --> 'B'
 		//      converted to char 
@@ -1484,9 +1564,11 @@ public class CharBasics {
 		
 
 
+
 	}
 
 }
+
 
 o/p:
 ----
@@ -1495,57 +1577,61 @@ B
 
 ---------------------------------------
 
-		// HW Can we store  float, double  , booolean values into  char var  ?
+// HW Can we store  float, double  , booolean values into  char var  ?
 ---------------------------------------------
 
 BooleanBasics Program:
 --------------
-package DataTypes;
+package DataTypeBasics;
 
 public class BooleanBasics {
 
 	public static void main(String[] args) {
-
 		// boolean :  store true / false  values  --> boolean values
-		//		Declare  boolean var (a) and  store true value 
-		// datatype varName;
+				//		Declare  boolean var (a) and  store true value 
+				// datatype varName;
+				boolean a;
+				// a is var, which is of type boolean
+				// so in var a, we can store boolean values i.e true or false
+				a =  true;
 
-		// a is var, which is of type
-		// so in var a, we can store boolean values i.e true or false
-	
+				// display var a
+				System.out.println(a);
+				//                 true 
 
-		// display var a
+				// store false value in var a
+				a =  false;
 
-		//                 true 
+				// display var a
+				System.out.println(a);
+				//                     false
 
-		// store false value in var a
+				// Can we store int value  10 into boolean var a 
+//				a  = 10;
+				
+				//Error: Type mismatch: cannot convert from int to boolean			 
+				// Error :  boolean data type , we can store only true / false values  but not int no
 
+				//// Can we store float value  2.34f  into boolean var a 
+//				a =  2.34f;
+				//		 // Error :  bolean data type , we can store only true / false values  but not dec no
 
-		// display var a
+				//// Can we store char value  'A'  into boolean var a 
+//				a = 'A';
+				//	Error :  bolean data type , we can store only true / false values  but not character value
 
-		//                     false
+				//// Can we store String value  "Rama" into boolean var a   
+//				a = "Rama";
+				//		  Error :  boleean data type , we can store only true / false values  but not String 
 
-		// Can we store int value  10 into boolean var a 
-
-		//Error: Type mismatch: cannot convert from int to boolean			 
-		// Error :  boolean data type , we can store only true / false values  but not int no
-
-		//// Can we store float value  2.34f  into boolean var a 
-
-		//		 // Error :  bolean data type , we can store only true / false values  but not dec no
-
-		//// Can we store char value  'A'  into boolean var a 
-
-		//	Error :  bolean data type , we can store only true / false values  but not character value
-
-		//// Can we store String value  "Rama" into boolean var a   
-
-		//		  Error :  boleean data type , we can store only true / false values  but not String 
-			
 
 	}
 
 }
+
+o/p:
+true
+false
 
 
 ********************************************************************************************************
@@ -1561,31 +1647,38 @@ ex:    "rama" ,  "Sita" ,  "abc123",  "abc123(.*"
 
 Declare String variable :
 -------------------------
-
-package DataTypes;
+package DataTypeBasics;
 
 public class StringBasics {
 
 	public static void main(String[] args) {
 		// Declare String  var and store "rama"  
-//		delcare int var a -->  
-
-
+		//		delcare int var a -->  int a;
+		String s;
 		// s is var, which is of type String 
 		// so in String var,we can store String value "Ram", "Sita123", "Ram.@gmail.com"
 		// We must write double quotes to store string value 
-		
+
 		// store "rama" into s variable
+		s = "rama";
 
-		
 		// display string s var
-
+		System.out.println(s);
 		//               rama
-
 		
+//		s =  10; //  10 - int value
+//		s= 2.34f;
+//		s = 2.45d;
+		
+		s = "10";// 10 is String value 
+		System.out.println(s);// 10
+
 	}
 
 }
+
+o/p:
+rama
 
 Revision :
 ---------
@@ -1598,76 +1691,81 @@ Revision :
 -----------------------------
 Concatenation Operator:
 ---------------------
-
-package DataTypes;
+package DataTypeBasics;
 
 public class ConcatenationOpertaor {
 
 	public static void main(String[] args) {
 		// +  is addition operator  or concatenation 
-		//		  10  +  20 = 30
+				//		  10  +  20 = 30
 
-		// declare var i.e c  and perform addition of 10 and 20
-		
+				// declare var i.e c  and perform addition of 10 and 20
+				int c =  10 + 20;
+				//        30
+				//     30
+				// c  = 30 
+				//	c  =   right side expression is evaluated / calculated  and result will be stored in left side var
+				//  i.e C  so C contains  30 val.
+				// display var c
+				System.out.println(c);
+				//                  30
 
-		//     30
-		// c  = 30 
-		//	c  =   right side expression is evaluated / calculated  and result will be stored in left side var
-		//  i.e C  so C contains  30 val.
-		// display var c
+				//  +  concatenation Operator:
+				//  performs concatenation (or) joining values
 
-		//                  30
+				//  "ram" + 20  --> ram20
 
-		//  +  concatenation Operator:
-		//  performs concatenation (or) joining values
+				//   10 + "sita"  --> 10sita
 
-		//  "ram" + 20  --> 
+				//   "rama" +  "sita" --> ramasita 
 
-		//   10 + "sita"  --> 
+				//		Note:  if any one value is String, it performs concatenation or joining values
 
-		//   "rama" +  "sita" --> 
+				System.out.println("ram"+20);// --> ram20
+				System.out.println(10+"sita");// --> 10sita
+				System.out.println("rama" + "sita");// --> ramasita
 
-		//		Note:  if any one value is String, it performs concatenation or joining values
+				System.out.println("rama" +  "sita" +  "lakshman");//-->ramasitalakshman
 
-		System.out.println("ram"+20);// --> 
-		System.out.println(10+"sita");// -->
-		System.out.println("rama" + "sita");// --> 
+				System.out.println(1 +3);//-->  4
+				System.out.println("1" + 3);  // --> 13  not 4
+				System.out.println(1+ "3");// 13   not 4
+				System.out.println("1"+ "3");// 13  not 4
+				
+				System.out.println(1 + "Sita");// 1Sita
+				System.out.println(1 + "Sita"+ 2);// 1Sita2
 
-		System.out.println("rama" +  "sita" +  "lakshman");//-->
+				// Declare var  and store Rama value in the same line 
+//				String s;
+//				s = "rama";
+				
+				String s = "Rama";
+				
+			// possible / valid stmt
+				
+				System.out.println("s");//  s  --  here "s" -s string 
+				System.out.println(s);// Rama
+				// here s is var 
 
-		System.out.println(1 +3);//-->  
-		System.out.println("1" + 3);  // --> 
-		System.out.println(1+ "3");//
-		System.out.println("1"+ "3");// 
-		
-		System.out.println(1 + "Sita");// 
-		System.out.println(1 + "Sita"+ 2);// 
+				System.out.println("String s value is =" + s);
+				//                  "String s value is =" +  "Rama"  
+				// 		     String s value is =Rama	
 
-		// Declare var  and store Rama value in the same line 
-		
-	// possible / valid stmt
-		
-		System.out.println("s");//  s  --  here "s" -s string 
-		System.out.println(s);// Rama
-		// here s is var 
+//				FAQ : Written exam   10 + 20 + "Ram" -->
+				System.out.println( 10  + 20 + "Ram");  // 30Ram  but not 1020Ram
+				//                   30 + "Ram"
+				//                   30Ram
+				
+//				FAQ : Written exam   "Ram" + 10 +20 --> 
+				System.out.println( "Ram" + 10 +20);// Ram1020  but not Ram30
+				//                   "Ram10"  + 20
+				//                     "Ram1020"
 
-		System.out.println("String s value is =" + s);
-		//                  "String s value is = +  "Rama"  
-		// 		     String s value is =Rama	
-
-//		FAQ : Written exam   10 + 20 + "Ram" -->
-		System.out.println( 10  + 20 + "Ram");  // 30Ram  but not 1020Ram
-		//                   
-		//                   
-		
-//		FAQ : Written exam   "Ram" + 10 +20 --> 
-		System.out.println( "Ram" + 10 +20);// Ram1020  but not Ram30
-		//                   
-		//                     
-
-	
-//		System.out.println("Rama" -10);// invalid stmt
-		//The operator - is undefined for the argument type(s) String, int
+			
+//				System.out.println("Rama" -10);// invalid stmt
+				//The operator - is undefined for the argument type(s) String, int
+				//  10-5 
+				
 
 	}
 
@@ -1682,14 +1780,31 @@ Single var :
 ------------
 datatype varName;
 
+int a;
+
 // Assign value to var 
+ a = 10;
 
 varName=  val/var/ Expression;
 
+
+
 declare var i.e a of type int and store some value  20
+a =20;
+a  = b;
+
+a =  10 + 20;
 
 --------------------
 declare variables a,b,c of  type = int in diff lines  and store 10,20,30
+
+int a;
+int b;
+int c;
+
+a = 10;
+ b = 20;
+c =30;
 
 
 
@@ -1699,11 +1814,12 @@ Syntax :
 datatype VarName1 , VarName2, VarName3.... etc ;
 
 //  Declare 3 variables a, b,c  of type int 
+int a , b ,c;
 
 	 // in single line 
 
 // Declare 2 float variables   in single line
-
+float f1, f2;
 
 
 
@@ -1716,106 +1832,119 @@ datatype VarName1 , VarName2, VarName3.... etc ;
 //HW  Declare 2 String variables  in single line?
 
 
-Declaring and assigning values in the single line:
--------------------------------------------------
+Assign Value to variables:
+--------------------------
+    varName = val / var/ Exp;
 
-datatype var1 = val1, var2 = val2, var3 = val3;
+Store 10,20,30 values  into variables a,b,c
+
 
 
 ---------------
-package DataTypes;
-
-public class MultipleVarDeclaration {
-
-	public static void main(String[] args) 
-	{
-		// Declare variables a,b,c in single line  and store multiple values in diff lines
-
-		
-		// store 10 into a
-
-		// print a
-
-
-		//store 20 into b
-
-
-		//store 30 into c
-
-
-		//a= 11, b=22,c=33;// invalid stmt - dont write
-
-		//				a, b ,c = 10;// invalid 
-
-
-		// Declare variables i.e  a1,b1,c1  and assigning 1,2,3 values in the same line 
-			
-			// Valid stmt
-
-		// Display a1
-
-		//                   1
-		// Display b1
-
-		//                   2
-		// Display c1
-
-		//                  3
-		// Can we declare one int , one float var  in single line
-
-
-// invalid  - diff data types declaration in single line -is not possible
-		
-		// declaring single var a2 and  and assign the 20 value in the same line
-
-
-		//int x,y,z = 10,20,30;// invalid stmt 
-		
-
-	}
-
-}
-
-
-// -------------------
-Note:
-
-package DataTypes;
+package DataTypeBasics;
 
 public class MultipleVarDeclaration {
 
 	public static void main(String[] args) {
-		
-	// local var :  the variables , which are declared inside method
-		 all local variables must be initialised with some value else it throws error
-		
-		
-		int a3;//  //  all local variables must be initilased with some value else it throws error
-		// display a3 
+		// Declare variables a,b,c of type int in single line  and store multiple values in diff lines
+		int a,b,c;
 
-// The local variable a3 may not have been initialized
+		// store 10 into a
+		a = 10;
+		// print a
+		System.out.println(a);
+
+		//store 20 into b
+		b  =20;
+
+
+		//store 30 into c
+		c =30;
+
+//		a = 11, b=22,c=33;
+//		a= 11, b=22,c=33;// invalid stmt - dont write
+
 		
+//			a, b ,c = 10;// invalid 
+
+
+		// Declare variables i.e  a1,b1,c1  and assigning 1,2,3 values in the same line 
+
+		int a1 =1, b1= 2,c1 =3;
+		
+		// Valid stmt
+
+		// Display a1
+		System.out.println(a1);
+		//                   1
+		// Display b1
+		System.out.println(b1);
+		//                   2
+		// Display c1
+		System.out.println(c1);
+
+		//                  3
+		// Can we declare one int , one float var  in single line
+//			int a2  = 10, float f =2.34f;
+//		int a2, float f2;// in vlaid 
+
+		// invalid  - diff data types declaration in single line -is not possible
+
+		// declaring single var a2 and  and assign the 20 value in the same line
+		int a2 =20;// valid
+
+//		int x,y,z = 10,20,30;// invalid stmt 
+
+
+
 	}
 
 }
 
+
+***************************************************
+	15-Oct-2025
+***************************************************
+
+// -------------------
+Note:
+
+package DataTypeBasics;
+
+public class MultipleVarDeclaration {
+
+	public static void main(String[] args) {
+	
+		
+		int a3;//  //  all local variables must be initilased with some value else it throws error
+		
+		
+		// display a3 
+		a3 = 10;
+		System.out.println(a3);
+		// The local variable a3 may not have been initialized
+		
+		int b;		
+		
+		System.out.println(b);
+
+	}
+
+}
+
+
 ------------------------
-Assigning the same value to Multiple variable in the same Line:
--------------------------------------------------
-   syntax:
-  var1 = var2 =  var3 = value;
-
-
-package DataTypes;
+package DataTypeBasics;
 
 public class MultipleVarDeclaration2 {
 
 	public static void main(String[] args) {
 		
+
 		int a, b ,c; // local var :  the variables , which are declared inside method
-		a= 10;  //  all local variables must be initilased with some value else it throws error
-		b=20;
-		c=30;
+		a = 10;  //  all local variables must be initilased with some value else it throws error
+		b = 20;
+		c = 30;
 		
 		
 //		a, b ,c = 10;// invalid 
@@ -1827,12 +1956,19 @@ public class MultipleVarDeclaration2 {
 		   //   
 
 		// display a,,b,c 
-		
-	
-		
+		  System.out.println(a);
+		  System.out.println(b);
+		  System.out.println(c);
+
 	}
 
 }
+
+
+o/p:
+20
+20
+20
 
 
 
@@ -1842,12 +1978,11 @@ public class MultipleVarDeclaration2 {
 
 Rules to Declare variable name:
 -------------------------------
-package DataTypes;
+package DataTypeBasics;
 
 public class RuleToDeclareVarName {
 
 	public static void main(String[] args) {
-
 		//  while writing any var name, we have to follow some rules
 		//
 		//			A variable name must start with a letter or an underscore character (_)
@@ -1859,81 +1994,94 @@ public class RuleToDeclareVarName {
 		//			The variable name cannot be any Go keywords
 
 		//		A variable name must start with a letter or an underscore character (_)
-//ex:valid
-
+		//ex:valid  int a; int b;
+		int empid;
 		
+		int _empid;
 
-//ex invalid 
-		//		int 1ename;// invalid var name should not start with digit 
-		//		int 25;//  var name must start with alphabet or Underscore
+
+		//ex invalid 
+//				int 1ename;// invalid var name should not start with digit 
+//				int 25;//  var name must start with alphabet or Underscore
 
 		//		A variable name can only contain alpha-numeric characters and underscores (a-z, A-Z, 0-9, and _ )
-		int ename123_City;
+		int ename_123;
 
 		// special char's (  . *  @ are not allowed except _
-		                  // special char i.e  '(' is not allowed in var anme 
-					// . is special char  -  not allowed in var name
+		
+//		int  emp(sal; // special char i.e  '(' is not allowed in var anme 
+//		int emp.sal// . is special char  -  not allowed in var name
 
-				 // _  is special char -- 
+		int emp_sal;// _  is special char -- 
 
-		//  Except  _  underscore - it wont allow any other special charaters
+		//  Except  _  underscore - it wont allow any other special charaters in var name
 
-		 		// invalid # is special char
-
+		// invalid # is special char
+//		int emp#sal;
 
 		//		Variable names are case-sensitive (age, Age and AGE are three different variables)
-
-		
+		int age =10;
+		int Age = 20;
+		int AGE = 30;		
 
 		// Display age, Age,AGE
+		System.out.println("age =" +  age);
+		//                 "age=" + 10 -->  age= 10 
 		
+		System.out.println("Age =" +  Age);
+		//                  "Age ="+ 20 
+		//                   Age =20   
+		System.out.println("AGE =" +  AGE);
+		//                 "AGE =" + 30
+		//                  AGE =30   
 
-		
-
-//		There is no limit on the length of the variable name
+		//		There is no limit on the length of the variable name
 		// 256 max length of var name 
-		
+		String ename1223124234324324324234234234234234;
 
 		// Note :  always try to give very short name and meaningful name
 
 		//    A variable name cannot contain spaces
+//		float emp sal;
 
-
-				// Var name must not allow any space 
-				//  Var name must not allow any space
+		// Var name must not allow any space 
+		//  Var name must not allow any space
 
 
 		//    The variable name cannot be any Java keywords
 		//      ex: int float char, boolean-- if 
 
-		 // char is predefined keyword in java lang
+		// char is predefined keyword in java lang
 
-			// if is predefiend wor or k/w in java lang
+		// if is predefiend wor or k/w in java lang
 		// so we should not use any k/w for var name
 
+	
 		//    int boolean;// invalid
-		//    boolean int;// invalid  
-		class String ;   //   dont use String as var
+//		    boolean int;// invalid  
+//		class String ;   //   dont use String as var
 
 
-//  any pefdefined k/w , we should not use for class name
+		//  any predefined k/w , we should not use for class name
 		// above rules are applicable for class name also
-//			class if
-//		{
-//			
-//		}
+		//			class if
+		//		{
+		//			
+		//		}
 
-//		ex: class int
-//		{
-//			
-//		}
-		
-		//  duplciate var names are not allowed in java
-//		int empno;//Eror  Duplicate local variable empno
+		//		ex: class int
+		//		{
+		//			
+		//		}
+
+		//  duplicate var names are not allowed in java
+				int empno;//Eror  Duplicate local variable empno
+//				int empno;
+//				int age;
 		// empno already declared in previous lines some where
-		
-		String empname;
-//		String empname;// Duplicate local variable empname
+
+//		String empname;
+//				String empname;// Duplicate local variable empname
 
 
 	}
@@ -1946,14 +2094,14 @@ ex:  find out which var name is valid /invalid?
 
   variable name      valid/invalid
 ------------------------------------
-  ename    -->   var name
-  123Empno -->    var name   (alph + _)
-  _empno   --> 	  var name
-  emp_city --> var name
-  emp123   --> var name
-  emp.no   --> var name as it does not allow special char's except _
-  (empname -->  as '('  is special char
-   int     --> var name  as int is predefined word/ key word 
+  ename    -->   valid var name
+  123Empno -->    invalid var name   (alph + _)
+  _empno   --> 	  valid var name
+  emp_city --> valid  var name
+  emp123   --> valid  var name
+  emp.no   --> invalid   var name as it does not allow special char's except _
+  (empname -->  invalid   as '('  is special char
+   int     --> invalid   var name  as int is predefined word/ key word 
                   any k/w in java lang ,we should not use for var name .
 
 
@@ -1984,40 +2132,49 @@ ex:  find out which var name is valid /invalid?
 /  -  Quotient val
 %  -  Remainder operator 
 
-   2 + 3
-  3 - 2
-  3 * 2
+   2 + 3 --> 5
+  3 - 2 -->   1
+  3 * 2 -->  6
   3 / 2  = Division operator - gives Quotient val
   3 % 2 =  Remainder opertator --gives  Remainder val
   
-package Operators;
+package OperatorBasics;
 
+public class ArithematicOperators {
+
+	public static void main(String[] args) {
 //		Arithematic :  + - * / %
 		//		    2 nos
 		//Declare 2 variables a,b and store 3,2 values
-		
+		int a,b;
+		a = 3;
+		b = 2;
 
 		// Declare add var
-		
-
 //		perform addition of a and b
-
-		//	 =   
+		int add;
+		add = a + b;
+		//     3 + 2
+		//       5  
+		//	add  = 5   
 		//   =      rt side exp is evaluated  and result will be stored in left side var i.e add
 		//   so add contains 5 val
 		// display result
-
-		//             
-
+		System.out.println("add=" + add);
+		//              "add ="  +  5
+		//             add =5
 		// Declare sub var  and perform subtsraction
-		
-		//    
-		//   sub =   
+		int sub;
+		sub = a - b;
+		//    3 -2
+		//      1
+		//   
+		//   sub =  1  
 		
 		// Display sub o/p
-
-		//                    
-		
+		System.out.println("sub=" +  sub);
+		//                   "sub=" +  1    
+		//                    sub=1
 //		HW   Perform Multiplication Operation of 2 no's?
 		
 		
@@ -2026,51 +2183,65 @@ package Operators;
 
 
 		int div =  a/b;
-		//             // Quo = 1	
-		//   
+		//         3/2    // Quo = 1	
+		//          1
 		// display division
-		
+		System.out.println("div=" + div);
 		//                  "div=" + 1
 		//                     div=1 
 
 //		 3 /2 -  Quotient val
 
-//		   2) 3 (   -(Quotient val)
+//		   2) 3 (1   -(Quotient val)
 //		      2		   
 //		---------------
-//		         (Remainder) 
+//		      1   (Remainder) 
 
 		  
 //		% - Remainder operator
 		int rem =  a % b;
-		// rem =    ;
-		//   rem=    
-
+		// rem =   3 %2 ;
+//		/             1 
+		//   rem=  1  
+		System.out.println("rem="+  rem);
 		// rem val=1
 		
 //		  5/ 2  =     quotient val
 //		 5 % 2  =       Remainder val
 
-//		   2 ) 5 (  Quotient val)
+//		   2 ) 5 (2  Quotient val)
 //		       4
 //		 ------------------------
-//			  (remainder val)
+//			   1 (remainder val)
 			   
-		System.out.println(5/2);// 
-		System.out.println(5%2);// 
+		System.out.println(5/2);// Q  2
+		System.out.println(5%2);// rem = 1
 		
-		System.out.println(9/2);//    -quotient
-		System.out.println(9%2);//    rem val
+		System.out.println(9/2);// 4    -quotient
+		System.out.println(9%2);// 1   rem val
+		//     2) 9(4  Q
+//		          8
+//		----------------
+//		          1 Rem
 		
 		
-		
+
+
 	}
 
 }
 
+o/p:
+add=5
+sub=1
+div=1
+rem=1
+2
+1
+4
+1
+
 ---------------------------------
-
-
 // HW  Perform add, sub, mul, div (quo, Remainder) of 2 nos  6 ,2 and display the o/p?	   
 
 // HW  Perform add, sub, mul, div (quo, Remainder) of 2 nos 7,2	 and display the o/p?	
@@ -2082,59 +2253,70 @@ IP FAQ Swap 2 variables  using 3rd variable  ?
 //       a= 10  b=20
 // o/p:  a=20 , b=10
 
-package StringBasics;
+package OperatorBasics;
 
 public class Swap2Numbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int a = 10;
-		int b = 20;
-		
-		System.out.println("Before swapping a="+ a + " b="+b);
-		
-		//    tmp=  
-		
+				int a = 10;
+				int b = 20;
+				
+				System.out.println("Before swapping a="+ a + " b="+b);
+				//                                       10          20
+				int tmp;
+				tmp = a;
+				//      10
+				//    tmp= 10  
+				
+				a  = b;
+				//     20 
+				//  a= 20
+				
+				b  =  tmp;
+				//        10
+				//  b=  10
+				
+				System.out.println("After swapping a="+ a + " b="+b);
+				///                                       20         10
 
-		//  a=
-		
-
-		//  b= 
-		
-		System.out.println("After swapping a="+ a + " b="+b);
-		
 
 	}
 
 }
+
 
 *****************************************************************
 
 *****************************************************************
 
 IP: FAQ Swap 2 variables  without 3rd variable ?
-
-package StringBasics;
+package OperatorBasics;
 
 public class Swap2NumberswihOutUsing3rdVariable {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int a = 3;
-		int b = 2;
+
+		int a = 5;
+		int b = 6;
 		
 		System.out.println("Before swapping a="+ a + " b="+b);//   3     ,   2
 		
-		
-		 //   
-		 //   
+		  a=  a+ b;
+		 //   3 + 2 
+		 //     5
+		  //   a = 5
 		 
-		 //   
-		 //   b=  
-		 
-
+		  b  = a-b;
+		 //    5- 2
+		  //      3
+		 //   b=  3
+//		 ^ 
+		  a = a - b;
+		  //   5 -  3
+		  //     2
+		  //   a = 2    should get 2
 			 //     a =  -a + b; or  a = b-a;
 		 //    
 		 //     
@@ -2142,13 +2324,17 @@ public class Swap2NumberswihOutUsing3rdVariable {
 		 	
 		
 		System.out.println("After swapping a="+ a + " b="+b);
-		//                                   
-		
+		//                                      8           3
+
 
 	}
 
 }
-		
+
+
+******************************************	
+	16-Oct-2025
+******************************************
 ------------------------------------------------
 o	Relation operators /Comparison operators:
 ------------------------------------------------
@@ -2163,46 +2349,51 @@ can be used to compare 2 nos  and gives the o/p in the form  of true/ false
 
 check these stmts are  true / false:
 --------------------------------------
-     6 == 6 -->    gives o./p  :  true 
-     6 == 3  --> 
+     6 == 6 --> true   gives o./p  :  true 
+     6 == 3  --> false
 
-    6 < 5   = 
-    3 < 5   = 
+    6 < 5   =   false
+    3 < 5   =   true
 
-   6 > 5  =  
-   3 > 5  =   
+   6 > 5  =  true
+   3 > 5  =   false
 
-   6 <= 5  -->  
-   6 <= 6  -->  
-   3 <= 6  --> 
+   6 <= 5  -->  false
+   6 <= 6  -->  true   
+   3 <= 6  --> true
 
-    6 >= 5  --> 
-    6 >= 6  --> 
-    3 >= 6  --> 
+    6 >= 5  --> true
+    6 >= 6  --> true
+    3 >= 6  --> false
 
    
 
-   6 != 3 --> 
-   6 != 6 --> 
+   6 != 3 -->  true
+   6 != 6 -->   false 
 
-package Operators;
+/**
+ * 
+ */
+package OperatorBasics;
 
 public class RelationalOperators {
 
-	public static void main(String[] args) {
-		System.out.println(6<5);//  
-		System.out.println(3<5);// 
+	public static void main(String[] args)
+	{
+		System.out.println(6<5);//  false
+		System.out.println(3<5);// true 
 
-		System.out.println(6>5);//  
-		System.out.println(3>5);//  
+		System.out.println(6>5);//  true
+		System.out.println(3>5);//   false
 
-		System.out.println(6<=5);// 
-		System.out.println(6<=6);// 
-		System.out.println(3<= 6);//  
+		System.out.println(6<=5);// false
+		System.out.println(6<=6);//true    6<= 6 6<6  6==6
+		
+		System.out.println(3<= 6);//true  3<6 
 
-		System.out.println(6>=5);//  
-		System.out.println(6>=6);//  
-		System.out.println(3>=6);//   
+		System.out.println(6>=5);//  true
+		System.out.println(6>=6);//  true  6>6   6==6 
+		System.out.println(3>=6);//  false 
 
 		//				      6 == 6   gives o./p  :  --> 
 		//				     6 == 3  -->
@@ -2212,11 +2403,18 @@ public class RelationalOperators {
 		//				   6 != 3 - --> 
 		//				   6 != 6 - -->
 		// HW   do above work
+		System.out.println(6!=6);//  false
 
 		// declare a,b variables of int and store 6,5
-		
+		int a,b;
+		a = 6;
+		b = 5;
 
 		//  compare a<b and store into int result variable	
+//		int result =  a<b;
+		//           6<5
+		//           false
+		
 //		int res =	a < b;
 		//          6 < 5
 		//           false
@@ -2224,13 +2422,15 @@ public class RelationalOperators {
 		// if we want to store boolean values true/ false values , we have to use 'boolean ' data type left side
 		// We cannot store boolean value true/ false values in int var i.e res
 
-
+		boolean res = a <b;
 		//					6 < 5 ;
-		//		      res =      = is  a boolean val
+		//                   false
+		//		      res =   false   = is  a boolean val
 
 		// display result
-
+		System.out.println("res="+  res);
 //							res=false
+
 
 	}
 
@@ -2277,45 +2477,48 @@ o	Compound operators:
 /=
 %=
 
-package Operators;
+package OperatorBasics;
 
 public class CompoundOperators {
 
 	public static void main(String[] args) {
 		int a = 2;
-		 a += 5;			 
-		 //  a  = 
-		 //        
-		 //        
-		 //  a = 
+		
+		a += 5;			 
+		 //  a  = a+5;
+		 //        2 + 5 
+		 //        7
+		 //  a = 7
 		 
 		 System.out.println("a="+ a);// 7  but not 2
 		 
 		 a -= 5;
-		 //   a=  
-		 //      
-		 //     	 dont substitute  a= 2   , substitute a=7
+		 //   a= a-5; 
+		 //      7-5
+		 //       2
+		 //     	 dont substitute old value  a= 2   , substitute latest value of a=7
 		  //       
-		 //    a = 
+		 //    a = 2
 		 System.out.println("a="+ a);//2
 		 
 		 a *= 5;
-		 //  a =    
-		 //       
-		 //      
-		 // a =
+		 //  a = a*5;   
+		 //      2 * 5 
+		 //      10
+		 // a = 10
 		 System.out.println("a="+ a);// 10
 		 
 		  a/=5;
-		  //   a =  
-		  //         == Quotient
-		  //        
-		  // a =
+		  //   a =  a /5;
+		  //        10/5         / == Quotient
+		  //         2
+		  // a = 2
 		  System.out.println("a="+ a);// 2
 		  
 		  a%=5;
-		  // a = 
-		  //      
+		  // a = a % 5;
+		  //     2 %5
+		  //      2
 		  //        2  rem val
 //		          5) 2  ( 0    -      not 0.4
 //		             0
@@ -2326,15 +2529,18 @@ public class CompoundOperators {
 		  
 		  // we can store + ve no, and -ve no's in var  
 		// store -3 val into var a
-
+		  a = -3;
+		  System.out.println("a="+a);
+		  //                    a = -3
 		  //   assign +3 val into var i.e a
-		 
-		  System.out.println("a="+a);//a=3
-
+		 a = +3;
+		  System.out.println("a="+a);
+//		  		a=3
 
 	}
 
 }
+
 
 ***********************************
 
@@ -2345,12 +2551,12 @@ We can write below stmts like
         b =2;
 
         a+=b;
-//       
-//          
+//       a =  a+ b;
+//            
 //        
 
 	a-=b;
-//         
+//       a =  a -b;  
 //           
 //          
 
@@ -2393,77 +2599,97 @@ o	Logical operators -  and -&&, OR- ||, not !
 
  a  b   a && b  (Multiplication)
 -------------------------------
-0   0                 
-0   1    
-1   0    
-1   1    
+0   0     0              
+0   1     0
+1   0     0
+1   1     1
 --------------------
  a         b     a && b  (Multiplication)
 ---------------------------------------
-false   false     
-false   true      
-true    false     
-true    true    
+false   false       false  
+false   true        false
+true    false       false
+true    true        true
 
 // if any one i/p is false-  && gives o/p - false
 //  if both i.p's are true - &&          -  true  
 
-package OperatorsBasics;
+package OperatorBasics;
 
 public class LogicalAndOperator {
 
 	public static void main(String[] args) {
-		
-	// Declare boolean var a, b  and store false , false
-		
-		
-// Declare boolean var  result  and perform logical and operation
-			
-			 // *  
-		//                 
-		//                 
+		// Declare boolean var a, b  and store false , false
+		boolean a, b;
+		a = false;
+		b=  false;
+
+		// Declare boolean var  result  and perform logical and operation
+		boolean result  =  a && b;		
+		// *    false && false
+		//               false  
+		//      result = false           
 		// if any one i/p is false-  && gives o/p - false
 		//  if both i.p's are true - &&          -  true
-		
+
 		// Display Result a &&b
-				// 
+		System.out.println("result a&&b=" + result);
+		//                         false
+
 		// Store false, true values into a, b  
+		a= false;
+		b = true;
+
 
 		// Declare boolean var result and and performs logical and operation
-
+//		boolean result  = a && b;
+		
 		//  no 2 var's can have same name.
 		// Var name must be unique
 		// duplicate var names are not allowed in java lang.
-		
 
-		 // 
+		result  = a && b;
+		//        false && true
+		//            false
 		// Display var result and and performs logical and operation       
+		System.out.println("result false && true=" + result);
+		//                                             false
 
-		  
 		// Store true, false values into a, b  
-
-// 		// Display Result a &&b
-
-		 //        
-		 System.out.println("Result a &&b ="+  result); // false
-		 
-		 		// Store true, true values into a, b  
+		a =  true;
+		b = false;
 		
-// Display Result a &&b
+		//		 		// Display Result a &&b
+		result  = a && b;
+		//         true && false
+		//         false
+		System.out.println("Result a &&b ="+  result); // false
 
-		 //         ==  
-		 System.out.println("Result a &&b ="+  result);// true 	
-		 
-//		 System.out.println("&& on numbers" + (1&&3));
-		 // the operator && is undefined for the argument type(s) int, int
-		 // Note:  we should not use any numbers for Logical and operator 
-		 // always we must give boolean val / boolean var 
-		 
+		// Store true, true values into a, b  
+		a= true;
+		b= true;
+		
+		// Display Result a &&b
+		result  =  a&&b;
+		//        true &&  true
+		//         ==   true
+		System.out.println("Result a &&b ="+  result);// true 	
+
+//			System.out.println("&& on numbers" + (1&&3));
+		// the operator && is undefined for the argument type(s) int, int
+		// Note:  we should not use any numbers for Logical and operator 
+		// always we must give boolean val / boolean var 
+			System.out.println( true && true);// ok
+			System.out.println( a && b);// ok
+//			System.out.println( 1 && 2);// not ok
 			
+
+
 
 	}
 
 }
+
 
 -------------------------
 
@@ -2475,72 +2701,79 @@ public class LogicalAndOperator {
 
  a  b   a || b  (Addition  +)
 ------------------
-0   0                  
-0   1             
-1   0    
-1   1     
+0   0        0+ 0 --> 0           
+0   1        0+ 1 --> 1     
+1   0        1+ 0 -> 1
+1   1      1+1->    1
 --------------------
  a         b     a || b  (addition+)
 --------------------------------
-false   false     
-false   true      
-true    false     
-true    true      
+false   false      false
+false   true      true 
+true    false     true
+true    true       true 
 ---------------------------
 if any one i/p is true - Logical OR gives o/p: true
 if both i/p's are false -                        false
 
 -----------------------
 
-package OperatorsBasics;
+package OperatorBasics;
 
 public class LogicalOROperator {
 
 	public static void main(String[] args) {
 		// Declare boolean variables a,b and store false, false
+			boolean a,b;
+			a = false;
+			b = false;
 		
-		// declare boolean var result and performs logical OR operation
-		
-		 //  addition
-		//  
-		// Display Result  
-          
-		// 
-		
-	// store false, true into a,b
-		
-		
-//  perform logical OR operation  and store the o/p into  result  var
-		
-
-		 //
-// Display Result       
- 
-		 
-// store true,false into a,b
-		
-	
-//  perform logical OR operation  and store the o/p into  result  var
-
-		 // 
-// Display Result         
-
-		 
-	// store true,true into a,b	 
-	
-
-//  perform logical OR operation  and store the o/p into  result  var	
-		
-		 //  
-// Display Result     
-	
-		 
-// Can we use || for numbers?
-		// System.out.println(" || on numbers" + (1||3));
-		 // the operator || is undefined for the argument type(s) int, int
-		 // Note:  we should not use any numbers for Logical OR operator 
-		 // always we must give boolean val / boolean var   with Logical OR operator		 
+				// declare boolean var result and performs logical OR operation
+				boolean res = a || b;
+				 //  addition  false ||  false
+				//               false
+				//       res = false
+				// Display Result  
+		          System.out.println("res="+ res);
+				//                            false
+				
+			// store false, true into a,b
+		          a = false;
+					b = true;	
+				
+		//  perform logical OR operation  and store the o/p into  result  var
+					res = a || b;	
+//						   false ||  true
+				 //           true
+					//   res =  tryue
+		// Display Result       
+					  System.out.println("res="+ res);// true
+				 
+		//HW  store true,false into a,b
+				
 			
+		//  perform logical OR operation  and store the o/p into  result  var
+
+				 // 
+		// Display Result         
+
+				 
+			// HW  store true,true into a,b	 
+			
+
+		//  perform logical OR operation  and store the o/p into  result  var	
+				
+				 //  
+		// Display Result     
+			
+				 
+		// Can we use || for numbers?
+				 System.out.println(" || on numbers" + (1||3));
+				 // the operator || is undefined for the argument type(s) int, int
+				 // Note:  we should not use any numbers for Logical OR operator 
+				 // always we must give boolean val / boolean var   with Logical OR operator		 
+					
+
 
 	}
 
@@ -2554,25 +2787,27 @@ logical Not (!):
   !true  = false
   !false = true
 
-package OperatorsBasics;
+package OperatorBasics;
 
 public class LogicalNotOperator {
 
 	public static void main(String[] args) {
-
 		boolean a = true;
 		boolean res =  !a;
-		///            
-
-		System.out.println("res ="+ res); // 
+		///            ! true
+//		                false
+		System.out.println("res ="+ res); // false
 
 		a = false;
 		res =  !a;
-		//      
-		System.out.println("res ="+ res);//
+		//      ! false
+		//          true
+		System.out.println("res ="+ res);// true
+
 	}
 
 }
+
 
 
 AND, OR , Not
@@ -2585,40 +2820,41 @@ Write o/p for below programs?
 
 Ex1:
 boolean result = true || false && true;
-		//                          
-		//           
-		System.out.println(result);
+		// true ||  false              
+		//     true      
+		System.out.println(result);// true
 
 Ex2:
 	boolean result = (5 > 3) && (2 < 4);
-		//                  
-		//                      
-	System.out.println(result);
+		//         true &&  true         
+		//           true           
+	System.out.println(result);// true
 Ex3:
 int x = 5;
 	boolean result = (x >= 5) || (x < 2);
-	//                  
-	//                  
-	System.out.println(result);
+	//                (5>=5) || (5<2)  
+	//                  true || false
+///                            true 
+	System.out.println(result);// true
 
 Ex4:
 	boolean result = (7 < 5) && (8 > 3) || (9 != 9);
-//	//                 
-//	//                    
-//	//
-	System.out.println(result);
+//	//                (false) && (true) || (false) 
+//	//                    false         ||  false
+//	//                    false
+	System.out.println(result);// false
 	
 Ex5:
 	int x = 4;
 	int y = 6;
 	boolean result = (x == 4) && (y != 6) || (x < y);
-//	//                 
-//	//                  
-//	//                    
-	System.out.println(result);
+//	//                (4==4) && ( 6!=6) || (4<6) 
+//	//                  true && false ||  true 
+//	//                    false || true
+//                                 true
+	System.out.println(result);// true
 
-HW Write the o/p  for below
-
+HW  Ex 6, 7,8,9 
 Ex6:
 	int a = 8;
 	int b = 3;
@@ -2648,6 +2884,9 @@ Ex9:
 	//                    
 	System.out.println(result);
 
+*************************************
+		21-Oct-2025
+*************************************
 
 -----------------------------
 Increment operators :
@@ -2661,53 +2900,69 @@ Post Increment Operator:
     var ++;
 
 -------------------
-package OperatorsBasics;
+package OperatorBasics;
 
-public class IncrementOperator1 {
+public class IncrementOperator1 
+{
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		int a = 2;
-		 ++ a;// pre  Increment
-		 //  
-		 System.out.println("a="+ a);// 
+		 ++ a;// pre  Increment --increase the val of var by 1
+		 // a=   a + 1
+		 //   2+ 1
+//		 /  a=     3
+		 System.out.println("a="+ a);//  3
 		 
 		  a= 3;
-		 a ++;//   
-		 System.out.println("a="+ a);// 
+		 a ++;//  post incre  
+		 //   a=  a  +1 
+		 //        3 + 1
+		 //         4
+		 ///   a = 4
+		 System.out.println("a="+ a);// 4
 		 
 
 	}
 
 }
+
 ---------------------
-package OperatorsBasics;
+package OperatorBasics;
 
 public class IncrementOperator2 {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		int a = 2;		
+		
 		 System.out.println(++a);// 
 		 //             1st Increment val  +   displays the var val 
-		 //             a= 
+		 //             a=  2+1 = 3
+		 //                  3
 		 
 		 a = 4; 
 		 System.out.println(a++);//  
 		 //       displays var val  +  increment val later
-		 //          a =     
+		 //          a =   4        4+1 = 5
 		 
 		  a= 5;
 		  System.out.println(++a);//   
-		  //         
+		  //                5 +1 = 6
+		  //                 6
 		  
 		  a = 4; 
-		System.out.println(++a);//  
-		//   
+		System.out.println(a++);//  
+		//                4      a=  a+ 1 =  4+1 =5
+		//                 
 		  	 
+
+		 
+
 	}
 
 }
+
 
 --------------------------------------------
 o	Decrement operators  --Pre, post--:
@@ -2723,74 +2978,102 @@ Post decrement :
    var --;
 
 
-package OperatorsBasics;
+package OperatorBasics;
 
-public class DecrementOperator {
+public class DecrementOperator 
+{
 
 	public static void main(String[] args) {
-		
+	
 		int a = 3;
 		
-		 --a;
-		 //  
-		 System.out.println("a="+a);// 
+		 --a; //  Pre decr 
+		 //   a = a -1
+		 //       3 -1
+		 //         2
+		 //   a = 2
+		 System.out.println("a="+a);//  a= 2
 		 
-		  a=  4;
-		 a --;//  
-		 System.out.println("a="+a);// 		 
-
+		  a =  4;
+		 a --;//  post  Decr
+		 //   a=  a-1;
+		 //       4-1
+		 //        3
+		 //   a= 3
+		 System.out.println("a="+a);// 	 a= 3	 
+		 
 	}
 
 }
+
 
 ------------------
 
-package OperatorsBasics;
+package OperatorBasics;
 
-public class DecementOperator2 {
+public class DecrementOperator2 {
 
 	public static void main(String[] args) {
-
-		int a = 3;		
+	
+		int a = 3;	// a =3	
 
 		System.out.println(--a);//	
 		//   1st perform decrement  +   display var
-		//    
+		//            a= a-1
+		//               3-1
+		//            a= 2
+		//                2
 		
 		a= 5;
 		System.out.println(--a);// 
-		//   
+		//               1st perform decre ++   display var 
+		//            a =  a-1
+		//                 5-1
+		//            a = 4
+		//                4
 		
 		 a=  6;
 		 System.out.println(a--);// 
-		 //    display var  , +    perform Decrement 
-		 //    
+		 //    display var  , +    perform Decrement later
+		 //           6              a=  a-1 =  6-1= 5
 		 
-		 System.out.println("a="+a);// 
+		 System.out.println("a="+a);// a= 5
 		 
 		  a =7;
 		 System.out.println(a--);// 7
-		 //     
-
-
+		 //      1st display var val  +    later it performs decrement 
+		 //          7               a=  a -1 = 7-1=6
+ 
+		 	System.out.println(a);// 6
 	}
 
 }
+
 --------------------
-package OperatorsBasics;
+package OperatorBasics;
 
 public class USTWrittemExam {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{
 		int x =5;
-		System.out.println(x++);// 
+		
+		System.out.println(x++);//
+		//                dis 5      +   x= x+ 1 = 5+1 =6
 		System.out.println(++x);// 
-		//   
+		//            1st perform incre  +   display var val
+		//              x =  x +1
+		//                   6 +1
+		//              x = 7
+		 //                       7  
 		System.out.println(x--);//
-		//
+		//  1st display var val   +  later it performs decre
+		//            7                  x = x-1 = 7-1 = 6
 		System.out.println(--x);  // 
-		//           
+		//             1st decre    +  later dissplay var val
+		//             x= x-1
+		//                6 -1
+		//            x  =5             5
 
 	}
 
@@ -2860,19 +3143,27 @@ block : collection stmts which are enclosed in curly braces
 there is no ;  at the end of ‘if’ stmt.
 
 Ex1: // Example 1: Checking if a number is greater than 10
+package FlowControlStatement;
 
-package IFCondStmts;
-
-public class ifbasics1 {
+public class IfNumberGreaterthan10 {
 
 	public static void main(String[] args) {
+		// Ex1: // Example 1: Checking if a number is greater than 10
 		
+		int num =  12;
 		
-
+		if(num > 10)
+		{// 12 > 10
+			//  true --  control goes inside if block
+			System.out.println("num > 10");//   executes
+		}
+		
+		System.out.println("after if block");
 
 	}
 
 }
+
 
 
 o/p:
@@ -2881,15 +3172,65 @@ o/p:
 Ex:
 Ex1: // Example 1: Checking if a number is Less than 10
 
+package FlowControlStatement;
+
+public class ifNumisLessthan10 {
+
+	public static void main(String[] args) {
+//		Ex1: // Example 1: Checking if a number is Less than 10
+		
+		int num = 2;
+		
+		if( num < 10)
+		{//  2 < 10
+			//  true, it will enter if block
+			System.out.println("Num < 10");// print     -gets executed if cond is true only
+		}
+		
+		System.out.println("after if block");// print
+
+	}
+
+}
+
+o/p:
+Num < 10
+after if block
 
 
-ex2: Write o/p for below program?
---------------------------------
+
 package FlowControlStatement;
 
 public class IfBasics1 {
 	
-public static void main(String[] args) {
+public static void main(String[] args) 
+{
+		
+		System.out.println("stmt-1");
+		
+		if(true)/// will  enter 
+		{
+			System.out.println("stmt-2");///  execites
+			System.out.println("stmt-3");	//    execute		
+		}
+		
+		System.out.println("stmt-4");// executes
+		
+
+	}
+
+}
+
+
+
+
+ex2: Write o/p for below program?
+--------------------------------
+package IFCondStmts;
+
+public class ifbasics1 {
+
+	public static void main(String[] args) {
 		
 		System.out.println("stmt-1");
 		
@@ -2905,13 +3246,18 @@ public static void main(String[] args) {
 	}
 
 }
-
 o/p:
 -------
 stmt-1
 stmt-4
 
 -----------------------
+
+
+*************************************
+	22-Oct-2025
+*************************************
+
 ex2:  if else  stmt 
 
 stmt1;
@@ -2932,15 +3278,15 @@ stmt6;// always gets executed if cond - true/ false
 
 
 ex1: Write o/p for below program?
-package FlowControlStatement;
 
-public class IfBasics2 {
+package IFCondStmts;
+
+public class ifbasics1 {
 
 	public static void main(String[] args) {
-
-
+		
 		System.out.println("stmt-1");
-
+		
 		if(true)
 		{
 			System.out.println("stmt-2");// true
@@ -2951,14 +3297,13 @@ public class IfBasics2 {
 			System.out.println("stmt-4");
 			System.out.println("stmt-5");	
 		}
-
+		
 		System.out.println("stmt-6");
-
+		
 
 	}
 
 }
-
 
 
 o/p:
@@ -2970,13 +3315,13 @@ stmt-6
 
 ex2:  Write o/p for below program?
 
-package FlowControlStatement;
+package IFCondStmts;
 
-public class IfBasics3 {
+public class ifbasics1 {
 
 	public static void main(String[] args) {
-
-System.out.println("stmt-1");
+		
+		System.out.println("stmt-1");
 		
 		if(false)
 		{
@@ -2990,12 +3335,11 @@ System.out.println("stmt-1");
 		}
 		
 		System.out.println("stmt-6");
-
+		
 
 	}
 
 }
-
 
 o/p:
 -------
@@ -3010,16 +3354,44 @@ if ()
 if else
 
 
-HW ex: write a program to check the given Age is greater than 18.
+ex: write a program to check the given Age is greater than 18.
 If age is > 18, display msg “age is >18”
 Else display msg “age is not >18 ”
+
+package FlowControlStatement;
+
+public class IfBasics1 {
+
+	public static void main(String[] args) 
+	{
+
+//		ex: write a program to check the given Age is greater than 18.
+//		If age is > 18, display msg “age is >18”
+//		Else display msg “age is not >18 ”
+
+//		int age = 20;
+		
+		int age = 10;	
+		
+		if(age > 18)
+		{// 10 >18 -- false -- does not enter if block
+			//
+			System.out.println(" age is > 18");// print
+		}
+		else
+		{
+			System.out.println(" age is not > 18");
+		}
+
+	}
+
+}
 
 
 
 ex:  program to check given number is even number.
 If it is even no, display “Given no is even no”
 Else display msg “Given no is not even”
-
 package FlowControlStatement;
 
 public class EvenNo {
@@ -3027,11 +3399,23 @@ public class EvenNo {
 	public static void main(String[] args) {
 		// Even no = check no is divisible by 2 =  if we get remainder ==0 - even 
 //					else  not even no
-
-
-			 System.out.println("It is Even no");
-		
-			 System.out.println("It is  not  Even no");
+			  int num = 4; //  rem   / Quot,    % - rem val 
+			  
+			  int rem;
+			  
+			  rem = num % 2;
+			  //     4 %2 = rem =0
+			  //   rem = 0
+			  
+			  if(rem == 0)
+			  {//  0 == 0 true- enters if block
+				  System.out.println("It is Even no"); 
+			  }
+			  else
+			  {
+				  System.out.println("It is  not  Even no"); 
+			  }
+			 
 	
 	}
 }
@@ -3041,31 +3425,42 @@ public class EvenNo {
 -ve :
 
 ex2:
-
 package FlowControlStatement;
 
-public class EvenNoNegative {
+public class EvenNo {
 
 	public static void main(String[] args) {
-
-		// Even no 
-//		
-		 int num = 3;
-		 
-		 if(num%2 == 0)
-		 {// 3%2
-		 //   1   == 0 false
-			 System.out.println("It is Even no");
-		 }
-		 else
-		 {
-			 System.out.println("It is  not  Even no");
-		 }
-
+		// Even no = check no is divisible by 2 =  if we get remainder ==0 - even 
+//					else  not even no
+//			  int num = 4; //  rem   / Quot,    % - rem val 
+			  
+			  int num = 3;
+			  int rem;
+			  
+			  rem = num % 2;
+			  //     3 %2 = rem =1
+			  //   rem = 1
+			  
+			  if(rem == 0)
+			  {//  1 == 0 false - does not enter if block- ctrl goes else block
+				  System.out.println("It is Even no"); 
+			  }
+			  else
+			  {
+				  System.out.println("It is  not  Even no"); 
+			  }
+			 
+	
 	}
 }
 
 
+
+
+
+ ex:  program to check given number is odd number
+If it is even no, display msg “Given no is not odd no”
+Else display msg “Given no is  odd no"
 
 
 --------------------------------
@@ -3074,45 +3469,65 @@ WAP to check given no is odd no or not
 
  if no is odd- display msg "It is odd no"
 else display msg "It is not odd no"
-
-package IFCondStmts;
+package FlowControlStatement;
 
 public class OddNo {
 
 	public static void main(String[] args) {
-		// Odd no 
+		// Odd no  -  num %2 = rem ==1 odd no else not odd no
 //		
 
+		 int num  =3;
 		 
-		
-			 System.out.println("It is Odd no");// 
-		
+		 int rem =  num %2;
+		 //          3% 2 =  1   rem val
+		 if(rem == 1)
+		 {//  1 == 1 true,  enters if block
+			 System.out.println("It is Odd no");//  
+		 }
+		 else
+		 {
 			 System.out.println("It is  not  Oddd no");
-		 
+		 }
+		
+			 
+
 	}
 
 }
+
 
 o/p:
 It is Odd no
 
 
 ---------------------
+
 -ve :
+----
 
 package FlowControlStatement;
 
-public class OddNoNegative {
+public class OddNo {
 
 	public static void main(String[] args) {
-		// Odd no 
+		// Odd no  -  num %2 = rem ==1 odd no else not odd no
 //		
 
+		 int num  = 4;
 		 
-		
-			 System.out.println("It is Odd no");// 
-		
+		 int rem =  num %2;
+		 //          4% 2 =  0   rem val
+		 if(rem == 1)
+		 {//  0 == 1 false,  does not enters if block-  ctrl goes to else block
+			 System.out.println("It is Odd no");//  
+		 }
+		 else
+		 {
 			 System.out.println("It is  not  Oddd no");
+		 }
+		
+			 
 
 	}
 
@@ -3125,22 +3540,31 @@ It is  not  Oddd no
 
 package FlowControlStatement;
 
-public class OddNo2 {
+public class OddNo {
 
 	public static void main(String[] args) {
-		// Odd no 
+		// Odd no  -  num %2 = rem ==1 odd no else not odd no
 //		
-		 int num = 3;
+
+		 int num  = 4;
 		 
-		//  if remainder  ==1 
+//		 int rem =  num %2;
+		 //          4% 2 =  0   rem val
+		 if(num%2 == 1)
+		 {//  0 == 1 false,  does not enters if block-  ctrl goes to else block
+			 System.out.println("It is Odd no");//  
+		 }
+		 else
+		 {
+			 System.out.println("It is  not  Oddd no");
+		 }
 		
-			 System.out.println(num +" is Odd no");
-		
-			 System.out.println(num +" is not Odd no");
+			 
 
 	}
 
 }
+
 
 o/p:
 
@@ -3158,7 +3582,9 @@ HW WAP  to check given salary is > =50000  -- display msg "Salary is >=50000"
  else display msg "Salary is not > = 50,000
 
 HW WAP to check Esal <= 50,000
-package IFCondStmts;
+ - display msg "Salary is <=50000"
+ else display msg "Salary is not < = 50,000
+
 
 
 HW WAP to check  esal = 10,000 , display msg "esal=10000"
@@ -3174,29 +3600,42 @@ public class IncrementSal {
 
 	public static void main(String[] args) {
 		// //		WAP  increment salary by 10000  for eid =10;
-		
+
 //		int eid = 10;
-//		int eid = 5;
-//		int esal  =  80000;
-		
+		int eid = 5;
+
+		int esal = 8000;
+
+		//		int eid = 10;
+		//		int eid = 5;
+		//		int esal  =  80000;
+
 		// check eid == 10
-		
-			// 
-			//  
-		 // increment salary by 10000 
+		if( eid == 10)
+		{//  5 == 10 , false ,  does notenterenters if block			
+			// increment salary by 10000 
+			esal   = esal + 10000;
+			//        8000 +  10000
+			//        180000
+			//  esal = 180000
+			System.out.println("after increment , esal ="+ esal);
+			//                                              18000
 			System.out.println("Increment for eid =10 only");
-			esal = esal  +  10000;
-			//    
-			//     
-			// esal  =
-//			System.out.println("after increment , esal ="+ esal);
-		
-		
-	
+
+		}
+		else
+		{
 			System.out.println("There is no increment ");
-		
-		
-		
+		}
+
+
+
+
+
+
+
+
+
 	}
 
 }
@@ -3216,26 +3655,31 @@ public class IfWithAnd {
 //		WAP to check eid =100  and esal =50000?
 		
 		// Declare eid  and store 100
-
+//		int eid =  100;
+//		int esal = 50000;
 		
 		// -ve
-//		int eid  = 70;
-//		int esal = 90000;
+		int eid  = 70;
+		int esal = 90000;
 		
 		// check eid =100  and esal =50000?
-		
-		//  ==   &&  == 50000
-			//   && 
-			//   
+		if( eid == 100  && esal == 50000)
+		{
+		//  70 == 100  && 90000 == 50000
+			// false   &&  false
+			//   false , does not enters if block, ctrl goes to else block
 			System.out.println(" eid =100  and esal =50000");
-	
+		}
+		else
+		{
 			System.out.println("not  eid =100  and esal =50000?");
+		}
+			
 		
 
 	}
 
 }
-
 
 
 //HW WAP to check eid =100  or  esal =50 000, display proper msg eid = 100 or salary is 50000
@@ -3248,34 +3692,22 @@ HW WAP  to check no is Divisible By 3
 
 HW  WAP to  check given no divisible by 4
 
-WAP to check given no  is PositiveNo or not
+HW WAP to check given no  is PositiveNo or not
 
  10,20 --  = + Ve numbers  
      a  =  10;
 
 -1,-2,-3 --  are not Positive numbers --  -VE numbers
 
-package FlowControlStatement;
+ package IFCondStmts;
 
 public class PositiveNo {
 
 	public static void main(String[] args) {
-		//WAP to check given no  is PositiveNo or not
 		
-		//  num > 0   --  positive no else it is not positive no
-	
-		
-		
-		
-			System.out.println("It is + ve no ");
-	
-			System.out.println("it is not positive no");
-		
-
 	}
 
 }
-
 
 ---------------------------
 3. if else if   else if  else if () -Multiple else if cond
@@ -3301,18 +3733,21 @@ else if(cond-3)
  stmt-6;
  stmt-7;
 }
+//  after if block
 
 stmt-8;
 
 ex: o/p for below program?
 -------------------------
-package FlowControlStatement;
 
-public class MultipleIfElseBasics1 {
+package IFCondStmts;
+
+public class ifbasics1 {
 
 	public static void main(String[] args) {
+		
 		System.out.println("stmt-1");
-
+		
 		if(true)
 		{
 			System.out.println("stmt-2");//  gtes executed if cond - true
@@ -3328,12 +3763,13 @@ public class MultipleIfElseBasics1 {
 			System.out.println("stmt-6");
 			System.out.println("stmt-7");	
 		}
-
+		
 		System.out.println("stmt-8");
+		
+
 	}
 
 }
-
 
 o/p:
 -----
@@ -3345,14 +3781,14 @@ stmt-8
 ---------------------
 o/p for below program?
 
-package FlowControlStatement;
+package IFCondStmts;
 
-public class MultipleIfElseBasics2 {
+public class ifbasics1 {
 
 	public static void main(String[] args) {
-
+		
 		System.out.println("stmt-1");
-
+		
 		if(false)
 		{
 			System.out.println("stmt-2");//  gtes executed if cond - true
@@ -3368,13 +3804,14 @@ public class MultipleIfElseBasics2 {
 			System.out.println("stmt-6");
 			System.out.println("stmt-7");	
 		}
-
+		
 		System.out.println("stmt-8");
-
+		
 
 	}
 
 }
+
 
 o/p:
 ---------------
@@ -3383,6 +3820,10 @@ stmt-8
 
 if all conditions are false --  cond-1, cond-3,cond-3 , it will  go to out of if block  and executes stmts after if block.
 
+
+*****************************************************
+	23-Oct-2025
+*****************************************************
 WAP
 //  		   marks > 85  and marks<=100 	    -->  1st class
 		//  marks > 60   and marks <=85     -->  2nd class
@@ -3392,14 +3833,42 @@ WAP
 
 package FlowControlStatement;
 
-public class ExamResults {
+public class MultipleIfElse {
 
 	public static void main(String[] args) {
+		//  marks > 85  and marks<=100 	    -->  1st class
+		//  marks > 60   and marks <=85     -->  2nd class
+		//  marks >=35 and marks <=60  	    -->  3rd class
+		//  else  			    -->  Fail
 
-//	   marks > 85  and marks<=100 	    -->  1st class
-	//  marks > 60   and marks <=85     -->  2nd class
-	// marks >=35 and marks <=60  	    -->  3rd class
-	//  else  			    -->  Fail
+//		int marks = 90;
+//		int marks = 70;
+//		int marks = 40;
+		int marks = 10;
+		
+		if(marks > 85 && marks <= 100)
+		{//  10 > 85  &&  10 <=100
+			// false &&  true
+			//   false --  does not enter if block
+			System.out.println(" 1st class");
+		}
+		else if(marks > 60 && marks <= 85)
+		{//     10 > 60 && 10 <= 85
+			//    false &&  true
+			//      false - not enters else if block
+			System.out.println("2nd class");
+		}
+		else if(marks >= 35 && marks <=60)
+		{ //    10- >= 35 &&   10 <= 60
+			//     false && true
+			//            false - does not enters if block
+			System.out.println("3rd class");
+		}
+		else
+		{
+			System.out.println("Failed");
+		}
+		
 
 
 	}
@@ -3433,8 +3902,49 @@ else
 }
 
 
+
 ex: program - to check the age is >=18,  if age >=18, check  weight > 50, display msg "You are eligible to donate blood" else You are not eligible to donate blood
 else display msg "Age must be >18"
+
+package FlowControlStatement;
+
+public class NestedIfBasics {
+
+	public static void main(String[] args) {
+//		ex1: program - to check the age is >=18,  if age >=18, check  weight > 50, display msg "You are eligible to donate blood"
+		
+		int age  =  20;
+//		int age  =  10;
+//		int weight = 52;
+		int weight = 25;
+		
+		if(age >=18)
+		{//  20 >= 18
+			//  true  - netrs if block
+			System.out.println("age is >= 18");
+			if( weight >50)
+			{ //  25 > 50  false -does not  enetrs if block
+				System.out.println("weight is > 50");
+				System.out.println("You are eligible to donate blood");
+			}
+			else
+			{
+				System.out.println("You are not eligible to donate blood as weight < 50 ");
+			}
+			
+		} 
+		
+		else 
+		{
+			System.out.println("age is not < 18");
+		}
+		
+		
+		
+	}
+
+}
+
 
 -------------------------
 Switch -Conditional stmts
@@ -3481,25 +3991,40 @@ where there are multiple cases / options are available - we will go for Switch s
          				    2 --> Monday
 				            3 --> TuesDay 
 
-package IFCondStmts;
+package FlowControlStatement;
 
 public class SwitchBasics1 {
 
 	public static void main(String[] args) {
+		//		ex:Write a program to check given  dayNo = 1 --> display msg "Sunday"
+		//				    							   2 --> display msg "Monday"
+		//	          									   3 --> display msg "TuesDay "
+		//											  else  -->  display msg "No case is matched"
 
- ex:Write a program to check given  dayNo = 1 --> display msg "Sunday"
-         				    2 --> display msg "Monday"
-				            3 --> display msg "TuesDay "
-					  else  -->  display msg "No case is matched"
-		
-		
-		
+		int dayNo = 1;
+
+		// write Switch 
+		switch(dayNo)
+		{//      1
+			case 1:
+				    System.out.println("1- Sunday");
+				    break;//  come out of switch
+			case  2:
+				    System.out.println("2-Monday");
+				     break;
+			case 3:
+				   System.out.println("3- TuesDay");
+				   
+			default: 
+				  System.out.println("No case is matched");
+
+		}	
+		// end of switch block
 		System.out.println("after switch block");
-		
-
 	}
 
 }
+
 
 
 ex2:  if no case is matched
@@ -3659,31 +4184,30 @@ public class SwitchBasics1 {
 			double val/var or 
 			boolean val/var in Switch Condi  
 
-ex:  switch(2)  --> 
-     switch(int var) --> 
+ex:  switch(2)  -->   valid
+     switch(int var) -->  valid
 
-     switch('A')  --> 
-     switch(char var) --> 
+     switch('A')  --> valid
+     switch(char var) --> valid
 
-     switch("RAM")  --> 
-     switch(String var) --> 
+     switch("RAM")  --> valid
+     switch(String var) --> valid
 
-     switch(2.34f)  --> 
-     switch(float var) --> 
+     switch(2.34f)  -->  invalid 
+     switch(float var) --> invalid 
 
-     switch(2.34d)  --> 
-     switch(double var) --> 
+     switch(2.34d)  --> invalid 
+     switch(double var) --> invalid 
 
-       switch(true)  --> 
-       switch(false)  --> 
-     switch(boolean var) --> 
+       switch(true)  --> invalid 
+       switch(false)  --> invalid 
+     switch(boolean var) --> invalid 
 
-ex: passing float, double values in Switch ():
------------------------------------------------
 
+  
 package FlowControlStatement;
 
-public class SwitchInvalidPassingFlotDoubleVals {
+public class SwitchBasics2 {
 
 	public static void main(String[] args) {
 
@@ -3692,8 +4216,8 @@ public class SwitchInvalidPassingFlotDoubleVals {
 			double d  =  3.4;
 			char ch ='A';
 			
-//			switch(d) // error
-			switch(d) 
+//			switch(f) // error
+//			switch(d) 
 			// Cannot switch on a value of type float. . 
 			//Only convertible int values, strings or enum variables are permitted
 			{
@@ -3713,6 +4237,7 @@ public class SwitchInvalidPassingFlotDoubleVals {
 			System.out.println("after switch block");
 			
 
+
 	}
 
 }
@@ -3720,33 +4245,26 @@ public class SwitchInvalidPassingFlotDoubleVals {
 
 ex:  Switch (char val/var)
 --------------------------
-ex: passing char value in Switch ():
 
+package IFCondStmts;
 
-package FlowControlStatement;
-
-public class SwitchInvalidPassingCharVal {
+public class SwitchBasics2 {
 
 	public static void main(String[] args) {
-
+		
 		float f = 1.0f;
 		double d  =  3.4;
 		
 		char ch ='B';
-		boolean b = true;
-		
-		String s = "Ram";
 		
 //		switch(d) // erro 
 //		switch(d) 
-//		switch(ch) 
+		switch(ch) 
 		//      'B'
-		switch(b) 
-//		switch(s)
-		// Cannot switch on a value of type boolean.  . 
+		// Cannot switch on a value of type float. . 
 		//Only convertible int values, strings or enum variables are permitted
 		{
-		case  'A': // not matching
+		case  'A': // not macthing
 			  System.out.println("Apple -stmt-1");
 			  break;
 		case  'B': // matching
@@ -3760,20 +4278,20 @@ public class SwitchInvalidPassingCharVal {
 		
 		
 		System.out.println("after switch block");
+		
 
 	}
 
 }
 
-
 ex: passing boolean values in Switch ()
 -----------------------------------------
-package FlowControlStatement;
+package IFCondStmts;
 
-public class SwitchInvalidPassingBooleanVal {
+public class SwitchBasics2 {
 
 	public static void main(String[] args) {
-
+		
 		float f = 1.0f;
 		double d  =  3.4;
 		
@@ -3805,7 +4323,7 @@ public class SwitchInvalidPassingBooleanVal {
 		
 		
 		System.out.println("after switch block");
-			
+		
 
 	}
 
@@ -3834,6 +4352,9 @@ Switch() - accepts int/char/string val/var
 -  break;
 - default : block gets executed ,  if no case val is matched --(or) none of case is matched
 
+*********************************************
+		24-Oct-2025
+*********************************************
 ---------------------------
 Loop statements:
 ---------------------------
@@ -3883,23 +4404,25 @@ package LoopBasics;
 public class ForLoop1 {
 
 	public static void main(String[] args) {
-		
+	
+
+		for(int i=1;i<=3;i++) //  i =1, 1+1 =2, 2+1 =3, 3+1 =4
+		{//         1<=3, true , enters for loop,
+			//      2<=3 true,enters for loop,
+			//     3<=3  true,enters for loop, 
+			//     4<=3 false, does not enter for loop,ctrl goes after for loop
+			 System.out.println("stmt-1");
+			 System.out.println("stmt-2");
+		} 
+		 
 //		 System.out.println("stmt-1");
-//		 System.out.println("stmt-2");
-//		 System.out.println("stmt-3");
-//		 
-//		 System.out.println("stmt-1");
-//		 System.out.println("stmt-2");
-//		 System.out.println("stmt-3");
-//		 
-//		 System.out.println("stmt-1");
-//		 System.out.println("stmt-2");
-//		 System.out.println("stmt-3");
+//		 System.out.println("stmt-2");		 
 		
 		// execute above stmts  for 3 times
 		
 		
 		System.out.println("out of for loop");
+
 
 
 	}
@@ -3908,6 +4431,15 @@ public class ForLoop1 {
 
 o/p:
 ----
+stmt-1
+stmt-2
+stmt-1
+stmt-2
+stmt-1
+stmt-2
+out of for loop
+
+
 
 
 ex:// display numbers 1 to 2
@@ -3917,8 +4449,17 @@ package LoopBasics;
 public class Display1to2 {
 
 	public static void main(String[] args) {
-	
-			
+		//  1  2
+		
+		for(int i=1;i<=2;i++)// i=1, 1+1 =2, 2+1 =3
+		{//          1<=2 true, enters for loop
+			//      2<=2 true, enters for loop
+			//      3<=2  false, does not enter for loop, ctrl goes after for loop 
+			System.out.println(i);
+			//                 1
+			//                 2  
+		} // end of for loop
+		
 			System.out.println("out of for loop");
 
 
@@ -3926,18 +4467,71 @@ public class Display1to2 {
 }
 
 
+
 o/p:
 ----
-i=1
-i=2
-i=3
+1
+2
 out of for loop
+
 -----------------
 
 display numbers   1 to 3? 
 
+package LoopBasics;
 
-HW display numbers  1 to 50
+public class Display1to2 {
+
+	public static void main(String[] args) {
+		//  1  2 3
+		
+		for(int i=1;i<=3;i++)// i=1, 1+1 =2, 2+1 =3
+		{//          1<=2 true, enters for loop
+			//      2<=2 true, enters for loop
+			//      3<=2  false, does not enter for loop, ctrl goes after for loop 
+			System.out.println(i);
+			//                 1
+			//                 2  
+		} // end of for loop
+		
+			System.out.println("out of for loop");
+
+
+	}
+}
+
+
+package LoopBasics;
+
+public class Display1to2 {
+
+	public static void main(String[] args) {
+		//  1  2 3  4
+		
+		for(int i=1;i<=4;i++)// i=1, i+1= 1+1=2, 2+1= 3, 3+1 =4, 4+1 =5
+		{//          1<=4 true, enters for loop
+			//      2<=4 true, enters for loop
+			//      3<=4  true, enters for loop 
+			//     4<=4  ,  true ,enters for loop
+			//    5<=4 false,does not enter for loop, ctrl goes after for loop 
+			System.out.println(i);
+			//                 1
+			//                2
+			//                3
+			//                4
+			  //    goes incrementing
+		} // end of for loop
+		
+			System.out.println("out of for loop");
+
+
+	}
+}
+
+
+HW display numbers  1 to 10
+
+HW display numbers  1 to 20
 
 
 ---------------------
@@ -3956,6 +4550,20 @@ public class Display2to5 {
 
 	public static void main(String[] args) {
 		// Display numbers 2 to 5 
+		//   2 3  4 5
+		for(int i= 2; i<=5;i++)// i =2, 2+1 =3, 3+1 =4, 4+1 =5, 5+1 =6
+		{//          2<=5 true, enters for loop
+			//        3<=5  true  enters for loop
+			//        4<=5  true  enters for loop
+			//        5<=5 true  enters for loop
+			//       6<=5 false, does enter for loop, ctrl goes after for loop
+			System.out.println(i);
+			//                 2
+			//                  3
+			//                  4
+			//                  5
+			//  incrementing
+		}
 		
 		
 		System.out.println("out of for loop");
@@ -3965,11 +4573,12 @@ public class Display2to5 {
 
 o/p:
 ----
-i=2
-i=3
-i=4
-i=5
+2
+3
+4
+5
 out of for loop
+
 
 
 ex:  // Display numbers  3,2,1 
@@ -3980,12 +4589,29 @@ public class Display3to1 {
 
 
 	public static void main(String[] args) {
-		// Display numbers 3 to 1
+		//  1 2 3   <=  ,  i++
+		// Display numbers 3 to 1    >=
+		//        3   2   1      >=    i--
 		
+		for(int i=3;i<=1;i++)// i =3
+//			for(int i=3;i>=1;i--)// i = 3, i-1= 3-1=2, 2-1 =1, 1-1 =0
+		{//             3>=1 true, enters for loop 
+				//      2>=1  true,enters for loop 
+				//      1>=1 , true , enters for loop
+				//     0>=1 false, does not enters for loop, ctl goes after for loop
+				//              infinnite lloop  
+			System.out.println(i);
+			//                  3
+			//                  2 
+			//                  1
+			/// 
+			//   Decremnting
+		}
 		
 		System.out.println("out of for loop");
 	}
 }
+
 
 
 o/p:
@@ -4028,6 +4654,43 @@ o/p:
 6
 7
 ....inifnite looop  - as condi is always true
+
+----------------
+package LoopBasics;
+
+public class Display3to1 {
+
+
+	public static void main(String[] args) {
+		//  1 2 3   <=  ,  i++
+		// Display numbers 3 to 1    >=
+		//        3   2   1      >=    i--
+		
+//		for(int i=3;i<=1;i++)// i =3
+			for(int i=3;i>=1;i--)// i = 3, i-1= 3-1=2, 2-1 =1, 1-1 =0
+		{//             3>=1 true, enters for loop 
+				//      2>=1  true,enters for loop 
+				//      1>=1 , true , enters for loop
+				//     0>=1 false, does not enters for loop, ctl goes after for loop
+				//              infinnite lloop  
+			System.out.println(i);
+			//                  3
+			//                  2 
+			//                  1
+			/// 
+			//   Decremnting
+		}
+		
+		System.out.println("out of for loop");
+	}
+}
+
+o/p:
+3
+2
+1
+out of for loop
+
   
 
 Note :
@@ -4053,10 +4716,12 @@ public class Display5to1 {
 
 	public static void main(String[] args) {
 		// Display numbers 5,4 3,2,1 
-		
-		
-		
-				System.out.println("out of for loop");
+		for(int i=5 ;i>=1;i--)
+		{
+			System.out.println(i);
+		}
+
+		System.out.println("out of for loop");
 	}
 }
 
@@ -4071,19 +4736,31 @@ We can  write  i--,  --i  or i=i-1  in for loop
  and also   we can write i = i+2
    or i= i+3;..etc
 
-ex:  write o/p for below program?
 
+	//		for(int i=5 ;i>=1;i--)
+		//		for(int i=5 ;i>=1;--i)
+		for(int i=5 ;i>=1;i=i-1)
+
+for(int i=5 ;i>=1;i=i+2)
+
+
+
+ex:  write o/p for below program?
 package LoopBasics;
 
 public class ForLoopOutputWithIncrement2 {
 	
 	public static void main(String[] args) {
 
-		for(int i=1;i<=3;i= i+2)// i=
+		for(int i=1;i<=3;i= i+2)// i= 1, i+2=1+2=3, 3+2= 5
 		{//        
-			//      
-			//     
+			//      1<=3 true, for loop
+			//      2<=3 true, for loop
+			//      5<=3 false, does nt enter for loop, ctrl goes after
 			System.out.println(i);// 
+			//                 1
+			///                3
+			//   i = i+2
 		}
 		
 		System.out.println("out of for loop");
@@ -4094,6 +4771,7 @@ public class ForLoopOutputWithIncrement2 {
 
 
 }
+
 
 o/p:
 -----
@@ -4116,7 +4794,6 @@ Syntax:
 //		 Incre/Decre;
 //		}
 
-
 package LoopBasics;
 
 public class WhileLoop1to3 {
@@ -4124,14 +4801,17 @@ public class WhileLoop1to3 {
 		
 //		
 				int i=1;
-		while(i<=3)
-		{  //  
-			//  
-			//  
-			//  
+		while(i<=3)// i =1,2,3,4
+		{  //  1<=3 , true , enters while loop
+			// 2<=3 true , , enters while loop
+			//  3<=3 true , enters
+			//  4<=3 false, doe snot enter while loop, ctrl goes after while loop
 			
-			 System.out.println("stmt-1");// // //
-			 i++;// i =  
+			 System.out.println(i);// // //
+			 //                 1
+			 //                 2
+			 //                 3
+			 i++;// i = i+1 = 1+1 =2 , 2+1 =3, 3+1 =4
 		}
 		
 		System.out.println("after while loop");
@@ -4140,6 +4820,12 @@ public class WhileLoop1to3 {
 
 
 }
+
+o/p:
+1
+2
+3
+after while loop
 
 
 
@@ -4154,46 +4840,113 @@ package LoopBasics;
 public class WhileLoop2to5 {
 
 	public static void main(String[] args) {
-		
-  //  display number 2 to 5   incrementing numbers use <= 
+		 //  display number 2 to 5   incrementing numbers use <= 
 		//                     Decrementing numbers , use >=
 	
+		int i = 2 ;
 		
+		while(i<=5) //  i=2
+		{//   2<=5 true, enters while loop
+			//  2<=5 , true ,  enters whil loop
+			//   2<=5 , true , enters whil looop
+			//    2<=5......infinite loop
+			//      ....
+			// .....    infinite loop
+			System.out.println(i);
+			//                  2
+			//                  2
+			
+			//  no incre/ no decre
+		}
 		
 		
 		System.out.println("after while loop");//
+
 
 	}
 
 }
 
+---------------------------
 
-----------
+
+
+package LoopBasics;
+
+public class WhileLoop2to5 {
+
+	public static void main(String[] args) {
+		 //  display number 2 to 5   incrementing numbers use <= 
+		//                     Decrementing numbers , use >=
+	
+		int i = 2 ;
+		
+		while(i<=5) //  i=2,3,4,5
+		{//   2<=5 true, enters while loop
+			//  3<=5 , true ,  enters whil loop
+			//   4<=5 , true , enters whil looop
+			//    5<=5...true..... ...infinite loop
+			//    6<=5 false , does not enter while, ctls goes after while loop  ....
+			// .....    infinite loop
+			System.out.println(i);
+			//                  2
+			//                  3
+			//                  4
+			//                  5
+			
+			//  no incre/ no decre
+			
+			i++;// i+1 = 2+1= 3	, 3+1 =4, 4+1=5	, 5+1=6	
+		}
+		
+		
+		System.out.println("after while loop");//
+
+
+	}
+
+}
+
+o/p:
+2
+3
+4
+5
+after while loop
+
+
+********************************
+	25-Oct-2025
+********************************
+
 Write o/p for below program?
 
 package LoopBasics;
 
 public class WhileLoopOutput {
 
-	public static void main(String[] args) {
-		
- 
+	public static void main(String[] args) 
+	{		
 		int i=3;
+		
 		while(i<=5)
-		{   // 
-			// 
-			//  
-			// 
+		{   // 3<=5  true, enters while loop
+			// 4<=5 true, enters while loop
+			//  5<=5  true,  ters while loop
+			//  6<=5  false, does not enter while loop, ctrl goes after while loop
 			
 			 System.out.println(i);//  
-			 i++;// i =
+			 //                  3  4 5
+			 i++;// i = i+1, 3+1 =4, 4 +1 =5, 5+1 =6
 		}
 		
 		System.out.println("after while loop");//
 
+
 	}
 
 }
+
 
 o/p:
 ---
@@ -4211,8 +4964,9 @@ public class WhileLoopOutput2 {
 	public static void main(String[] args) {
 		
 		int i=3;
-		while(i>=5)
-		{   // 
+		
+		while(i>=5)// i =3
+		{   // 3>=5 , false, does not enter while loop, ctl goes after while loop
 			
 			 System.out.println(i);//  
 		}
@@ -4223,8 +4977,10 @@ public class WhileLoopOutput2 {
 
 }
 
+
 o/p:
 ----
+after while loop
 
 
 HW Display numbers 3 to 1 using while loop
@@ -4233,7 +4989,7 @@ HW Display  numbers 5 to 2  using while loop
 
 
 
- //  display number 3 to 1      reverse order 3,2,,, use >=, -- decrement operator
+ //  display number 3 to 1      reverse order 3,2,,,1 use >=, -- decrement operator
 		//                in normal order  1,2,3,.. , use <= ,  and ++ increment operator
         
 ********************************************************************************************************
@@ -4251,12 +5007,19 @@ public class WhileLoopOutput3 {
 		
 		//  display 3 to 1
 		  int i=3; //   while reversing,  we have to use decrement 
+		  
 		  while(i>=1)
-		  { //   
-			  //  
-			  // 
+		  { //   3>=1  true, enters while loop 
+			  // 3>=1     true, enters while loop 
+			  // 3>=1  true, enters while loop
+			  // .....
+			  //.............  infinite loop
 //			  / /   3>=3 -True  it goes to infinite loop  as condi is always true  and i=3 always (we are not incrementing/ decrementing i val)
-			 System.out.println("i="+i); // 
+			 System.out.println("i="+i); 
+			  //                     "i=" + 3 -->  i=3
+			 //                                     i=3
+			 //                                     i=3
+			 
 		  }
 		
 		System.out.println("after while loop");
@@ -4271,6 +5034,13 @@ public class WhileLoopOutput3 {
 
 }
 
+o/p:
+i=3
+i=3
+i=3
+...
+....
+...  infinite no of time 
 
 
 
@@ -4279,101 +5049,83 @@ public class WhileLoopOutput3 {
 
 package LoopBasics;
 
-public class WhileLoopOutput4{
+public class WhileLoopOutput4 {
 
 	public static void main(String[] args) {
-		 
-	//  display 3 to 1
-			  int i=3; //   while reversing,  we have to use decrement 
-			  while(i>=1)
-			  { //   
-				  // 
-				  // 
-//				  / /   6>=3 -True  it goes to infinite loop  as condi is alwyas true  and i=3 always (we are not incrementing/ decrementing i val)
-				 System.out.println("i="+i); // 
-				 
-				 i++;//  i= 
-			  }
-			
-			System.out.println("after while loop");
-			
-//			Note : 
-//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+		
+
+		//  display 3 to 1
+				  int i=3; //   while reversing,  we have to use decrement 
+				  while(i>=1)// i=3,4  5, 6
+				  { //  3>=1 true, enters while loop 
+					  //4 >= 1,  true, enters while loop
+					  // 5>=1 , true, enters while loop
+					  // 6>=1 true, enters while loop
+//					  ..................
+//					  .................... infinite loop
+//					  / /   6>=3 -True  it goes to infinite loop  as condi is alwyas true  and i=3 always (we are not incrementing/ decrementing i val)
+					 System.out.println("i="+i); 
+					 					// i=3
+					 //                    i =4
+					 //                    i = 5
+					 
+					 i++;//  i= i+1, 3+1 =4, 4+1 =5, 5+1 =6
+				  }
+				
+				System.out.println("after while loop");
+				
+//				Note : 
+//					while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
 
 	}
 
 }
+
 
 o/p:
 -----
+i =3
+i =4
+...
+....
  infinte loop
 
 -----------------
-Write o/p for below program?
 
-package LoopBasics;
-
-public class WhileLoopOutput5{
-
-	public static void main(String[] args) {
-		 
-	//  display 3 to 1
-			  int i=3; //   while reversing,  we have to use decrement 
-			  while(i>=1)
-			  { //    
-				  // 
-				  // 
-//				  / /   6>=3 -True  it goes to infinite loop  as condi is always true.
-				 System.out.println("i="+i); // 
-				 
-				 i++;//  i=
-			  }
-			
-			System.out.println("after while loop");
-			
-//			Note : 
-//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
-
-	}
-
-}
-
-o/p:
-----
-3
-4
-5
-.....inifnte loop
 
 ex: Display the o/p for below program?
 
 package LoopBasics;
 
-public class WhileLoopOutput5B{
+public class WhileLoopOutput5B {
 
 	public static void main(String[] args) {
 		 
-	//  display 3 to 1
-			  int i=3; //   while reversing,  we have to use decrement 
-			  while(i>=1)
-			  { 
-				  // 
-				  // 
-				  // 
-				  // 0>=1 False-  does not enter while loop and comes out of while loop and comes after while loops
-				 System.out.println("i="+i); // 3	 2	 1 
-				 
-				 i--;//  
-			  }
-			
-			System.out.println("after while loop");
-			
-//			Note : 
-//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+		//  display 3 to 1
+				  int i=3; //   while reversing,  we have to use decrement 
+				  while(i>=1)// i=3,2,1,0
+				  { 
+					  // 3>=1 true,enters whil loop
+					  // 2>=1 true,enters whil loop
+					  // 1>=1 true,enters whil loop
+					  // 0 >= 1 false, 
+					  // 0>=1 False-  does not enter while loop and comes out of while loop and comes after while loop
+					 System.out.println("i="+i); //  i=3 i =2 i =1
+					 
+					 i--;// i = i-1, 3-1=2 , 2-1=1, 1-1= 0
+				  }
+				
+				System.out.println("after while loop");
+				
+//				Note : 
+//					while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
 
-	}
+		}
 
+		
 }
+
 
 o/p:
 i=3
@@ -4393,28 +5145,31 @@ Display o/p for below program?
 
 package LoopBasics;
 
-public class WhileLoopOutput6{
+public class WhileLoopOutput6 {
 
 	public static void main(String[] args) {
-		 
+		
 	//  display 3 to 1
-			  int i= -1 ; //   while reversing,  we have to use decrement 
-			  System.out.println(-1>=1);//  false
-			  while(i>=1)  //  
-			  { // -
-				  
-				 System.out.println("i="+i); // 
-				 
-				 i--;//  i=
-			  }
-			
-			System.out.println("after while loop");
-			
-//			Note : 
-//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+		  int i= -1 ; //   while reversing,  we have to use decrement 
+		  System.out.println(-1>=1);//  false
+		  
+		  while(i>=1)  //  i =-1
+		  { // -1>=1 false, does not enter while, ctrl after while loop
+			  
+			 System.out.println("i="+i); // 
+			 
+			 i--;//  i=
+		  }
+		
+		System.out.println("after while loop");
+		
+//		Note : 
+//			while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
 
-	}
+		
+		}
 
+		
 }
 
 o/p:
@@ -4465,6 +5220,7 @@ Do while loop:
 		//   can be used to write do while loop  stmt
 //		syntax:
 -------------------------
+              intitialisation;
 //		do 
 //		{
 //		     stmt-1;	
@@ -4475,16 +5231,32 @@ Do while loop:
 
 ex:
 
-	int i=1;
-		do
+package LoopBasics;
+
+public class DoWhileLoop {
+
+	public static void main(String[] args) {
+		
+		int i=1;
+		
+		do 
 		{
 			System.out.println("stmt1-");//  these stmts gte executed at least once
-			i++;//
+			//       stmt-1
+			//       stmt-1
+			//       stmt-1
+			i++;//i = i +1=1+1=2,2+1= 3, 3+1 =4
 		}
 		while(i<=3);//  at end we are checking condi
-		
+		//    2<=3 true,enters do block , 
+		//    3<= 3 true, enters do block
+		//    4 <= 3 false, does not enter do block, ctlrs goes after do while loop
 		System.out.println("after do while loop");
 
+
+	}
+
+}
 
 
 o/p:
@@ -4497,26 +5269,27 @@ after do while loop
 
 package LoopBasics;
 
-public class doWhileLoop1 {
+public class DoWhileLoop1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		int i=1;
-		
+
 		do 
 		{
 			System.out.println("i="+ i);// i=  1
 			//   do block smts gets executed at least once even if cond is false				
-			i++;// i = 
+			i++;// i = i+1= 1+1 =2
 		}
 		while(i>=3);
 		//    2>=3 False - it wont go do block
-	//     - does not enter do block  and goes after  do while loop 
-		System.out.println("after do while loop");	
-
+		//     - does not enter do block  and goes after  do while loop 
+		System.out.println("after do while loop");
 
 	}
 
 }
+
 
 o/p:
 -------
@@ -4524,6 +5297,40 @@ i=1
 after do while loop
 
 ----------------------
+
+package LoopBasics;
+
+public class DoWhileLoop2 {
+
+	public static void main(String[] args) 
+	{
+		int i=1;
+
+		do 
+		{
+			System.out.println("i="+ i);// i=  1
+			//                             i =2
+			//                             i =3
+			//   do block smts gets executed at least once even if cond is false				
+			i++;// i = i+1= 1+1 =2, 2+1 =3, 3+1 =4
+		}
+		while(i<=3);
+		//    2<=3 true  - enters do block ,
+		//    3<=3  true  - enters do block ,
+//		      4<=3  false - does not enter do block  and goes after  do while loop 
+		System.out.println("after do while loop");
+
+	}
+
+}
+
+o/p:
+---
+i=1
+i=2
+i=3
+after do while loop
+
 
 
 Break, continue stmt:
@@ -4548,32 +5355,35 @@ write o/p for below program?
 
 package LoopBasics;
 
+package LoopBasics;
+
 public class break1 {
 
 	public static void main(String[] args) {
+		//  for
+		int i;
+		for(i=1;i<=3;i++) // i=1 , 1+1 =2
+		{      // 1<=3 true, enters for loop
+			 //    2<= 3 true, enters for loop
+			 System.out.println("i="+ i);// i= 1  i =2
+			 if(i==2)
+			 { // 1 == 2 false, does nt enter if block, ctrl goes after if block
+				// 2 == 2 true, enters  if block,
+				 break;//  -->  come out of for loop
+//				 System.out.println("after break ");//  Unreachable code
+				 // Note:  dont write any stmts after break k/w
+			 }	
+			 
+			 System.out.println("after break ");
+			 //    goes incrementing
+		} // end of for loop
 		
-	//  for
-			int i;
-			for(i=1;i<=3;i++) // i=1 = 1+ 1 =2
-			{      // 
-				 //   
-				 System.out.println("i="+ i);// 
-				 if(i==2)
-				 { // 
-					//  
-					 break;//  -->  come out of for loop
-//					 System.out.println("after break ");//  Unreachable code
-					 // Note:  dont write any stmts after break k/w
-				 }		  
-				 System.out.println("after break ");
-			} // end of for loop
-			
-			System.out.println("after for loop");
-			
-			
+		System.out.println("after for loop");
+
 	}
 
 }
+
 
 o/p:
 ----------
@@ -4619,34 +5429,34 @@ after for loop
 -------------------
 break in while loop:
 ---------------------
-
-	package LoopBasics;
+package LoopBasics;
 
 public class breakInsideWhileLoop {
 
 	public static void main(String[] args) {
-		
-
 		int i=1;
-		while(i<=3)
-		{  // 
-			// 
-			System.out.println("Enters loop");// Enters loop, Enters loop,after while loop
+		
+		while(i<=3)// i=1 , 2
+		{  // 1<= 3 true, enters whil loop
+			// 2<=3 , true , enters while loop
+			System.out.println("Enters loop");// Enters loop Enters loop
 			if(i==2)
-			{ // 
-				// 
+			{ // 1==2 false, does not enter if blokc,
+				// 2== 2 true , enters if block
 				break;// come out of  while loop
-			}
+			}// end of if block
 			
-			i++;// i = 
+			i++;// i = i+1 =1+1=2
 		} //  end of while loop
 			
 			System.out.println("after while loop");
 			
-			
+
+
 	}
 
 }
+
 
 
 o/p:
@@ -4721,32 +5531,34 @@ while(cond);
 
 continue:  
 --------
-
 package LoopBasics;
 
 public class continue1 {
 
 	public static void main(String[] args) {
-		
 		//for loop  
-				for(int i=1;i<=3;i++) // i =
-				{     //     
-					//     
-					//      
-					if(i==2)
-					{ // 
-					//   
-						// 
-						//using continue statement  
-						continue;//it will skip the rest  of statements  
-					}  // end of if block
-					
-					System.out.println(i); // 
-				}  // end of for loop
-				 System.out.println("after loop");
+		for(int i=1;i<=3;i++) // i = 1, 1+1 =2, 2+ 1 =3, 3+1 =4
+		{     //    1<=3 true, enters for loop  
+			//      2<=3 true, for loop
+			//      3<=3 true, for loop
+			//       4<=3 false , does not enter for loop
+			if(i==2)
+			{ // 1 ==2 false, does not enter if blokck, ctrl goes after if block
+			//   2 == 2 true, enters if block
+				//3==2 false, no if block, 
+				//using continue statement  
+				continue;//it will skip the rest  of statements , it continues next iteration - i value 
+			}  // end of if block
+			
+			System.out.println(i); // 1 3 
+			//      incrementing
+		}  // end of for loop
+		 System.out.println("after loop");
+
 	}
 
 }
+
 
 o.p:
 -----
@@ -4757,35 +5569,79 @@ after loop
 --------
 package LoopBasics;
 
-public class continue2{
+public class continue2 {
 
 	public static void main(String[] args) {
-		
 		int i;
-		for(i=1;i<=3;i++) // i=
-		{	//   
-			 System.out.println("i="+ i);// i=
+		for(i=1;i<=3;i++) // i= 1, 1+1 =2, 2+1 =3, 3+1 =4
+		{	//   1<=3 true, enters for loop
+			//    2<=3  tryue , for loop
+			//   3<=3  true  , for loop
+			//   4<=3 false , does enter for loop,  ctrls goes after for loop
+			 System.out.println("i="+ i);// i=1 i =2 i =3
 			 if(i==1)
-			 { // 
-				 break;//   come out of loop // last executeable stmts inside loop
-//				 continue;
-				 System.out.println("after break ");// error :  Unreachable code
+			 { // 1==1 true 
+				 // 2 == 1 false, does not enter if block, ctrls goes after if blokc
+				 // 3==1 false,does not enter if block, ctrls goes after if blokc
+//				 break;//   come out of loop // last executeable stmts inside loop
+				 continue;
+//				 System.out.println("after break ");// error :  Unreachable code
 				 // Note:  dont write any stmts after break k/w
 				 //   Dont  write any stmts after continue  k/w
-			 }		  
+			 }	// end of if blokc	  
 			 System.out.println("after break ");
+			//  incrementing 
 		}
 		
 		System.out.println("after for loop");
-			
-			
+	
+
+	}
+
+}
+o/p:
+i=1
+i=2
+after break 
+i=3
+after break 
+after for loop
+
+
+---------------------
+o	Nested If, for
+
+HW  write o/p for below program?
+
+package LoopBasics;
+
+public class NestedIf {
+
+	public static void main(String[] args) {
+		int a= 50;
+		int b=20;
+		int c=30;
+		
+		if(a>15) // outer if cond
+		{
+			System.out.println("a> 15");// a>15
+			if(b>10) // inner if cond // Nested If:   writing if condi inside if stmt
+			{ //
+				System.out.println("b>10");// b>10
+			}
+		}
+
 	}
 
 }
 
 
----------------------
-o	Nested for
+
+o/p:
+-----------
+a> 15
+b>10
+
 
 
 Nested For loop:
@@ -4798,31 +5654,33 @@ package LoopBasics;
 public class NestedForLoop {
 
 	public static void main(String[] args) {
-		
-		
 
-		for(int i=1;i<=3;i++) // outer for loop i= 
-		{ //        
-			//       
-			  //      
-			//       
+		for(int i=1;i<=3;i++) // outer for loop i=  1, 1+1 =2, 2+1 =3, 3+1 =4
+		{ //         1<=3 true , enters for loop
+			//       2<=3 tre, enters for loop
+			  //      3<=3 true
+			//        4<=3 false, does not enter loop ,  ctrls goes after outer for loop
 			System.out.println("inside 1st for loop");// inside 1st for loop
-			for(int j=1;j<=2;j++) //  inner  for loop  j= 
-			{ //        
-				//      
-				//     
+			for(int j=1;j<=2;j++) //  inner  for loop  j= 1, 1+1=2, 2+1 =3
+			{ //        1<=2  true , enters innner for loop 
+				//      2<=2 true , enters innner for loop
+				//      3<=2  false, does not entter inner for loop, ctrl after inner for loop
 				System.out.println("i="+ i + ",j="+j);
-				// 
-				//                                       
-				//                                       
-				//                       
-				//                      			
+				//                  i =1       , j=1
+				//                  i=1           j=2          
+				//                   i =2         j= 1                    
+				//                    i =2         j=2
+				//    goes incrementing  j val                  			
 			}//  end of inner loop
 			
 			System.out.println("after inner loop");// 	gets executed 		
-		}
+		
+			//  incremting i value
+		}// end of outer for loop
 		
 		System.out.println("after outer loop");
+
+
 
 	}
 
@@ -4844,6 +5702,11 @@ after inner loop
 after outer loop
 -----------------
 
+
+*********************
+	26-Oct -2025
+
+*********************
 write o/p for below program?
 
 
@@ -4947,19 +5810,26 @@ package ArraysBasics;
 //		syntax :
 
 //		  datatype varname [] =  new datatype [size];
-                        (or)
+                      
+				  (or)
+
 		datatype [] varname  =  new datatype [size];
 		
 // size = represents how many values we can store in in array 
 
 //  declare int array with name i.e arr and size of array = 3
+     int arr [] = new int [3]  or  int [] arr = new int [3];
 
 //  declare float array with name i.e farr and size of array = 3
+	float farr []  =  new float [3]; or float [] farr = new float[3];
 
-//  declare char array with name i.e farr and size of array = 3
+//  declare char array with name i.e farr and size of array = 4
+      char charr [] = new char [4];
 
-//  declare String array with name i.e farr and size of array = 3
+//  declare String array with name i.e farr and size of array = 2
+    String sarr [] = new String [2];
 
+    String sarr  = new String [2];// invalid 
 
 in array, it stores the values in index no.
 the first element of the array is stored at the indexno=0, 
@@ -4971,11 +5841,11 @@ the first element of the array is stored at the indexno=0,
 Store/assign values in array:
 -----------------------------
 		//  store 10 val at index no =0
-
+		arr [0] =  10;
                           //  10 value is stored at index no =0 in array
 		
 		//  store 20 val at index no =1
-
+		arr [1]  =20;
 		  //  20 val is stored at indexno =1 in array
 	
 		
@@ -4984,69 +5854,76 @@ Store/assign values in array:
 
 package ArrayBasics;
 
-public class intArrayBasics 
-{
+public class intArrayBasics {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
+	//   create array of int val's  and size =3
+		  int arr []  = new int[3];
+		  
+			//  store max 3 values only  
 
-		//   create array of int val's  and size =3
+			//  store 10 val index no =0
+		  	arr [0]  = 10 ;
+		  	
+			//  10 value is stored at index no =0 in array
 
-		//  store max 3 values only  
+	//  store 20 val index no =1
+		  arr [1] = 20;
 
-		//  store 10 val index no =0
+			//  20 val is stored at indexno =1 in array
 
-		//  10 value is stored at index no =0 in array
+		//  store 30 val index no =2
+			arr [2] = 30;
+				// 30  val at index no =2
 
-//  store 20 val index no =1
-
-
-		//  20 val is stored at indexno =1 in array
-
-	//  store 30 val index no =2
-		
-			// 30  val at index no =2
-
-	// store 40 val at index no  =3  --> ???	
-		//   4  th val  size  =3  max 
-//		arr[4]  = 40 ; // error :  we dont have index no = 4 ..here arr size = 3 index from 0 to size-1 i.e 3-1 = 2
-		
-		// Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 3
-//		at ArraysBasics.intArray.main(intArray.java:62)
-		//  arr [5]  index no = 0 to 4
-		//  arr [100]           0 to 99
-		
+		// store 40 val at index no  =3  --> ???
+//			arr[3] = 40;
+			//   4  th val  size  =3  max 
+//			arr[4]  = 40 ; // error :  we dont have index no = 4 ..here arr size = 3 index from 0 to size-1 i.e 3-1 = 2
+//			System.out.println(arr[3]);
+			// Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 3
+//			at ArraysBasics.intArray.main(intArray.java:62)
+			//  arr [5]  index no = 0 to 4
+			//  arr [100]           0 to 99
 			
- 
-		// display / Access  values from array 
-			// display arr val at index no =0
-//					
-			// display arr val at index no =1 
-			
-	
-			//// display arr val at index no =2 
+				
+	 
+			// display / Access  values from array 
+				// display arr val at index no =0
+				System.out.println("display arr val at index no =0 i.e"+  arr[0]);	// 10
+				
+				// display arr val at index no =1 
+				System.out.println("display arr val at index no =1 i.e"+  arr[1]);// 20
+		
+				//// display arr val at index no =2 
+				System.out.println("display arr val at index no =2 i.e"+  arr[2]);// 3-
+				
 
-			
+
 
 	}
-	
+
 }
+
 
 o/p:
 ----
-array val at index no = 10
-20
-30
+display arr val at index no =0 i.e 10
+display arr val at index no =1 i.e 20
+display arr val at index no =2 i.e 30
+
 
 
 ---------------------
-package ArraysBasics;
+package ArrayBasics;
 
 public class floatArray {
 
 	public static void main(String[] args) {
-//		int arr[] =  new int[3];
+		//		int arr[] =  new int[3];
 		// Declare float array of size =3
-
+		 float farr [] =  new float [3];
+		 
 		//   array name  - fArr 
 		// size of array =  3  - we can store max of 3 float values  
 		// index no -always starts from 0  and ends with size of arr -1. i.e  3-1 =2 
@@ -5054,32 +5931,41 @@ public class floatArray {
 
 		// store some float values in array
 		// store 1.2f values in float array at indexno =0 
-
+		 farr[0] =  1.2f;
+		 
 		// store 2.2f values in float array at indexno =1
-
+		 farr[1] =  2.2f;
+		 
 		// store 3.2f values in float array at indexno =2
+		 farr[2] =  3.2f;
 
-		
-//  display vals from float array
-	
-		
-		}
+		//  display vals from float array
+		 System.out.println(farr[0]);
+		 System.out.println(farr[1]);
+		 System.out.println(farr[2]);
+//		 System.out.println(farr[3]);// Error:
+// Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+		 
+
+	}
 
 }
 
+
 o/p:
 ----
-float array values at index no=0 i.e 1.2
-float array values at index no=1 i.e 2.2
-float array values at index no=2 i.e 3.2
+1.2
+2.2
+3.2
 
-HW define char array  and store char values  and display it
 
-HW Define  double array and store double values  and display it
+HW define char array of size  =4  and store char values  and display it
 
-HW Define long array  and store some values  and display it
+HW Define  double array of size 2 and store double values  and display it
 
-HW  Define boolean array  and store boolean values  and display it
+HW Define long array of size = 5  and store some values  and display it
+
+HW  Define boolean array of size  3 and store boolean values  and display it
 
 
 Note:
@@ -5100,115 +5986,148 @@ Note:
 Display values from array using 'for' loop:
 -----------------------------------------
 	
-
 package ArrayBasics;
 
 public class DisplayValsFromIntArray {
 
 	public static void main(String[] args) {
-
 		// int array :  and store 3 values
-				
-
-//Display each values from array using index no
-
-
-//Display values from array using for loop:
+		int iarr[] = new int [3];
+		iarr[0] = 10;
+		iarr[1] = 20;
+		iarr[2] = 30;
 		
+
+		//Display each values from array using index no
+		System.out.println(iarr[0]);
+		System.out.println(iarr[1]);
+		System.out.println(iarr[2]);
+		
+//		System.out.println(iarr[100]);
+
+		//Display values from array using for loop:
+		for(int i=0;i<=2;i++)
+		{
+			System.out.println("Vals from array using for loop ="+ iarr[i]);
+		}
 
 	}
 
 }
 
----------------------------------
+
+*********************************************
+	27-Oct-2025
+*********************************************
 
 Array length:
 ---------------
 
-package ArraysBasics;
-
-import com.sun.tools.sjavac.server.SysInfo;
+package ArrayBasics;
 
 public class intArrayLength {
 
 	public static void main(String[] args) {
-	
 		// Declare int array  and size = 3
+		int arr [] =  new int [3];//  ony max 3 values 
 
-		
 		//  creates array with name i.e arr and we can store max 3 values of int data type
 		//  store 10 val index no =0
+		arr[0]  = 10;
 
 		//  10 value is stored in at index no = 0 in array
 
 		//   		//  store 20 val index no = 1
+		arr[1] =  20;
 
-		 //  20 val is stored at indexno =1 in array
+		//  20 val is stored at indexno =1 in array
 
 		//   		//  store 30 val index no =2
+		arr[2] =  30;
 
-
-// Can we store decimal no in int array
-//		arr[0]  = 3.2f;// Type mismatch: cannot convert from float to int
+		// Can we store decimal no in int array
+		//				arr[0]  = 3.2f;// Type mismatch: cannot convert from float to int
 		//  int array - can be used store int values
 		//   floar array - can be used store decimal numbers else it throws error
-		
+
 		// Access  values from array using index no
-		System.out.println("arary val at index no =0 -->" +  arr[0]);
-		
-		System.out.println("arary val at index no =1 -->" +  arr[1]);
-		
-		System.out.println("arary val at index no =2 -->" +  arr[2]);
-		
+		System.out.println("arary val at index no =0 -->" +  arr[0]);// 10
+
+		System.out.println("arary val at index no =1 -->" +  arr[1]);// 20
+
+		System.out.println("arary val at index no =2 -->" +  arr[2]);// 30
+
 		//   count of values in array
-		
-		
-		
-		//  dispay all values  from array  using for loop  and length of array
-		
-//		for(int i=0;i<=2;i++)
-// use length
-		
-		
-//				Values from array =10
-//				Values from array =20
-//				Values from array =30
-	
+		// syntax:  arrname.length 
+		int l = arr.length;
+		System.out.println("Length of array ="+  l);// 3
+
+		//  display all values  from array  using for loop  and length of array
+
+		//				for(int i=0;i<=2;i++)
+		// use length
+//		for (int i=0;i<=2;i++)
+		for(int i=0; i<= arr.length-1;i++)
+		{//               3-1=2
+//			                     arr[0]
+					//			 arr[1]
+					//			 arr[2]
+			System.out.println("vals from array ="+ arr[i]);
+		}
+
+		//						Values from array =10
+		//						Values from array =20
+		//						Values from array =30
+
 		System.out.println("ends here");
-		
+
+
+
 
 	}
 
 }
+
 
 
 ------------------------------
 Display values using for loop in float array:
 -------------------------------------------
-package ArraysBasics;
+package ArrayBasics;
 
-public class DisplayValsFromFloatArray{
+public class DisplayValsFromFloatArray {
 
 	public static void main(String[] args) {
 //		int arr[] =  new int[3];
 		// Declare float array  and of size =4
-
+        float farr [] =  new float [4];
 		//   array name  - fArr 
-		// size of array =  3  - we can store max of 3 float values  
-		// index no always starts from 0  and ends with size of arr -1. i.e  3-1 =2 
-		//    index no varies from 0 to 2  -  0,1,2
+		// size of array =  4  - we can store max of 4 float values  
+		// index no always starts from 0  and ends with size of arr -1. i.e  4-1 =3 
+		//    index no varies from 0 to 3  -  0,1,2,3
 
 		// store some float values in array 1.2f,2.2f,3.2f,4.2f in indexno = 0,1,2,3
+		farr [0] = 1.2f;
+		farr [1] = 2.2f;
+		farr [2] = 3.2f;
+		farr [3] = 4.2f;
 		
+        
 		// Display val at index no =0,1,2
+		System.out.println("vals from array at index no =0 i.e " +  farr[0]);
 		
-		
+//		for(int i=0;i<=3;i++)
+			for(int i=0;i<=farr.length-1;i++)// 
+		{//                  4-1=3
+			System.out.println("vals from float array ="+  farr[i]);
+		}
 		
 		//  display all vals from float arr using for loop  and use length of array
 		// length of arr
-		
-
-		
+			for(int i=0;i<=farr.length-1;i++)// 
+		{//                  4-1=3
+			System.out.println("vals from float array ="+  farr[i]);
+		}
 		
 		
 //		length of array =4
@@ -5218,9 +6137,11 @@ public class DisplayValsFromFloatArray{
 //				vals from float array =4.2
 		
 
+
 	}
 
 }
+
 ------------------------------------
 
 Note:
@@ -5291,31 +6212,36 @@ public class DefaultValuesIntArray2 {
 ------------------
 Default values in float array :
 ----------------------------
-package ArraysBasics;
+package ArrayBasics;
 
 public class DefaultValsInFloatArray2 {
 
 	public static void main(String[] args) {
 
-		float fArr[]  =  new float [4];
-	// if we dont store any vals in float arr,  it stores 0.0   by default 
-		
-	// Display values from float array		
+		float fArr[]  =  new float [4];// max 4 value
+		// if we dont store any vals in float arr,  it stores 0.0   by default 
+
+		// Display values from float array		
+		for(int i=0;i<=fArr.length-1;i++)
+		{
+			System.out.println("vals from float array =" +fArr[i]);
+		}
 
 		
-			System.out.println("vals from float array =");
-		
-//		vals from float array =0.0
-//				vals from float array =0.0
-//				vals from float array =0.0
-//				vals from float array =0.0
+
+		//		vals from float array =0.0
+		//				vals from float array =0.0
+		//				vals from float array =0.0
+		//				vals from float array =0.0
+
 
 
 	}
 
 }
 
-    true, false, true, true, --  size of array
+
+    true, false, true, true, --  size of array == ??  4
 
 HW  what is the default vals in char array ?
 HW  what is the default vals in bolean array ?
@@ -5325,49 +6251,67 @@ HW  what is the default vals in String array ?
 Way2 : Initialise values in integer array (or) Store Values in integer Array:
 ----------------------------------------------------------------------------
 
-package ArraysBasics;
+package ArrayBasics;
 
 public class InitialseValsInArr {
 
 	public static void main(String[] args) {
-//    way 1:  Declare int array and store 3 values
-//		 int arr []  =  new int [3];
-//		
-//		arr [0] =10;
-//		arr [1] =20 ;
+//	    way 1:  Declare int array and store 3 values
+//			 int arr []  =  new int [3];
+//			
+//			arr [0] =10;
+//			arr [1] =20 ;
 
-		//  way 2: 10,20,30 
-		
- //	vals at index        0  1  2
-		// display all vals from array using for loop
-		
+			//  way 2: 10,20,30 
+		int arr [] = { 10,20,30 };
+			
+	 //	vals at index   0  1  2
+			// display all vals from array using for loop
+			for(int i=0;i<=2;i++)
+			{
+				System.out.println("display all vals from array using for loop =" +  arr[i]);
+			}
+
+
 
 	}
 
 }
+
 
 --------------------
 Way2 : Intialise values in float array (or) Store Values in float Array:
 ------------------------------------------------------------------------
-package ArraysBasics;
+package ArrayBasics;
 
 public class InitialiseValsInFloatArray {
 
 	public static void main(String[] args) {
+	//  Intialise values in float array (or) Store Values in float Array:1.2f , 2.2f, 3.3f
 		
-		//  Intialise values in float array (or) Store Values in float Array:1.2f , 2.2f, 3.3f
+		float farr [] = { 1.2f, 2.2f , 3.3f };
+		//                 0      1      2
 		
-		// length of array
+			// length of array
+		int l =  farr.length;
+		//           3
+		//    l = 3 
+		System.out.println("length of array ="+ l);// 3
+			
+	// display values from float array using length of array
 		
-// display values from float array using length of array
-	
-//				vals from flat arr=1.2
-//				vals from flat arr=2.2
-//				vals from flat arr=3.3
+		for(int i=0;i<=l-1;i++)
+		{
+			System.out.println("vals from flat arr=" + farr[i]);
+		}
+//					vals from flat arr=1.2
+//					vals from flat arr=2.2
+//					vals from flat arr=3.3
 
 	}
 
 }
+
 
 ------------------
 
@@ -5380,23 +6324,26 @@ HW    define char array and store vals using 2nd way and display vals from arr
  Way2 : Intialise values in String array (or) Store Values in String Array:
 ---------------------------------------------------
 
-package ArraysBasics;
+package ArrayBasics;
 
 public class InitialiseValsInStringArray {
 
 	public static void main(String[] args) {
 		// "ram" , "sita", "abc123" 
+		//  way2: 
+		String sarr [] =  { "Ram", "sita", "abc123"};
+		//                    0       1          2 
 
-//                                   0       1          2 
-		
-		System.out.println("1st val =" + sArr[0]); // ram
-		
+		System.out.println("1st val =" + sarr[0]); // Ram
+
 		// HW get all vals from string array using for loop
-		
+
+
 
 	}
 
 }
+
 ********************************************************************************************************
 
 ********************************************************************************************************
@@ -5421,19 +6368,23 @@ for(int i=1;i<=3;i++)
 
 package ArrayBasics;
 
-public class ForLoopwithoutcondi {
+public class ForLoopWithoutCondition {
 
 	public static void main(String[] args) {
-		
-		for(;;) 
-		{ //  no cond-  condi is always true 
-			//  no cond-  condi is always true 
+		for(;;) // 
+		{ //  no cond-  condi is always true , enters for loop
+			//  no cond-  condi is always true , enters forloop
+//			/  no cond-  condi is always true , enters forloop
+			//...........
+			//..........  infinite..... 
 			System.out.println("stmt-1");
 			System.out.println("stmt-2");
+			//    incrementing
 		}
-
 	}
+
 }
+
 
 o/p:
 ----
@@ -5468,38 +6419,49 @@ package ArrayBasics;
 public class DisplayValsFromIntArrayUsingForEachLoop {
 
 	public static void main(String[] args) {
-	//  define int array and store 11 22 33 44
-			int arr [] =  {11,22,33,44};
-			
-			//  display all vals using for each loop
-			
-			
-			 //   gets each val from arr  and store each val in to variable i.e val
+
+		//  define int array and store 11 22 33 44
+		int arr [] =  {11,22,33,44};
+		
+		//  display all vals using for each loop
+		for(int eachVal :  arr)
+		{// //   gets each val from arr  and store each val in to variable i.e val
+			System.out.println("gets all vals from array using for each loop ="+ eachVal );
+		}
+
+		
+
 
 	}
 
 }
+
 
 		
 
 
 ---------------
 Display Values from float  Array using for each loop:?
-
 package ArrayBasics;
 
-public class DisplayValsFromIntArrayUsingForEachLoop {
+public class DisplayValsFromFloatArrayUsingForEachLoop {
 
 	public static void main(String[] args) {
-		
 		 float farr []  =  {1.1f,2.1f,3.1f,4.1f};
+		 
 			// display all values  for each loop
-			 
+			//  display all vals using for each loop
+			 for(float x : farr)
+			 { //          x= 4.1
+			//   gets each val from arr  and store each val in to variable i.e x 
+				 System.out.println("vals from array using for each loop ="+  x);// 1.1 2.1 3.1 4.1 
+			 }
 			
+			 
+
 	}
 
 }
-
 			 
 		 
 		
@@ -5515,7 +6477,7 @@ HW  store some vals in char array and  gets all vals using for each loop?
 HW  store some vals in boolean array and  gets all vals using for each loop?
 ----------------------------------------
 ---------------
-HW Display Values from String Array using for each loop:
+HW    Display Values from String Array using for each loop:
 -----------------------------------------------------
 
 package ArrayBasics;
@@ -5565,31 +6527,36 @@ package ArrayBasics;
 public class DisplayValsFromStringArrayInReverse {
 
 	public static void main(String[] args) {
-		
 		String sArr []  = {"Ram", "Sita", "Raju"};
-		
+//                         0         1       2
 		//Display Values from String Array using for each loop:
-		
-			System.out.println("gets vals from String array using for each loop:");
-		
-		
+		for(String x : sArr)
+		{
+			System.out.println("gets vals from String array using for each loop:"+ x);
+		}
+
 		System.out.println("After for each loop");
 		// display values in reverse order
-		
-		
-			System.out.println("vals from array in reverse direction = ");
-		
+
+		for(int i=2 ;i>=0; i--)
+		{
+			System.out.println("vals from array in reverse direction = " + sArr[i]);
+		}
 
 	}
 
 }
 
+***************************************
+	28-Oct-2025
+***************************************
 
   single dimensional array  :
 ------------------------------
 
 		 int arr[] =  new int[3];
-           ( or) int [] arr = new int [3];
+		           ( or) 
+		int [] arr = new int [3];
 
 
 2 Dim array:
@@ -5613,39 +6580,49 @@ public class TwoDimArr {
 
 	public static void main(String[] args) {
 		// Declare 2 dim array  and store 2 rows and 3 columns
-
-
-
-					  //  4   index no varies from  0- 3
-
+		 int [][] arr =  new int [2] [3];
+		// 
 		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
 		// n -no of columns- 3  --  columms , index -  0 to 2
 
-		//  store some value	
-		
-		
-		// 10   1 1 ,  12
-		
-		
+		//  store some value at  0 0 , 01 , 02  
+		 arr [0] [0] = 0;
+		 arr [0] [1] = 1;
+		 arr [0] [2] =  2;  		 
+		 
+		 // 10   1 1 ,  12
+		 arr [1] [0] = 10;
+		 arr [1] [1] = 11;
+		 arr [1] [2] =  12; 	 
+
 		// display val at index  00
-		
-		
+		 System.out.println("display val at index  00="+  arr[0][0]);
+
 		//display val at index  01
+		 System.out.println("display val at index  01="+  arr[0][1]);
 
+		//display val at index  11
+		 System.out.println("display val at index  11="+  arr[1][1]);
 
-//		display val at index  11
+		//display val at index  12
+		 System.out.println("display val at index  12 ="+  arr[1][2]);
 
-		
-//		display val at index  12
+		//  index no -3 
 
-		
-	//  index no -3 
 
 
 
 	}
 
 }
+
+o/p:
+---
+display val at index  00=0
+display val at index  01=1
+display val at index  11=11
+display val at index  12 =12
+
 
 ------------------------
 		// get all values from 2 dimensional array 
@@ -5666,7 +6643,7 @@ public class DisplayValsFromTwoDimArr {
 //		or int arr [] [] =  new int [m][n];
 
 
-		int arr[] []  = new int [2] [3];  //  4   index no varies from  0- 3
+		int arr[] []  = new int [2] [3];  // 
 
 		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
 		// n -no of columns- 3  --  columms , index -  0 to 2
@@ -5681,10 +6658,25 @@ public class DisplayValsFromTwoDimArr {
 		arr [1] [1] = 11;
 		arr [1] [2]  = 12;	
 				
-			// get all values from 2 dimensinal array using  for loop
+			// get all values from 2 dimensional array using  "for" loop
 //		00  01  02
 //		10  11  12
 		
+		for(int i= 0 ; i<= 1 ;i++)//  to vary no of rows 0 - 1   i = 0 , 0+1= 1
+		{ //           0<=1 true , enterd  outer for oop
+			//         1<=1 true,
+			for(int j=0 ; j<=2 ; j++)//  to var no of columns  0 - 2 j= 0, 0+1 =1, 1+1 =2, 2+1 =3
+			{  //         0<=2 true , enters inner for loop
+				//        1<=2 true , enters inner for loop
+				//        2<=2 true, for loop
+				//      3<=2  false , does not enter for loop,
+				System.out.println("vals from 2 D array="+ arr[i] [j]);
+				//                                         arr[0] [0] // 0      1 0   -->10
+				//                                        arr [0] [1] //  1     1  1  --> 11
+				//                                         arr [0] [2] // 2      1  2 -->12
+  			}
+			
+		}
 		
 		 //        
 			//       
@@ -5696,19 +6688,22 @@ public class DisplayValsFromTwoDimArr {
 				// 
 				                                                
 			
-	
+
+
 	}
 
 }
 
+
 o/p:
 -----
-vals from arry using for loop=0
-vals from arry using for loop=1
-vals from arry using for loop=2
-vals from arry using for loop=10
-vals from arry using for loop=11
-vals from arry using for loop=12
+vals from 2 D array=0
+vals from 2 D array=1
+vals from 2 D array=2
+vals from 2 D array=10
+vals from 2 D array=11
+vals from 2 D array=12
+
 
 ---------------------
 	
@@ -5724,10 +6719,7 @@ String sArr [] =  {10, 1.3f,,'C' "abc123" };// invalid
 // Type mismatch: cannot convert from float to String
 
 in array, we cannot store one int, float,char  ..etc
-always prefer to store same data type values	
-
-String sarr2 [] = { "10", "1.3f","C",  "abc123"} 
-                    String   String      String 	
+always prefer to store same data type values		
 
 
 
@@ -5741,31 +6733,34 @@ public class GetRowsCntColumnsCntFromTwoDimArray {
 
 	public static void main(String[] args) {
 		// Declare 2 dim array with 2 rows  cols= 3
-
+		int arr [] [] =  new int [2][3];
 
 		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
 		// n -no of columns- 3  --  columms , index -  0 to 2
 
 		//  store some values 00,01,02	
-		
+
 
 		// store some values  10,   1 1 ,  12
-			
+
 
 		//  rows cnt  form 2 dim array
-		
-		 //          rowsCnt =       2
-		 
+		int rowsCnt =	 arr.length;
+		System.out.println("rowsCnt="+ rowsCnt);
+		//          rowsCnt =       2
+
 
 
 		// Columns cnt  form 2 dim array
-		
+		int colsCount = arr[0].length;
+		System.out.println("colsCount="+ colsCount);
+		// 3
 
-			// 3
 
 	}
 
 }
+
 
 		
 		
@@ -5779,19 +6774,63 @@ FAQ SearchForGivenNoInArray :
 
 		// check given no is exist in array or not
 
-	package ArrayBasics;
+package ArrayBasics;
 
 public class SearchForGivenNoInArray {
 
 	public static void main(String[] args) {
-		
-				
-	System.out.println("after for loop");
-		
-		
 
+		int arr [] =  {10,20,30};
+//                     0    1   2
+		//  check 10 is found in array or not -- Val is found in array
+		//  check 15 is found in array or not -->Val is not found in array
+		
+//		int num  = 10 ;
+//		int num  = 20 ;
+		int num  = 15 ;
+		
+		boolean valFound = false;
+		
+		
+		// get all vals from array one by one
+		for(int i=0; i<=2;i++ )// i =0 , 0+1 =1
+		{ //         0<=2 true, enters for loop
+			//       1<=2 true, for loop
+//			System.out.println("vals from array =" + arr[i]);
+			// check num = 10 ==  each val from arr
+			if( arr[i] == num)
+			{// arr[1] 
+				//  10 == 20  false, does not enters if blokc, ctrl goes to else block 
+			
+				System.out.println("Given no="+ num  + " is found in array");
+				//                              10       
+				valFound = true;
+				// come out for loop
+				break;
+			}
+			else
+			{
+//				System.out.println("Given no="+ num  + " is not found in array");
+				//                               10         not 
+			}
+			
+		} // end of for loop
+		
+		
+		if(valFound == true)
+		{
+			System.out.println("Given no="+ num  + " is found in array");
+		}
+		else
+		{
+			System.out.println("Given no="+ num  + " is not found in array");
+		}
+		
+		System.out.println("after for loop");
 	}
+
 }
+
 
 ********************************************************************************************************
 
@@ -5811,15 +6850,44 @@ package ArrayBasics;
 public class CharacterCntInArray {
 
 	public static void main(String[] args) {
-//		  char chArr []  = { 'r' , 'a', 'm','a'}
-
+		  char chArr []  = { 'r' , 'a', 'm','a'};
+ //                           0    1     2    3
 //		  'a'  char count - 2  times  
 //		  'r'             -1   times
 		// Given char is not found ,   cnt =0
+		  
+//		  char ch  = 'a';
+//		  char ch  = 'r';
+		  char ch  = 'p';
+		  
+		  int count = 0;//  0+1,+ 1 
+		  
+		  for(int i=0;i<=chArr.length-1;i++)// i= 0, 1, 1+1=2, 2+1 =3 , 4
+		  { //        4<= 3 true ,
+//			  System.out.println(chArr[i]);
+			  
+			  // check char  is ==  each val from array
+			  if(chArr [i] == ch)
+			  {// charr[3]  == a
+				  //    a  == a. true, enters if block
+				  
+				  // increase cnt by 1 
+				  count =  count  +1;
+				  //        1 + 1
+				  //          2
+				  //  count = 2
+			  }
+			  
+		  }
+		  // end of for loop
+		  System.out.println("Given Char ="+  ch + " count ="+ count);
+		  //                                   a                2  
+		  
 
 	}
 
 }
+
 
 
 -----------------------------
@@ -5836,9 +6904,43 @@ package ArrayBasics;
 public class VowelCntInArray {
 
 	public static void main(String[] args) {
-		
+		// WAP  to get vowels count from char array ?
+		//  Vowels :  a e i o u 
 
-		 
+		char chArr []  = { 'r' ,'a', 'm','a','e'};
+		//  vowels cnt  = 3  -
+		
+		int vowelsCount = 0;
+		
+		for(int i=0;i<=chArr.length-1;i++)
+		{
+//			System.out.println(chArr[i]);
+			
+			if(chArr[i] == 'a')
+			{
+				vowelsCount = vowelsCount  +1;
+			}
+			if(chArr[i] == 'e')
+			{
+				vowelsCount = vowelsCount  +1;
+			}
+			if(chArr[i] == 'i')
+			{
+				vowelsCount = vowelsCount  +1;
+			}
+			if(chArr[i] == 'o')
+			{
+				vowelsCount = vowelsCount  +1;
+			}
+			
+			if(chArr[i] == 'u')
+			{
+				vowelsCount = vowelsCount  +1;
+			}
+			
+		} // end of fo loop
+		
+		System.out.println("Vowels count ="+ vowelsCount);
 
 	}
 
@@ -5868,6 +6970,9 @@ hint:
 				vowelsCnt =  vowelsCnt + 1 ;
 			}
 
+**********************************************************
+		29-Oct-2025
+**********************************************************
 
 --------------------------------------------------
 TypeCasting:
@@ -8279,6 +9384,17 @@ public class ReverseOFStringUsingCharAt2 {
 
 
 ******************Reviewed 24 Oct 2025
+
+
+
+
+
+
+
+
+
+
+
 
 
 
