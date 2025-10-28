@@ -1,0 +1,8292 @@
+Introduction
+Name:
+Education:
+Where are you from?
+Who is reference?
+Passed out year:
+Target audience:
+•	Switch to IT  (or) from Non IT to IT
+•	Manual testing to Automation testing
+•	Zero knowledge in Programming
+•	 (0-5) years of experience
+
+•	Notes
+•	Assignments
+•	Practise daily - ***
+•	Doubts Clarifications-Sat/Sun/ Offline
+•	Provide Interview FAQ
+•	Duration: 
+•	Placements:
+
+
+
+
+************************************************************
+
+************************************************************
+
+Manual Testing :
+---------------
+Testing :
+----------
+   checking /Verifying sthng on the appl  whether functionality is working properly (or) not  as Per FRS  or BRS.
+
+FRS -Functional Req Specification Doc  --  .word doc 
+BRS -Business Req Sepcification doc -
+
+User stories-   in Jira tool
+
+Manual testing :
+----------------
+              checking the functionality with help of manual efforts
+
+entering the data in user name
+entering the data in password
+click login button manually
+
+
+ ex1:   gmail  Login functionlaity
+
+Steps:
+-----------
+Open chrome browser, with gmail.com, 
+Enter user,
+Enter pwd
+Click Login btn
+Verify home page is displayed ---Compose mail button 
+
+ex 2:  create user -  new gmail 
+
+first name , last name,   mobile no :   submit --  
+Verify user is created ...
+
+Disadvantages of manual testing :
+----------------------------------
+- Time consuming  task --
+ex:   Login with 1 user --   1 min
+              2 users  -- >  2*1= 2min 
+	    500         -->  500 min
+
+  		Automation :     20 to 30 min
+
+- cannot provide accurate results - 
+ex   esal :   78,97.45 INR 
+              78,79.54  -  Incorrect 
+
+
+-  Test resources will be  tired ..   we will not execute Tc, missing to execute TC's
+    Automations tools --  never - 
+
+- Costly -- more no of Resources -  8 
+             Automation- initially -  we need more resources-   --  2 to maintian automation   code
+
+--------------------
+Automation Testing :
+---------------------
+  checking the apppl functionality with help of some automation tool  and some Programming languages.
+
+ex:
+
+ ex:   gmail  Login functionlaity
+
+Steps:
+-----------
+Open chrome browser  -->   cmd --  line of code 
+with gmail.com,  --->    cmd   -  code 
+Enter user,  -->   code
+pwd,   -->   code 
+Click Login btn  -->  code
+Verify home page is displayed ---Compose mail button -->    code 
+
+Functional Testing Tools:
+--------------------------
+
+check only functionality of the appl.
+
+Commerical tools (or) Paid tools :    purchase license for tool
+
+ex: 
+----------------------------------
+QTP by Mercury Interacive  -> UFT (Unified Functioanl Testing ) by HP  >   UFT acquired by MicrFocus
+Test Complete -
+KatalonStudio -
+
+Open source tool :
+-----------------
+  Free -  source code of project is open to all.
+Selenium - free 
+
+
+Performance Testing Tools:
+-------------------------
+  check about performance
+
+ex:   gmail login --   calculate time taken to login to appl -- 3 sec
+
+ex for Performance Testing Tools:
+------------------------
+ Load Runner by 'Mercury Interactive' > HP -Load Runner >   Load runner by MicroFocus - paid tool
+
+NeoLoad 
+
+Locust 
+
+Gatling 
+Jmeter
+
+------------------------
+
+FAQ: Difference b/w Manual and Automation?
+-------------------------------------------
+
+1. time consuming  task                 1.  is not time consuming task
+
+2. Cannot provide accurate results	2. We can provide accuarte results
+
+3. Resources are tired 			3. nevers tired
+
+4.   costly 				4.   free automation --  less costly  compare to manual testing
+------------------------------------------------------------------------
+
+************************************************************
+
+************************************************************
+
+Selenium Introduction:
+----------------------
+Selenium :   is Open source automation tool.
+     source code of the project is open to all people --  Free  -- 
+
+	any body can download Selenium  and 
+	available in the form  Selenium.jar 
+
+- can be used to automate browser -   only web  based appl
+but not desktop appl's
+
+Web appl : 
+----------
+  the appl's which are opened by browser --  chrome, firefox , Edge...etc
+
+ex:  amazon.com, Redbus.com
+
+-  at a time multiple people can access the web appl 
+
+Desktop appl :
+--------------
+    the appl which  are installed in our desk top machine -
+
+    ex:     VLC.exe   , note pad
+
+-at a time  only one user can access the appl
+
+FAQ What is the diff b/w Web based appl and Desktop appl?
+--------------------------------------------------------
+1.Def:
+2.ex:
+3.how many users can access?
+
+    to  automate Desktop appl 's --> 3r party s/w or tools   ex:AutoIT 
+
+     Selenium alone  -  cannot automate desktop appl's 
+
+-supports multiple browsers 
+   ex:  
+     Chrome 
+     IE   - Microsoft -   stopped giving support 
+     Edge  --->  
+     Firefox browser
+    Safari (in MAC o/s)   --   not avaialble  in windows  o/s
+
+- supports Multiple Programing languages
+  ex:  Java, ..NET,   Python ,  JavaScript , Perl,ruby....etc
+
+UFT -  paid tool --   buy licence  -- >   supports only one language i.e VBscript 
+
+- Supports Multiple o/s 
+   ex:   Windows , Linux , Mac  o/s 
+
+  UFT -  supports only windows o/s 
+
+- migrate to Selenium automation code project
+
+  demand --  
+    UFT --  paid tool --->  free tools / open source -- >  use in project
+    UFT code --- > migrate to Selenium automation code project
+
+Selenium Advantages:
+-------------------
+   tell same above points
+    
+---------------------------
+Comparison with commercial tools :
+------------------------------------------
+Selenium				UFT
+(Open source Tool)			(Commercial /paid tool)
+-------------------------------------------------------------------
+1. Open source - freely 	
+-  buy license in order to use tool
+
+2. to automate web appl's only 
+ -    UFT-  automate web appl's and  also Desktop appl's
+
+3. supports multiple browsers :  ex: chrome, Firefox, IE , Edge , Safari
+    initially designed to Firefox browsers 
+
+UFT --  intially  IE,  later chrome, FF  
+
+4.Suports multiple lang's ex:  Java, Python ,Perl Ruby..etc
+
+UFT -  VBscript programing
+
+5. Suports multiple o/s ex: windows, Linux, MAC o/s
+ UFT  --   Windows o/s  only 
+         tools cannot be used in Linux. MAc o/s  as UFT s/w is not aavilable for Linux, MAC o/s.
+
+6.Cannot generate Automation test results  by Default 
+   Note :    to generate Test results -->   3rd part s/w  --  TestNG, Extent Reports
+
+UFT --  generate test results by default  at end of execution
+
+7. -  does not support OR  concept by default
+   
+OR- Object Repository :
+-----------------------
+  is place  where we maintain all the obj's info 
+ex:  in login page-->   user name, pwd, Login btn 
+
+- UFT  --   supports OR  concept  by default 
+
+8. no proper techincal help/ support Team  from Selenium
+     -->   Selenium forums.  
+
+UFT --->  Customer support team
+        if any where some tool functioanlty is not working -- >   setup meeting with UFT support Team
+		Resolve ur issue 
+ 
+------------------------------------------------------
+FAQ: Disadvantages of Selenium:
+-------------------------------
+
+1. Selenium cannot automate Desktop appl's
+   note:     3rd party tool-->   AutoIT tool -->  to automate Desktop appl
+
+2. Cannot automate bar code scanninng appl's
+
+3.  Recpatcha testing cannot be done
+
+4. cannot generate automation Test results by default 
+      to genarete test results >>>  3 rd party tool --TestNG, Extent reports
+
+5. No  proper techncial Support from Selenium 
+
+------------------------------------
+Download Install JDK 8 or 11 Version
+Download  Eclipse IDE
+
+********************************************************************************************************
+
+********************************************************************************************************
+Java Introduction:
+-----------------
+Java is open source Programming language.
+
+-    to establish communictaion b/w  2 things 
+-   English  -->  English lang
+-   Machine   --->  Programming language 
+
+Program :  collection of stmts  
+  can be used to perform specific task
+
+ex:    addition       10 + 20   = 30
+       substraction    20 - 10 = 10 
+
+- is  Object oriented Proagramming Language
+
+- means in Java is everything is represneted in the form obj  and class
+
+OOPS  features :
+----------------
+
+Object & class
+Inheritance
+Polymorphism
+Abstraction
+Encapsulation
+
+ex:    Java , C#.net,  Python.   etc
+
+if any Programing lang supports above OOPs features --  Object oriented Programming language.
+
+•	Platform independence:
+-------------------------------
+-Java is platform indepenent lang
+
+ -- platform --  any o/s  
+		 windows
+		Linux
+                Mac o/s
+
+ A.java  -->run    windows   -->   A  Results  (Same results)
+		Linux        -->   A  Results  (Same results)
+                Mac o/s      -->   A  Results  (Same results)
+
+
+platform dependent lang:
+
+ ex:  C- Language  , 
+
+ A.c   -->   Run in window -->  A  Results
+       -->           Linux  -->  B Results
+
+
+Note: VB  script  (in Windows o/s)
+
+Java applications:
+-----------------
+1. develop Desk top appl's
+
+ex:    vlc.exe, notepad(text file)
+
+2.  develop web based applications
+  ex: amazon.com , facebook.com
+
+3. Mobile applications  (android appl's)
+   eX:   Whats app,  amazon 
+
+4.  in ERP  applications   
+ex: Saleforce -
+
+5. Java can be used in Automation testing tools
+
+------------------------------------------
+FAQ: JDK,JRE,JVM:
+------------------
+
+JDK :  Java Development Kit
+
+- can be used to develop/ write java program  +   run Java program
+- JDK  s/w  
+
+
+JRE:   Java RunTime Environment
+
+- can be used to run Java Program only
+
+-   Note:   we cannnot write/develop java Programs   using JRE
+
+-can be installed individually
+
+install JDK  >  installs also JRE by default
+
+JDK  contains JRE . JRE part of JDK
+
+JDK =   JRE + JVM +  LIB +  BIN +  etc..
+
+FAQ Diff b/w JDK and JRE ?
+--------------------------
+
+JVM :  Java Virtual Machine 
+
+-  set of programs or specifications - 
+- can be  to execute Java Program.
+
+Java - developed   James Gosling -- By Sun Micro Systems company
+
+-now acquired by Oracle Company 
+-------------------------------------
+•	JDK installation:
+------------------------
+download JDK 11:
+https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html
+
+Oracle account
+
+brahma.trainer@gmail.com
+Oracle@12345
+
+Note :   after clicking download link >  Select checkbox 'I reviewed and accept the Oracle Technology Network License Agreement for Oracle Java SE
+' --> Click Download btn  >  create Oracle account with ur gmail  and password >  login with ur gmail >  download 
+
+it will download - "jdk-11.0.15.1_windows-x64_bin.exe"
+Click jdk.exe file  from downloads folder> Click Next > Next  >  Finish
+
+Check Java Installed :
+-----------------------
+Go and check in ur system:  
+	C:\Program Files\Java\jdk-11.0.15.1
+
+cmd :
+-----
+open cmd Prompt window :   Pressing 'Windows' btn +  R --> It opens 'Run' window >  Type 'cmd' > clikc 'Ok' or Press enter button >  opens 'Cmd prompt window'  in black screen
+
+java -version
+
+ex:
+C:\Users\Lenovo>java -version
+
+java version "11.0.15.1" 2022-04-22 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.15.1+2-LTS-10)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.15.1+2-LTS-10, mixed mode)
+--------------------------------
+
+Download Eclipse :
+-----------------
+Open Eclipse :
+
+Create Workspace :
+------------------
+
+
+Create Project :
+----------------
+steps:
+--------
+File >NEw > Other >  Search for JAva Project > Select 'Java Project > Click "Next"  >  ' Give some "Project name"  i.e "Nov182023JavaProject"  >  finish or Next>  Click Finish button >  click 'Dont create '  button > it creates new Project i.e 'Nov182023JavaProject" in 'package explorer' window in left side  
+
+
+if we expand Java project,  there are 2 folders available .
+
+  1. src
+  2.JRE System Libraries
+
+check Project Current Location in our system:
+------------------------------------------
+Steps:
+----
+Select project >  Rt click > Properties ' option (or) alt + Enter >  Location :C:\brahma\Practise\SelniumPractiseNew\Nov2023WorkSpace\Nov182023JavaProject  >  click 'Righ arrow' >  it opens the Folder in ur system.
+
+
+HW Create 2 Java Projects in Eclipse  and find the location of the project in ur system ?
+
+
+
+********************************************************************************************************
+
+********************************************************************************************************
+Keywords in Java :
+-----------------
+   to learn any lang -->   alphabets A, B,C
+
+       make words   Apple, Bat...etc
+
+     make stmt  -  >  I like an apple  - -->  have to follow some grammar rules --> Syntax rules
+                      Apple like I ---invalid stmt
+		      I apple like 
+
+
+
+Sys will not understand our lang  english  -->    java lang  stmts--->    Machine Level Lang (001010101) -- (Sys or Processor understands)
+
+Keyword: 
+---------
+
+Def:
+----
+are pre defined words  in Java lang.
+Reserved words:  which has special meaning in Java lang.
+   which are reserved for Special purpose.
+
+ex:
+
+int --> is keyword,  can be used to store integer numbers   10,20, -15 
+
+float    -->                               decimal  number ex:  10.23f, 4.5f
+
+double --> decimal  number ex:  10.23, 4.5
+
+char  -->  used to store single character  'A' ,  'B'
+
+boolean  -->           to store  true, false values
+
+if  -->  k/w in java , can be used write  if (condi)  stmt
+else --> 
+for
+while
+break 
+
+class  --> is k/w in java lang-can be used  to define/ write  class  
+  
+  Syntax:
+class someClassName
+{
+
+
+}
+
+ex2:  creating some 'employee'  class
+class employee
+{
+
+
+}
+
+ex3:   create student class
+class student
+{
+
+
+}
+
+Note:
+-----
+without writing/defining any class, we cannot write any java Program.
+-  if we want to write any java program, we must write/define class
+
+interface- k./w
+syntax :
+
+interface I1
+{
+
+
+}
+
+public
+static
+void --- 
+
+...etc 
+
+---------------------
+Create Package and Class:
+-------------------------------
+Package :
+---------
+        collection of classes  and Interfaces
+
+            class1   +  Interface1
+	    class2  + Interface2
+	    class3 + Interface3
+
+create Package :
+------------
+
+Steps:
+--------
+select 'src' folder> Rt click >   New > Package > enter Name:   package1 > clk 'Finish' button >  it creates  new package i.e Package1 in src folder 
+
+Create class :
+----------------
+Select Package i.e Package1 , Rt click >  new > class >Enter some class name : class1   class1 > click Finish
+> it create new class i.e class1 in the selected package 
+
+Create Interface :
+------------------
+HW :  write Naviagation steps  how to create interface (same as  above)
+
+HW Create 2 packages,2 classes , 2 interfaces
+         package:  MyJavaPrograms   --->   create some classes (A, B) + interfaces (I3,I4)
+         Package : MySeleniumPrograms  --> Create   some classes(C1,C2) +  interfaces (I5,I6)
+
+
+
+
+*********************************************
+
+**********************************************
+Comments:
+---------
+   can be used to understand the program clearly
+
+•	Types of comments:
+--------------------------
+
+ 2 types 
+
+1. Single line comment:
+      start with  //
+
+2.Multi Line Comment
+
+
+package Package1;
+
+public class CommentsProgram
+{
+          Program name :  Writing comments 
+	   Developed Date:  6-Apr-2023	
+	   Comments will not be executed .. and it will be ignored 
+	
+//	Note:  Single line comments :  
+//	select line->     Press Ctrl + / == to comment lines
+//	uncomment line -> Press Ctrl + /
+	
+	stmt1
+	stmt2	
+	stmt3
+	
+//	note2  : 
+//select multiple lines  and Press ctrl +  / -- it comments selected  lines
+//	select multiple lines and Press ctrl +  / -- it uncomments selected  lines
+	
+	stmt1
+	stmt2	
+	stmt3
+
+}
+
+2. Multi line comments :
+--------------------
+	
+//	Multi Lines : starts with 
+
+/*     
+
+
+
+ */
+	
+package Package1;
+
+public class MultiLineComments
+{
+
+
+	//	Multi Lines : starts with /*      */
+
+	// add Multi line comments for below 
+
+	   Author : Brahma  
+	     Program name :  Writing comments 
+	    Devleoped Date:  6-Apr-2023
+
+
+	// add Multi line comments for below 
+
+	  stmt-1
+	   stm-2
+	   stm-3	
+	 
+
+
+	//	Note : select multiple lines - Press  ctrl+ shft + /
+	//	                uncomment  -          ctrl+ shft + \
+
+
+	
+	  Author : Brahma 
+	 Program name : Writing comments Devleoped Date: 6-Apr-2023
+	 
+	  stmt-1 stm2 stm-2
+	 
+
+
+	  stmt-1
+	   stm-2
+	   stm-3	
+	  
+
+}
+
+
+First Java program in Eclipse:
+------------------------------
+
+
+package Package1;
+
+public class FirstJavaProgram {
+	// we have to write main() 
+
+	
+ //  special method in java
+		// program execution always starts from main() method only
+		
+		// stmt :  collection of words +   syntax rules 
+		// display some msg "Hi Java"   in console window/ monitor
+		
+		// print given msg  and it goes to new line
+		
+		//println() :  predefined method in java
+		// can be used to display given  msg in console window/ o/p window/ monitor
+		// what ever we write in dbl quotes -- it displays as it is ..
+
+		//		Semicolon ;   is  stmt terminator 
+		// Every stmt must end with  semi colon;	
+		
+	//  to display   msg  How are you?
+		
+			// print given msg  and it goes to new line
+		
+	}
+
+}
+
+
+run java :
+----------
+right click inside main method > run as > Java applictaion
+
+o/p:
+-----
+Hi Java
+How are you
+
+------------------------------------
+
+ex2:
+package Package1;
+
+public class JavaProgram2 
+{
+	//  write main ()  -special  method -- 
+	///when we run java,   JVM or o/s Calls main- method  by default
+	// Execution starts from main - method
+
+		// Display msg in stmt-1
+
+
+		// Display msg in stmt-2
+
+
+		// Display msg in stmt-3
+
+
+		// Short cut :   
+		//	to write println () --  
+		//type syso +  Press  -(ctrl +  space) and press enter- it displays println() stmt  fully
+		//   Display msg in stmt-4
+
+		//   Display msg in stmt-5
+
+		
+
+	
+
+}
+//o/p:
+stmt-1
+stmt-2
+stmt-3
+stmt-4
+stmt-5
+
+HW print the given msgs in the new line 
+     Hi thulasi
+     Hi Ram
+     Hi sita
+
+If we don't have laptop, We can write and run java program in "online java -compiler" from browser
+
+Searh in google  -->  superfast online java compiler (Prefer this one ) and Open "superfast online java compiler" link > Write java program and run it
+
+Refer:  https://www.programiz.com/java-programming/online-c
+
+**************************************
+
+**************************************
+
+println("Hi Java"); :  can be used to print the given msg  and cursor goes to next line
+
+
+print():  - is predefined method in java
+ - can be used to print the given msg in console window   and cursor is in the same  line
+
+
+print basics Program:
+-----------------------
+
+package Introduction;
+
+public class printBasics {
+
+	public static void main(String[] args) 
+	{
+		System.out.print("Hi Java"); //  print given msgs and  cursor is in the same line
+		System.out.print("How are you");
+		System.out.print("I am fine");		
+	}
+
+}
+
+
+/*
+ * o/p: 
+ * Hi JavaHow are youI am fine
+ * 
+ * 
+
+ */
+
+
+FAQ :  Diff b/w println()  and print() ?
+
+
+HW :  display below o/p using println and print()
+
+o/p:
+     Hi Ram
+     Learn Java
+     sure
+
+HW :  display below o/p using println() and print() 
+o/p: Hi RamLearn Javasure
+
+-------------------------
+package Introduction;
+
+public class MixingPrintlnAndPrint 
+{
+	// write main ()
+	public static void main(String args[])
+	{
+		System.out.print("Hi Java");
+		System.out.println("How are you");
+		System.out.println("I am fine");
+		System.out.print("What about you.");		
+		
+	}
+	
+
+}
+
+/*      ctrl +  /  or    ctrl+ shft +/
+ * o/p:
+ 	
+ * I am fine
+ * What about you.
+ * 
+ * 
+ */
+
+
+HW  write o/p for below program:
+
+		System.out.println("Hi Java");
+		System.out.print("How are you");
+		System.out.print("I am fine");
+		System.out.println("What about you.");	
+
+
+
+\n  -  goes to new line
+ex:
+
+package Package1;
+
+public class MixingPrintlnAndPrint 
+{
+	
+	public static void main(String args[])
+	{
+		//\n  -  goes to new line
+		System.out.print("Hi Java\n");
+		System.out.print("How are you\n");
+		System.out.print("I am fine\n");
+		System.out.print("What about you.\n");	
+		
+	}
+
+}
+
+o/p:
+Hi Java
+How are you
+I am fine
+What about you.
+
+-------------------------------------
+HW in the above program replave \n  by \t write the o/p?
+\t -represents tab (Enter 5 spaces)
+	.
+
+
+
+create class with public static void main() through options
+
+Different ways to run Java Program:
+------------------------------------
+1. from Eclipse
+2. through command prompt window
+
+1. Eclipse:
+----------------
+	1. RT click inside main ()  -->  Run as -->  Java appl
+	2.  In Menu Items (under 'navigate' or 'Project' menu) >click  'play button (or) Run button' >  it runs java program
+
+2. through command prompt window:
+---------------------------------
+
+We can write java program in notepad/txt file 
+
+steps to create java file in notepad:
+------------------------------------
+open note pad >  type Java Program >  Go to file menu > Save as >  Give  File name as same as class name   with extension .java (SampleJava.java) > Save >  it creates 'Sample.java' file 
+
+
+cmds :
+-------------------
+1. compile java program:
+syntax :
+  javac javafilename.java
+  javac SampleJava.java
+
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>javac SampleJava.java
+SampleJava.java:7: error: unclosed string literal
+ System.out.println("Hi Java')
+                    ^
+1 error
+
+ System.out.println("Hi Java")
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>javac SampleJava.java
+SampleJava.java:7: error: ';' expected
+ System.out.println("Hi Java")
+                              ^
+1 error
+
+
+Compilation Process:
+--------------------
+Compiler :   will check all errors in programs. 
+if at all we have errors, it displays all error details 
+
+. if at all there are no errors >
+
+  Sample.java   to  >   Sample.class  ( contains byte code instructions) --> JVM ( Run / execute java programs)
+
+
+>   to low level lang (or) Machine level lang ( 01010) -->  Processor (or) system understands only machine lang only >    executes the program >  display the o/p on console window 
+
+
+once we compile java progam-   it creates class file with same name as classname >>  byte code instructions
+ >  JVM   -> Machine lang (or) low level language   >  machine (or) system or processor   >  Executes program and displays the o/p
+
+
+FAQ JVM ?
+JVM  convert byte code instructions to  machine lang  and it will be given to processsor . executes the instruction
+>  display the o/p on console window 
+
+- used to run Java program
+
+2. run java Program :
+-----------------------------
+Syntax: cmd :  java javafilename
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>    javac SampleJava.java
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SampleJava
+Hi Java
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SampleJava
+Hi Java
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>javac SampleJava.java
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SampleJava
+Hi Ram
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>
+
+
+Note :   every java program, first we must compile and then Run Java program.
+
+ if you modify some code/  add 2 (or) 3 lines of code,  first we must compile,  then run java program.
+
+
+compile :  javac  filename.java
+Run	:   java filename
+
+java Filename.java --  error - dont use it    i.e  .java 
+java Filename.class -->  error - donot use it i.e .class
+eX:
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SimpleJava.class
+Error: Could not find or load main class SimpleJava.class
+Caused by: java.lang.ClassNotFoundException: SimpleJava.class
+
+C:\brahma\Practise\SelniumPractiseNew\JavaPrograms>java SimpleJava.java
+error: class found on application class path: SimpleJava
+
+HW Create 2 Programs in notepad  and compile and Run it?
+   Sample2.java
+   Sample3.java
+
+
+
+----------------------------
+Data types in Java:
+--------------------
+     what type of data    we are storing /  using
+
+          numbers :  10,20,-34 -->  int -  predefined word or keyword or   datatype
+
+	   decimal nos  -->   float ,  double    10.54, 3.45
+
+	  'A', 'B'   -- > char 
+
+	true/ false -->  boolean 
+
+	 "RamaRao" --->  String 
+	   
+  
+2 types:
+-------
+1.Primitive data types:
+
+2.Reference Data types
+
+1.Primitive data types:
+------------------------------
+can be used to store single value at a time 
+
+ Numbers:
+---------
+
+
+Data Type	Size	Description
+---------------------------------------------------------------
+byte		1 byte	Stores whole numbers from -128 to 127
+short		2 bytes	Stores whole numbers from -32,768 to 32,767
+int		4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long		8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+------------------------------------------------------------
+
+Decimal nos :   10.5 , 3,45 
+---------------------------
+
+float :  is predefined word in java lang
+-  to store decimal numbers
+-  allocates 4B  memory
+-  can store 7 decimal numbers  after decimal point
+eX:   2.1234567f -   f - represents float value
+
+double :
+----------
+ is predefined in java .
+- can be used to store decimal nos
+-allocate  8B of memory
+- can store 15 values after decimal point
+
+eX:    10.34  -  if we don't write f,  it will consider as double value
+     2.34d --   d for double 
+
+float	4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal dig
+
+
+char:
+-----------
+to store single character  -- char 
+char - is predefined k/w in java 
+
+- can be used to single char 
+- it must be enclosed in single quotes 
+ex:   'A', 'B', 'C'
+
+ invalid :  'ABC' 
+
+- it must be enclosed in single quotes 
+--  allocated 2Bytes of memory
+
+char	2 bytes	Stores a single character/letter or ASCII values
+
+----------------------
+boolean : 
+------------
+is predefined k/w in java lang.
+
+- can be used store only true and false values
+
+   Note:   we cannnot store any other values in boolean data type
+
+--    ex: 'A' , "true", 10, 20, 10.24  -invalid
+        Memory 
+boolean	1 bit	S    stores true or false values
+
+----------------------------------------------------------
+
+Revision:
+-------
+
+•	Numbers  -->   Byte, short, int, long
+•	Decimal numbers -->  float, double
+•	Character  -->  char  'A'
+•	true/false -->  boolean
+-----------------------------------
+String : 
+--------
+
+   collection of characters which must be enclosed in dbl quotes 
+
+i.e "rama"
+
+   group of  ....  "abc123" ,,  "123" , "123.()",   ".*"
+
+-is not data type  - is predefined class in java.  but  it is often used in the form of data types. 
+-   can be used store group of characters
+
+
+************************************************************************
+
+************************************************************************
+
+2.Reference Data types:
+------------------------
+can be used to store multiple values (10,20,30)  at a time
+
+ex:  arrays --  can be used to store group of values -- later classes
+ String (is predefined class in java language)
+  or any predefined class 
+ 
+********************************************************************************************************
+
+FAQ Diff b/w primitive data type and reference data type ?
+Def
+
+ex: byte,short,int, long
+    float , double  
+
+
+arrays-  store multiple values 
+
+
+-----------------------
+Variable:
+----------
+In Mathematics,
+
+  x = 10
+  y = 20
+  z = x + y , what is the value of z?
+
+
+   Z = 
+//     
+//   z= 
+
+x,y,z - are variables
+ 
+ex2:
+   a = 3
+   b = 2
+   c = a*b, c= ?
+    c =  
+    c =  
+
+a,b,c - are variables 
+
+= :   assignment operator
+ can be used to assign/ Store some value
+
+    a = 10 // comment:
+	// 10 value is stored in var i.e a
+
+Variable Def:   is some  meaningful name (or) container - can be used to store some value
+-  to  hold some value 
+
+Declare Variables and Assign values:
+------------------------------------
+Syntax :
+--------
+datatype somevarname;
+
+ex:   store numbers
+ 
+
+ // declaring var i.e a of type int --> 
+
+//   a is var , which is of type - int . so in var i.e a ,  we can store integer numbers
+
+
+Declare var (esal)  and store decimal no's --> 
+
+//   esal is var  of type float data type- so esal var we can store only decimal no's
+
+
+Declare byte var -->  
+b is var  , which is of type - byte- so in var b, we can store integer numbers.
+
+
+HW Delcare  short variable ,long  variable , double, char  variable ?
+
+
+Assign values to variable :
+-------------------------
+Syntax :
+----------
+
+
+  varName = val/ var/ Expression;
+
+  1. varname= val;
+
+	  we need = operator - assignment operator 
+// store 10  in variable 'a'
+
+      10 val is assigned to left side var i.e a  contains 10
+
+// store 20  in variable 'b'
+
+     20  val.....                            b contains 20
+
+2.   varName = var;
+
+      b = a;//  value of a i.e 10 is assigned to left side var i.e b so b contains 10  val.
+//        
+       b = 
+
+3.  varName = Expression;
+     c = 
+      c=  
+   
+     c  =     rt side expression is evaluated/calculated first  and result will be stored in left  side var i.e c
+   so C contains 30 val.
+
+Note:
+---------
+1. Left side, always  we must use varname only 
+invalid :
+      10 = a ;   Left side, we have to use varname only 
+      10.657 = b;  // invalid stmt
+
+Check below are valid and invalid:
+
+    c =25; --> left side is var  valid
+    35 =  d;	-->
+   1.45f  = f ;	--> 
+
+2. Right side, we can write val/ var/ Expression
+          a = 10;
+          c = a;
+	  c =  a+ b;
+
+
+Check below are valid and invalid:
+
+       a = c;	-->
+       a+ b  = c -->  
+
+
+ ----------------------------------
+Int basic program:
+-----------------
+package DataTypes;
+
+public class IntBasicsProgram 
+{
+	public static void main(String[] args) 
+	{
+		// int :
+				//		   a =10
+				//	       b=20
+				//	        c= a+b
+//		  a= 10;
+//				   b= 20;
+//				   c  = a+b;
+				//   If we want to use some var i,e a , so first we must declare var 
+				// with out declaring var name , we cannnot use var in program
+				// datatype varName; 
+				// Declare var's a,b,c
+				
+				
+// store 10  in var a
+
+
+// store 20  in var b
+
+
+// store a+b  in var c
+					
+				 
+				/// c = 
+				// print the val of a, ,b ,c
+				
+
+	}
+
+}
+
+o/p:
+---
+
+
+---------------------
+
+HW  Declare  variables for byte data type and store some values  and display o/p ?
+HW  Declare  variables for short data type  and store some values  and display o/p ?
+HW  Declare  variables for long data type and store some values  and display o/p ?
+
+package DataTypes;
+
+public class IntBasicsProgram2 
+{
+	public static void main(String[] args) 
+	{
+Can We store decimal numbers in int variable ?
+
+		
+		// Error : Type mismatch: cannot convert from float to int
+		//				 we cannot store decimal no in int var
+		// int var-  we can store integer values but not decimal numbers
+
+
+		// Note :  
+		//Can We store char value into int variable ?
+				
+			// value of  ASCii no A -65 , B -66, C-67
+		//     65
+		// a=  65
+		//    ascii    
+// display var  i.e a 		 
+
+		                // 65 . Note:   it wont display 'a'
+
+//		Can We store true/ false value into int variable ? 
+		//	  a = true; ///Error: Type mismatch: cannot convert from boolean to int
+		
+	}
+
+}
+
+---------------------------------------
+
+Float basics:
+--------------
+package DataTypes;
+
+public class FloatBasics {
+
+	public static void main(String[] args) {
+
+		// float :   store decimal no's   10.45f, 2.34f
+		// at end of decimal no , we have to use 'f'   ex:  10.45f, 1.3f
+		//		Declare float var 
+		//		datatype varname;
+
+
+		// Delcare float var f  and store 2.3 f
+		
+		
+		//  so we can store only decimal nos
+		System.out.println(f);
+		//                2.3   
+
+
+		//can we store  int value (4) into float var i.e f
+
+		//   4 --> 4.0  5 -> 5.0   8 --> 8.0
+		// f=   4.0
+		//       int val is converted to left side data type i.e float 
+		//   int val is converted to float val  
+		//   --->  
+		// display f var value
+
+		//                 4.0  but not 4
+
+		// can we store  char value ('A') into float var i.e f
+				
+				// A - 65
+		//        65
+		//  f = 65	        
+		//       65 --->  65.0
+			//  f  =  65.0
+		// display f var value
+
+							// 65.0  but not 'A'   and not 65 
+
+			// left side float data type, it always o/p in the form float value only
+			
+		//HW  can we store  boolean vals (true, false) into float var
+			
+		//  Type mismatch: cannot convert from boolean to float
+			
+
+
+	}
+
+}
+
+o/p:
+------------
+2.3
+4.0
+65.0
+
+
+--------------------------
+double basics:
+-------------
+package DataTypes;
+
+public class DoubleBasics {
+
+	public static void main(String[] args) {
+
+		// Double :   store decimal no  
+		//   declare var i.e x is of type  'double' data type   and  store 2.34
+		//  so we can store dec no
+
+			 // d- double. even if we dont write 'd' at end - it will be considered as double value
+		//x = 3.45;// d is optional
+
+		//  display x
+
+		//                2.34
+
+		//  store 4.534d; into x
+
+
+		// display x var
+	
+		//              4.534
+		// note :  Select all lines >   ctrl + I  -  Indentation (or) allignment of lines proper
+
+	}
+
+}
+
+********************************************
+
+********************************************
+char basic program:
+---------------------
+package DataTypes;
+
+public class CharBasics {
+
+	public static void main(String[] args) {
+
+		// char :   'a', 'F'
+		//		Declare char var (ch) and store 'A'
+		// datatype someVarName;
+			
+		// ch is var name, which is of type -char
+		//  so we can store char values only 'A', 'B'
+		// char value must be written in single quotes i.e 'A' , 'B'
+		// store 'A' into ch
+
+
+//		ch = B;//Error :  B cannot be resolved to a variable
+		
+		
+		// Can we store "B"  into ch 
+//		ch = "B"; // "B" -- String 		
+		//Error : type mismatch: cannot convert from String to char
+
+//		ch  =  'ABC';//error:  Invalid character constant
+		// in single quotes , we have to write single char only  but not group of characters.
+
+		// display var ch 
+
+		//                  A
+
+		// Can  we store int number (66) in  char var ?	
+			
+			// A - Ascci no - 65, B - 66, C - 67
+		//    66 --> 'B'
+		//      converted to char 
+		//  always , o/p will be displayed based on left side var data type
+		// left side- char data type, so o/p will be displayed as char value only i.e 'B'  but not 66
+		System.out.println(ch);
+		//                  B
+		
+
+
+	}
+
+}
+
+o/p:
+----
+A
+B
+
+---------------------------------------
+
+		// HW Can we store  float, double  , booolean values into  char var  ?
+---------------------------------------------
+
+BooleanBasics Program:
+--------------
+package DataTypes;
+
+public class BooleanBasics {
+
+	public static void main(String[] args) {
+
+		// boolean :  store true / false  values  --> boolean values
+		//		Declare  boolean var (a) and  store true value 
+		// datatype varName;
+
+		// a is var, which is of type
+		// so in var a, we can store boolean values i.e true or false
+	
+
+		// display var a
+
+		//                 true 
+
+		// store false value in var a
+
+
+		// display var a
+
+		//                     false
+
+		// Can we store int value  10 into boolean var a 
+
+		//Error: Type mismatch: cannot convert from int to boolean			 
+		// Error :  boolean data type , we can store only true / false values  but not int no
+
+		//// Can we store float value  2.34f  into boolean var a 
+
+		//		 // Error :  bolean data type , we can store only true / false values  but not dec no
+
+		//// Can we store char value  'A'  into boolean var a 
+
+		//	Error :  bolean data type , we can store only true / false values  but not character value
+
+		//// Can we store String value  "Rama" into boolean var a   
+
+		//		  Error :  boleean data type , we can store only true / false values  but not String 
+			
+
+	}
+
+}
+
+
+********************************************************************************************************
+
+********************************************************************************************************
+
+String  :
+---------
+     is collection of characters (or) group of chars's
+    -  must be enclosed  dbl quotes 
+
+ex:    "rama" ,  "Sita" ,  "abc123",  "abc123(.*"
+
+Declare String variable :
+-------------------------
+
+package DataTypes;
+
+public class StringBasics {
+
+	public static void main(String[] args) {
+		// Declare String  var and store "rama"  
+//		delcare int var a -->  
+
+
+		// s is var, which is of type String 
+		// so in String var,we can store String value "Ram", "Sita123", "Ram.@gmail.com"
+		// We must write double quotes to store string value 
+		
+		// store "rama" into s variable
+
+		
+		// display string s var
+
+		//               rama
+
+		
+	}
+
+}
+
+Revision :
+---------
+//  byte, short,int, long --> to store integer values 10,20,-10 
+		// float, double  -->  decimal no 1.34f,  1.45d
+		// char -->    'A'
+		// boolean  -->  true / false
+		// String  --> "ram"
+
+-----------------------------
+Concatenation Operator:
+---------------------
+
+package DataTypes;
+
+public class ConcatenationOpertaor {
+
+	public static void main(String[] args) {
+		// +  is addition operator  or concatenation 
+		//		  10  +  20 = 30
+
+		// declare var i.e c  and perform addition of 10 and 20
+		
+
+		//     30
+		// c  = 30 
+		//	c  =   right side expression is evaluated / calculated  and result will be stored in left side var
+		//  i.e C  so C contains  30 val.
+		// display var c
+
+		//                  30
+
+		//  +  concatenation Operator:
+		//  performs concatenation (or) joining values
+
+		//  "ram" + 20  --> 
+
+		//   10 + "sita"  --> 
+
+		//   "rama" +  "sita" --> 
+
+		//		Note:  if any one value is String, it performs concatenation or joining values
+
+		System.out.println("ram"+20);// --> 
+		System.out.println(10+"sita");// -->
+		System.out.println("rama" + "sita");// --> 
+
+		System.out.println("rama" +  "sita" +  "lakshman");//-->
+
+		System.out.println(1 +3);//-->  
+		System.out.println("1" + 3);  // --> 
+		System.out.println(1+ "3");//
+		System.out.println("1"+ "3");// 
+		
+		System.out.println(1 + "Sita");// 
+		System.out.println(1 + "Sita"+ 2);// 
+
+		// Declare var  and store Rama value in the same line 
+		
+	// possible / valid stmt
+		
+		System.out.println("s");//  s  --  here "s" -s string 
+		System.out.println(s);// Rama
+		// here s is var 
+
+		System.out.println("String s value is =" + s);
+		//                  "String s value is = +  "Rama"  
+		// 		     String s value is =Rama	
+
+//		FAQ : Written exam   10 + 20 + "Ram" -->
+		System.out.println( 10  + 20 + "Ram");  // 30Ram  but not 1020Ram
+		//                   
+		//                   
+		
+//		FAQ : Written exam   "Ram" + 10 +20 --> 
+		System.out.println( "Ram" + 10 +20);// Ram1020  but not Ram30
+		//                   
+		//                     
+
+	
+//		System.out.println("Rama" -10);// invalid stmt
+		//The operator - is undefined for the argument type(s) String, int
+
+	}
+
+}
+
+
+-------------------------------
+•	Declare  Multiple Variables and assign values:
+-----------------------------------------------
+
+Single var :
+------------
+datatype varName;
+
+// Assign value to var 
+
+varName=  val/var/ Expression;
+
+declare var i.e a of type int and store some value  20
+
+--------------------
+declare variables a,b,c of  type = int in diff lines  and store 10,20,30
+
+
+
+
+Syntax :
+--------
+datatype VarName1 , VarName2, VarName3.... etc ;
+
+//  Declare 3 variables a, b,c  of type int 
+
+	 // in single line 
+
+// Declare 2 float variables   in single line
+
+
+
+
+//HW  Declare 3 double variables    in single line
+
+//HW  declare 2 char variables  in single line
+
+//HW  declare 2 boolean variables  in single line
+
+//HW  Declare 2 String variables  in single line?
+
+
+Declaring and assigning values in the single line:
+-------------------------------------------------
+
+datatype var1 = val1, var2 = val2, var3 = val3;
+
+
+---------------
+package DataTypes;
+
+public class MultipleVarDeclaration {
+
+	public static void main(String[] args) 
+	{
+		// Declare variables a,b,c in single line  and store multiple values in diff lines
+
+		
+		// store 10 into a
+
+		// print a
+
+
+		//store 20 into b
+
+
+		//store 30 into c
+
+
+		//a= 11, b=22,c=33;// invalid stmt - dont write
+
+		//				a, b ,c = 10;// invalid 
+
+
+		// Declare variables i.e  a1,b1,c1  and assigning 1,2,3 values in the same line 
+			
+			// Valid stmt
+
+		// Display a1
+
+		//                   1
+		// Display b1
+
+		//                   2
+		// Display c1
+
+		//                  3
+		// Can we declare one int , one float var  in single line
+
+
+// invalid  - diff data types declaration in single line -is not possible
+		
+		// declaring single var a2 and  and assign the 20 value in the same line
+
+
+		//int x,y,z = 10,20,30;// invalid stmt 
+		
+
+	}
+
+}
+
+
+// -------------------
+Note:
+
+package DataTypes;
+
+public class MultipleVarDeclaration {
+
+	public static void main(String[] args) {
+		
+	// local var :  the variables , which are declared inside method
+		 all local variables must be initialised with some value else it throws error
+		
+		
+		int a3;//  //  all local variables must be initilased with some value else it throws error
+		// display a3 
+
+// The local variable a3 may not have been initialized
+		
+	}
+
+}
+
+------------------------
+Assigning the same value to Multiple variable in the same Line:
+-------------------------------------------------
+   syntax:
+  var1 = var2 =  var3 = value;
+
+
+package DataTypes;
+
+public class MultipleVarDeclaration2 {
+
+	public static void main(String[] args) {
+		
+		int a, b ,c; // local var :  the variables , which are declared inside method
+		a= 10;  //  all local variables must be initilased with some value else it throws error
+		b=20;
+		c=30;
+		
+		
+//		a, b ,c = 10;// invalid 
+		   a = b = c = 20;
+		 //          
+		   //   
+		   //      
+		   //  
+		   //   
+
+		// display a,,b,c 
+		
+	
+		
+	}
+
+}
+
+
+
+**********************************
+
+**********************************
+
+Rules to Declare variable name:
+-------------------------------
+package DataTypes;
+
+public class RuleToDeclareVarName {
+
+	public static void main(String[] args) {
+
+		//  while writing any var name, we have to follow some rules
+		//
+		//			A variable name must start with a letter or an underscore character (_)
+		//			A variable name cannot start with a digit
+		//			A variable name can only contain alpha-numeric characters and underscores (a-z, A-Z, 0-9, and _ )
+		//			Variable names are case-sensitive (age, Age and AGE are three different variables)
+		//			There is no limit on the length of the variable name
+		//			A variable name cannot contain spaces
+		//			The variable name cannot be any Go keywords
+
+		//		A variable name must start with a letter or an underscore character (_)
+//ex:valid
+
+		
+
+//ex invalid 
+		//		int 1ename;// invalid var name should not start with digit 
+		//		int 25;//  var name must start with alphabet or Underscore
+
+		//		A variable name can only contain alpha-numeric characters and underscores (a-z, A-Z, 0-9, and _ )
+		int ename123_City;
+
+		// special char's (  . *  @ are not allowed except _
+		                  // special char i.e  '(' is not allowed in var anme 
+					// . is special char  -  not allowed in var name
+
+				 // _  is special char -- 
+
+		//  Except  _  underscore - it wont allow any other special charaters
+
+		 		// invalid # is special char
+
+
+		//		Variable names are case-sensitive (age, Age and AGE are three different variables)
+
+		
+
+		// Display age, Age,AGE
+		
+
+		
+
+//		There is no limit on the length of the variable name
+		// 256 max length of var name 
+		
+
+		// Note :  always try to give very short name and meaningful name
+
+		//    A variable name cannot contain spaces
+
+
+				// Var name must not allow any space 
+				//  Var name must not allow any space
+
+
+		//    The variable name cannot be any Java keywords
+		//      ex: int float char, boolean-- if 
+
+		 // char is predefined keyword in java lang
+
+			// if is predefiend wor or k/w in java lang
+		// so we should not use any k/w for var name
+
+		//    int boolean;// invalid
+		//    boolean int;// invalid  
+		class String ;   //   dont use String as var
+
+
+//  any pefdefined k/w , we should not use for class name
+		// above rules are applicable for class name also
+//			class if
+//		{
+//			
+//		}
+
+//		ex: class int
+//		{
+//			
+//		}
+		
+		//  duplciate var names are not allowed in java
+//		int empno;//Eror  Duplicate local variable empno
+		// empno already declared in previous lines some where
+		
+		String empname;
+//		String empname;// Duplicate local variable empname
+
+
+	}
+
+}
+
+
+
+ex:  find out which var name is valid /invalid?
+
+  variable name      valid/invalid
+------------------------------------
+  ename    -->   var name
+  123Empno -->    var name   (alph + _)
+  _empno   --> 	  var name
+  emp_city --> var name
+  emp123   --> var name
+  emp.no   --> var name as it does not allow special char's except _
+  (empname -->  as '('  is special char
+   int     --> var name  as int is predefined word/ key word 
+                  any k/w in java lang ,we should not use for var name .
+
+
+-------------------------------------------------------
+			Operators:
+-------------------------------------------------------
+
+1. Arithmetic operators:  + ,  - ,*, / , %
+
+2.Relation operators /Comparison operators
+
+3.Compound operators
+
+4.Logical operators -  and -&&, OR- ||, not !  (not missed)
+
+5.Increment operators , ++pre, Post ++
+
+6.Decrement operators  --Pre, post--
+
+-----------------------
+1.Arithmetic operators:
+-----------------------
+   + -  *  / % 
+   used perfom arithematic opertions  like addition, subtsraction , Multiplication, division 
++
+- 
+*
+/  -  Quotient val
+%  -  Remainder operator 
+
+   2 + 3
+  3 - 2
+  3 * 2
+  3 / 2  = Division operator - gives Quotient val
+  3 % 2 =  Remainder opertator --gives  Remainder val
+  
+package Operators;
+
+//		Arithematic :  + - * / %
+		//		    2 nos
+		//Declare 2 variables a,b and store 3,2 values
+		
+
+		// Declare add var
+		
+
+//		perform addition of a and b
+
+		//	 =   
+		//   =      rt side exp is evaluated  and result will be stored in left side var i.e add
+		//   so add contains 5 val
+		// display result
+
+		//             
+
+		// Declare sub var  and perform subtsraction
+		
+		//    
+		//   sub =   
+		
+		// Display sub o/p
+
+		//                    
+		
+//		HW   Perform Multiplication Operation of 2 no's?
+		
+		
+		
+//		/  -  Division operator - Gives Quotient value
+
+
+		int div =  a/b;
+		//             // Quo = 1	
+		//   
+		// display division
+		
+		//                  "div=" + 1
+		//                     div=1 
+
+//		 3 /2 -  Quotient val
+
+//		   2) 3 (   -(Quotient val)
+//		      2		   
+//		---------------
+//		         (Remainder) 
+
+		  
+//		% - Remainder operator
+		int rem =  a % b;
+		// rem =    ;
+		//   rem=    
+
+		// rem val=1
+		
+//		  5/ 2  =     quotient val
+//		 5 % 2  =       Remainder val
+
+//		   2 ) 5 (  Quotient val)
+//		       4
+//		 ------------------------
+//			  (remainder val)
+			   
+		System.out.println(5/2);// 
+		System.out.println(5%2);// 
+		
+		System.out.println(9/2);//    -quotient
+		System.out.println(9%2);//    rem val
+		
+		
+		
+	}
+
+}
+
+---------------------------------
+
+
+// HW  Perform add, sub, mul, div (quo, Remainder) of 2 nos  6 ,2 and display the o/p?	   
+
+// HW  Perform add, sub, mul, div (quo, Remainder) of 2 nos 7,2	 and display the o/p?	
+
+
+
+------------------------------
+IP FAQ Swap 2 variables  using 3rd variable  ?
+//       a= 10  b=20
+// o/p:  a=20 , b=10
+
+package StringBasics;
+
+public class Swap2Numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 10;
+		int b = 20;
+		
+		System.out.println("Before swapping a="+ a + " b="+b);
+		
+		//    tmp=  
+		
+
+		//  a=
+		
+
+		//  b= 
+		
+		System.out.println("After swapping a="+ a + " b="+b);
+		
+
+	}
+
+}
+
+*****************************************************************
+
+*****************************************************************
+
+IP: FAQ Swap 2 variables  without 3rd variable ?
+
+package StringBasics;
+
+public class Swap2NumberswihOutUsing3rdVariable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a = 3;
+		int b = 2;
+		
+		System.out.println("Before swapping a="+ a + " b="+b);//   3     ,   2
+		
+		
+		 //   
+		 //   
+		 
+		 //   
+		 //   b=  
+		 
+
+			 //     a =  -a + b; or  a = b-a;
+		 //    
+		 //     
+		 //    a=  
+		 	
+		
+		System.out.println("After swapping a="+ a + " b="+b);
+		//                                   
+		
+
+	}
+
+}
+		
+------------------------------------------------
+o	Relation operators /Comparison operators:
+------------------------------------------------
+can be used to compare 2 nos  and gives the o/p in the form  of true/ false  
+
+<
+>
+<=
+>=
+==
+!= not equal
+
+check these stmts are  true / false:
+--------------------------------------
+     6 == 6 -->    gives o./p  :  true 
+     6 == 3  --> 
+
+    6 < 5   = 
+    3 < 5   = 
+
+   6 > 5  =  
+   3 > 5  =   
+
+   6 <= 5  -->  
+   6 <= 6  -->  
+   3 <= 6  --> 
+
+    6 >= 5  --> 
+    6 >= 6  --> 
+    3 >= 6  --> 
+
+   
+
+   6 != 3 --> 
+   6 != 6 --> 
+
+package Operators;
+
+public class RelationalOperators {
+
+	public static void main(String[] args) {
+		System.out.println(6<5);//  
+		System.out.println(3<5);// 
+
+		System.out.println(6>5);//  
+		System.out.println(3>5);//  
+
+		System.out.println(6<=5);// 
+		System.out.println(6<=6);// 
+		System.out.println(3<= 6);//  
+
+		System.out.println(6>=5);//  
+		System.out.println(6>=6);//  
+		System.out.println(3>=6);//   
+
+		//				      6 == 6   gives o./p  :  --> 
+		//				     6 == 3  -->
+		// HW   do above work  
+
+		//
+		//				   6 != 3 - --> 
+		//				   6 != 6 - -->
+		// HW   do above work
+
+		// declare a,b variables of int and store 6,5
+		
+
+		//  compare a<b and store into int result variable	
+//		int res =	a < b;
+		//          6 < 5
+		//           false
+		//		 int res =  a < b;// Type mismatch: cannot convert from boolean to int
+		// if we want to store boolean values true/ false values , we have to use 'boolean ' data type left side
+		// We cannot store boolean value true/ false values in int var i.e res
+
+
+		//					6 < 5 ;
+		//		      res =      = is  a boolean val
+
+		// display result
+
+//							res=false
+
+	}
+
+}
+
+
+HW :  write the o/.p for below stmts?
+
+  2 ==	2 
+  2 == 3
+
+ 3 > 2
+ 2 > 3
+
+ 6 < 3
+ 6 < 8
+
+ 3 >= 2
+ 3 >= 3
+3 >= 10
+ 
+ 3 <= 2
+ 3<=3
+ 3<=10
+
+3 !=3
+3! =10
+
+Note :
+-----
+3 > 3 --> False
+3 < 3 --> False
+	System.out.println(3>3);// false
+	System.out.println(3<3);// false
+
+--------------------------
+o	Compound operators:
+--------------------------
+  mixed operators =  
+
++=
+-=
+*=
+/=
+%=
+
+package Operators;
+
+public class CompoundOperators {
+
+	public static void main(String[] args) {
+		int a = 2;
+		 a += 5;			 
+		 //  a  = 
+		 //        
+		 //        
+		 //  a = 
+		 
+		 System.out.println("a="+ a);// 7  but not 2
+		 
+		 a -= 5;
+		 //   a=  
+		 //      
+		 //     	 dont substitute  a= 2   , substitute a=7
+		  //       
+		 //    a = 
+		 System.out.println("a="+ a);//2
+		 
+		 a *= 5;
+		 //  a =    
+		 //       
+		 //      
+		 // a =
+		 System.out.println("a="+ a);// 10
+		 
+		  a/=5;
+		  //   a =  
+		  //         == Quotient
+		  //        
+		  // a =
+		  System.out.println("a="+ a);// 2
+		  
+		  a%=5;
+		  // a = 
+		  //      
+		  //        2  rem val
+//		          5) 2  ( 0    -      not 0.4
+//		             0
+//		            ---------
+////		        	 2 -- rem	  
+		        		 
+		  System.out.println("a="+ a);// 2
+		  
+		  // we can store + ve no, and -ve no's in var  
+		// store -3 val into var a
+
+		  //   assign +3 val into var i.e a
+		 
+		  System.out.println("a="+a);//a=3
+
+
+	}
+
+}
+
+***********************************
+
+***********************************
+We can write below stmts like 
+
+        a =3;
+        b =2;
+
+        a+=b;
+//       
+//          
+//        
+
+	a-=b;
+//         
+//           
+//          
+
+HW 
+	a*=b;
+	a/=b;
+	a%=b;
+
+2) 5 (  -Quotient val
+   
+-------------
+       -rem val
+
+----------------
+    
+  
+			  //  Var =   val/ var/ Exp;
+//			     a = 10;
+//			     a =   b;
+//			      a =  a+ 3;
+
+// Left side We must write var name only   but not any number,  expression
+			  
+//			   12 = 3 *2;//  invalid 
+//			   3*2 = a;  // invalid 
+
+
+********************************************************************************************************
+	
+********************************************************************************************************
+  
+o	Logical operators -  and -&&, OR- ||, not !  
+--------------------------------------------------
+
+  &&  - Logical and operator :
+   -  can be used to perform Mulitplication (*) operation on Boolean values
+
+  0 - false
+  1 - true  (or any no  235)
+
+ a  b   a && b  (Multiplication)
+-------------------------------
+0   0                 
+0   1    
+1   0    
+1   1    
+--------------------
+ a         b     a && b  (Multiplication)
+---------------------------------------
+false   false     
+false   true      
+true    false     
+true    true    
+
+// if any one i/p is false-  && gives o/p - false
+//  if both i.p's are true - &&          -  true  
+
+package OperatorsBasics;
+
+public class LogicalAndOperator {
+
+	public static void main(String[] args) {
+		
+	// Declare boolean var a, b  and store false , false
+		
+		
+// Declare boolean var  result  and perform logical and operation
+			
+			 // *  
+		//                 
+		//                 
+		// if any one i/p is false-  && gives o/p - false
+		//  if both i.p's are true - &&          -  true
+		
+		// Display Result a &&b
+				// 
+		// Store false, true values into a, b  
+
+		// Declare boolean var result and and performs logical and operation
+
+		//  no 2 var's can have same name.
+		// Var name must be unique
+		// duplicate var names are not allowed in java lang.
+		
+
+		 // 
+		// Display var result and and performs logical and operation       
+
+		  
+		// Store true, false values into a, b  
+
+// 		// Display Result a &&b
+
+		 //        
+		 System.out.println("Result a &&b ="+  result); // false
+		 
+		 		// Store true, true values into a, b  
+		
+// Display Result a &&b
+
+		 //         ==  
+		 System.out.println("Result a &&b ="+  result);// true 	
+		 
+//		 System.out.println("&& on numbers" + (1&&3));
+		 // the operator && is undefined for the argument type(s) int, int
+		 // Note:  we should not use any numbers for Logical and operator 
+		 // always we must give boolean val / boolean var 
+		 
+			
+
+	}
+
+}
+
+-------------------------
+
+ ||  -  Logical OR operator :
+-------------------------
+ Pipe symbol
+- can be used to perform addition (+) operation on boolean values
+
+
+ a  b   a || b  (Addition  +)
+------------------
+0   0                  
+0   1             
+1   0    
+1   1     
+--------------------
+ a         b     a || b  (addition+)
+--------------------------------
+false   false     
+false   true      
+true    false     
+true    true      
+---------------------------
+if any one i/p is true - Logical OR gives o/p: true
+if both i/p's are false -                        false
+
+-----------------------
+
+package OperatorsBasics;
+
+public class LogicalOROperator {
+
+	public static void main(String[] args) {
+		// Declare boolean variables a,b and store false, false
+		
+		// declare boolean var result and performs logical OR operation
+		
+		 //  addition
+		//  
+		// Display Result  
+          
+		// 
+		
+	// store false, true into a,b
+		
+		
+//  perform logical OR operation  and store the o/p into  result  var
+		
+
+		 //
+// Display Result       
+ 
+		 
+// store true,false into a,b
+		
+	
+//  perform logical OR operation  and store the o/p into  result  var
+
+		 // 
+// Display Result         
+
+		 
+	// store true,true into a,b	 
+	
+
+//  perform logical OR operation  and store the o/p into  result  var	
+		
+		 //  
+// Display Result     
+	
+		 
+// Can we use || for numbers?
+		// System.out.println(" || on numbers" + (1||3));
+		 // the operator || is undefined for the argument type(s) int, int
+		 // Note:  we should not use any numbers for Logical OR operator 
+		 // always we must give boolean val / boolean var   with Logical OR operator		 
+			
+
+	}
+
+}
+
+
+logical Not (!):
+----------------
+ performs nagation operation
+
+  !true  = false
+  !false = true
+
+package OperatorsBasics;
+
+public class LogicalNotOperator {
+
+	public static void main(String[] args) {
+
+		boolean a = true;
+		boolean res =  !a;
+		///            
+
+		System.out.println("res ="+ res); // 
+
+		a = false;
+		res =  !a;
+		//      
+		System.out.println("res ="+ res);//
+	}
+
+}
+
+
+AND, OR , Not
+&&    ||     !
+*     +       Negation 
+
+Note:  && has high priority than ||
+
+Write o/p for below programs?
+
+Ex1:
+boolean result = true || false && true;
+		//                          
+		//           
+		System.out.println(result);
+
+Ex2:
+	boolean result = (5 > 3) && (2 < 4);
+		//                  
+		//                      
+	System.out.println(result);
+Ex3:
+int x = 5;
+	boolean result = (x >= 5) || (x < 2);
+	//                  
+	//                  
+	System.out.println(result);
+
+Ex4:
+	boolean result = (7 < 5) && (8 > 3) || (9 != 9);
+//	//                 
+//	//                    
+//	//
+	System.out.println(result);
+	
+Ex5:
+	int x = 4;
+	int y = 6;
+	boolean result = (x == 4) && (y != 6) || (x < y);
+//	//                 
+//	//                  
+//	//                    
+	System.out.println(result);
+
+HW Write the o/p  for below
+
+Ex6:
+	int a = 8;
+	int b = 3;
+	boolean result = (a % 2 == 0) || (b % 2 != 0);
+	//              
+	//                 
+	//                 
+	System.out.println(result);
+Ex7:
+	boolean result = (4 >= 4) && (2 != 2) || (7 <= 7);
+	//                 
+	//                  
+	//                      
+	System.out.println(result);
+Ex8:
+	boolean a = true;
+	boolean b = false;
+	boolean result = (a && b) || (!b);
+	// 			
+	//                  
+	System.out.println(result);
+Ex9:
+	int x = 10;
+	boolean result = (x < 5) && (x == 10) || (x > 5);
+	//                
+	//                    
+	//                    
+	System.out.println(result);
+
+
+-----------------------------
+Increment operators :
+-------------------------------
+   can be used to increment val of var by 1
+
+Pre Increment Operator: 
+       ++ var; 
+
+Post Increment Operator:
+    var ++;
+
+-------------------
+package OperatorsBasics;
+
+public class IncrementOperator1 {
+
+	public static void main(String[] args) {
+		
+		int a = 2;
+		 ++ a;// pre  Increment
+		 //  
+		 System.out.println("a="+ a);// 
+		 
+		  a= 3;
+		 a ++;//   
+		 System.out.println("a="+ a);// 
+		 
+
+	}
+
+}
+---------------------
+package OperatorsBasics;
+
+public class IncrementOperator2 {
+
+	public static void main(String[] args) {
+		
+		int a = 2;		
+		 System.out.println(++a);// 
+		 //             1st Increment val  +   displays the var val 
+		 //             a= 
+		 
+		 a = 4; 
+		 System.out.println(a++);//  
+		 //       displays var val  +  increment val later
+		 //          a =     
+		 
+		  a= 5;
+		  System.out.println(++a);//   
+		  //         
+		  
+		  a = 4; 
+		System.out.println(++a);//  
+		//   
+		  	 
+	}
+
+}
+
+--------------------------------------------
+o	Decrement operators  --Pre, post--:
+--------------------------------------------
+ can be used to decrease the val by 1
+
+Pre Decrement Operators:
+----------------------
+   -- var;  PreDecrement
+
+
+Post decrement :
+   var --;
+
+
+package OperatorsBasics;
+
+public class DecrementOperator {
+
+	public static void main(String[] args) {
+		
+		int a = 3;
+		
+		 --a;
+		 //  
+		 System.out.println("a="+a);// 
+		 
+		  a=  4;
+		 a --;//  
+		 System.out.println("a="+a);// 		 
+
+	}
+
+}
+
+------------------
+
+package OperatorsBasics;
+
+public class DecementOperator2 {
+
+	public static void main(String[] args) {
+
+		int a = 3;		
+
+		System.out.println(--a);//	
+		//   1st perform decrement  +   display var
+		//    
+		
+		a= 5;
+		System.out.println(--a);// 
+		//   
+		
+		 a=  6;
+		 System.out.println(a--);// 
+		 //    display var  , +    perform Decrement 
+		 //    
+		 
+		 System.out.println("a="+a);// 
+		 
+		  a =7;
+		 System.out.println(a--);// 7
+		 //     
+
+
+	}
+
+}
+--------------------
+package OperatorsBasics;
+
+public class USTWrittemExam {
+
+	public static void main(String[] args) {
+		
+		int x =5;
+		System.out.println(x++);// 
+		System.out.println(++x);// 
+		//   
+		System.out.println(x--);//
+		//
+		System.out.println(--x);  // 
+		//           
+
+	}
+
+}
+
+********************************************************************************************************
+		
+********************************************************************************************************
+
+
+Flow Control Statements:
+-------------------------
+ can be used  to control the flow of  Program execution
+
+
+ a = 20;   // Assignment stmt
+
+1.Conditional stmts:
+--------------------
+
+ex:  
+
+if()   cond stmt
+
+Switch - condi stmt
+
+2. Loop stmts:
+------------
+  For
+ while loop
+do while loop
+
+
+1.Conditional stmts:
+----------------------
+if()   cond stmt
+
+syntax:
+   if (cond)     note :  there is no ;  at the end of if stmt
+  {                // if block /  beginning of if block
+	stmt2;  //   gets executed if cond is true only
+        stm3;
+   }  // end of if block
+
+  stmt4;
+
+ if cond is true , it executes stmt2, stm3 
+            false , it wont enter enter if block, will come out of if block. executes all stmts after if block  i.e 
+ stmt4;
+
+
+block : collection stmts which are enclosed in curly braces
+      
+   ex:
+  {                // if block /  beginning of 'if' block
+	stmt2;
+        stm3;
+   }  // end of if block
+
+{
+    
+}
+
+'if' is pre defined  word  (or) keyword in java
+- can be used to write if cond stmt
+
+there is no ;  at the end of ‘if’ stmt.
+
+Ex1: // Example 1: Checking if a number is greater than 10
+
+package IFCondStmts;
+
+public class ifbasics1 {
+
+	public static void main(String[] args) {
+		
+		
+
+
+	}
+
+}
+
+
+o/p:
+----
+
+Ex:
+Ex1: // Example 1: Checking if a number is Less than 10
+
+
+
+ex2: Write o/p for below program?
+--------------------------------
+package FlowControlStatement;
+
+public class IfBasics1 {
+	
+public static void main(String[] args) {
+		
+		System.out.println("stmt-1");
+		
+		if(false)
+		{
+			System.out.println("stmt-2");
+			System.out.println("stmt-3");			
+		}
+		
+		System.out.println("stmt-4");
+		
+
+	}
+
+}
+
+o/p:
+-------
+stmt-1
+stmt-4
+
+-----------------------
+ex2:  if else  stmt 
+
+stmt1;
+
+if(cond)
+{
+   stmt -2; //  gets executed if cond is true only
+   stmt -3;
+}
+else   //   else - k/w in java - can be used to define else block
+{
+  stmt -4;
+  stmt -5;
+}  // end of if block
+
+stmt6;// always gets executed if cond - true/ false 
+
+
+
+ex1: Write o/p for below program?
+package FlowControlStatement;
+
+public class IfBasics2 {
+
+	public static void main(String[] args) {
+
+
+		System.out.println("stmt-1");
+
+		if(true)
+		{
+			System.out.println("stmt-2");// true
+			System.out.println("stmt-3");			
+		}
+		else  //  if con- is false - else block gets executed
+		{
+			System.out.println("stmt-4");
+			System.out.println("stmt-5");	
+		}
+
+		System.out.println("stmt-6");
+
+
+	}
+
+}
+
+
+
+o/p:
+--------
+stmt-1
+stmt-2
+stmt-3
+stmt-6
+
+ex2:  Write o/p for below program?
+
+package FlowControlStatement;
+
+public class IfBasics3 {
+
+	public static void main(String[] args) {
+
+System.out.println("stmt-1");
+		
+		if(false)
+		{
+			System.out.println("stmt-2");// true
+			System.out.println("stmt-3");			
+		}
+		else  //  if con- is false - else block gets executed
+		{
+			System.out.println("stmt-4");
+			System.out.println("stmt-5");	
+		}
+		
+		System.out.println("stmt-6");
+
+
+	}
+
+}
+
+
+o/p:
+-------
+stmt-1
+stmt-4
+stmt-5
+stmt-6
+
+
+if ()
+
+if else
+
+
+HW ex: write a program to check the given Age is greater than 18.
+If age is > 18, display msg “age is >18”
+Else display msg “age is not >18 ”
+
+
+
+ex:  program to check given number is even number.
+If it is even no, display “Given no is even no”
+Else display msg “Given no is not even”
+
+package FlowControlStatement;
+
+public class EvenNo {
+
+	public static void main(String[] args) {
+		// Even no = check no is divisible by 2 =  if we get remainder ==0 - even 
+//					else  not even no
+
+
+			 System.out.println("It is Even no");
+		
+			 System.out.println("It is  not  Even no");
+	
+	}
+}
+
+
+
+-ve :
+
+ex2:
+
+package FlowControlStatement;
+
+public class EvenNoNegative {
+
+	public static void main(String[] args) {
+
+		// Even no 
+//		
+		 int num = 3;
+		 
+		 if(num%2 == 0)
+		 {// 3%2
+		 //   1   == 0 false
+			 System.out.println("It is Even no");
+		 }
+		 else
+		 {
+			 System.out.println("It is  not  Even no");
+		 }
+
+	}
+}
+
+
+
+
+--------------------------------
+
+WAP to check given no is odd no or not
+
+ if no is odd- display msg "It is odd no"
+else display msg "It is not odd no"
+
+package IFCondStmts;
+
+public class OddNo {
+
+	public static void main(String[] args) {
+		// Odd no 
+//		
+
+		 
+		
+			 System.out.println("It is Odd no");// 
+		
+			 System.out.println("It is  not  Oddd no");
+		 
+	}
+
+}
+
+o/p:
+It is Odd no
+
+
+---------------------
+-ve :
+
+package FlowControlStatement;
+
+public class OddNoNegative {
+
+	public static void main(String[] args) {
+		// Odd no 
+//		
+
+		 
+		
+			 System.out.println("It is Odd no");// 
+		
+			 System.out.println("It is  not  Oddd no");
+
+	}
+
+}
+
+
+o/p:
+----
+It is  not  Oddd no
+
+package FlowControlStatement;
+
+public class OddNo2 {
+
+	public static void main(String[] args) {
+		// Odd no 
+//		
+		 int num = 3;
+		 
+		//  if remainder  ==1 
+		
+			 System.out.println(num +" is Odd no");
+		
+			 System.out.println(num +" is not Odd no");
+
+	}
+
+}
+
+o/p:
+
+
+
+********************************************************************************************************
+			
+********************************************************************************************************
+  
+HW WAP if marks >=35 -Display msg "student passed"
+   else -->  "Student failed"
+
+
+HW WAP  to check given salary is > =50000  -- display msg "Salary is >=50000"
+ else display msg "Salary is not > = 50,000
+
+HW WAP to check Esal <= 50,000
+package IFCondStmts;
+
+
+HW WAP to check  esal = 10,000 , display msg "esal=10000"
+else display msg "esal is not equal 10000"
+
+
+WAP to  increment salary by 10000  for eid =10;
+
+
+package FlowControlStatement;
+
+public class IncrementSal {
+
+	public static void main(String[] args) {
+		// //		WAP  increment salary by 10000  for eid =10;
+		
+//		int eid = 10;
+//		int eid = 5;
+//		int esal  =  80000;
+		
+		// check eid == 10
+		
+			// 
+			//  
+		 // increment salary by 10000 
+			System.out.println("Increment for eid =10 only");
+			esal = esal  +  10000;
+			//    
+			//     
+			// esal  =
+//			System.out.println("after increment , esal ="+ esal);
+		
+		
+	
+			System.out.println("There is no increment ");
+		
+		
+		
+	}
+
+}
+
+
+
+HW WAP to check esal > 80000 , decrease sal by by 5000
+
+------------------------
+
+//WAP to check eid =100  and esal =50000?
+package FlowControlStatement;
+
+public class IfWithAnd {
+
+	public static void main(String[] args) {
+//		WAP to check eid =100  and esal =50000?
+		
+		// Declare eid  and store 100
+
+		
+		// -ve
+//		int eid  = 70;
+//		int esal = 90000;
+		
+		// check eid =100  and esal =50000?
+		
+		//  ==   &&  == 50000
+			//   && 
+			//   
+			System.out.println(" eid =100  and esal =50000");
+	
+			System.out.println("not  eid =100  and esal =50000?");
+		
+
+	}
+
+}
+
+
+
+//HW WAP to check eid =100  or  esal =50 000, display proper msg eid = 100 or salary is 50000
+else display msg "either eid is not = 100 or salary is not = 50000"
+//note : use logical OR symbol
+
+
+
+HW WAP  to check no is Divisible By 3
+
+HW  WAP to  check given no divisible by 4
+
+WAP to check given no  is PositiveNo or not
+
+ 10,20 --  = + Ve numbers  
+     a  =  10;
+
+-1,-2,-3 --  are not Positive numbers --  -VE numbers
+
+package FlowControlStatement;
+
+public class PositiveNo {
+
+	public static void main(String[] args) {
+		//WAP to check given no  is PositiveNo or not
+		
+		//  num > 0   --  positive no else it is not positive no
+	
+		
+		
+		
+			System.out.println("It is + ve no ");
+	
+			System.out.println("it is not positive no");
+		
+
+	}
+
+}
+
+
+---------------------------
+3. if else if   else if  else if () -Multiple else if cond
+-----------------
+Syntax:
+
+stmt-1;
+
+if(cond)
+{
+stmts-2;
+stmt-3;
+
+}
+
+else if(cond-2)
+{
+ stmt-4;
+ stmt-5;
+}
+else if(cond-3)
+{
+ stmt-6;
+ stmt-7;
+}
+
+stmt-8;
+
+ex: o/p for below program?
+-------------------------
+package FlowControlStatement;
+
+public class MultipleIfElseBasics1 {
+
+	public static void main(String[] args) {
+		System.out.println("stmt-1");
+
+		if(true)
+		{
+			System.out.println("stmt-2");//  gtes executed if cond - true
+			System.out.println("stmt-3");			
+		}
+		else if(true)  //  if con- is false - else block gets executed
+		{
+			System.out.println("stmt-4");
+			System.out.println("stmt-5");	
+		}
+		else if(true)
+		{
+			System.out.println("stmt-6");
+			System.out.println("stmt-7");	
+		}
+
+		System.out.println("stmt-8");
+	}
+
+}
+
+
+o/p:
+-----
+stmt-1
+stmt-2
+stmt-3
+stmt-8
+
+---------------------
+o/p for below program?
+
+package FlowControlStatement;
+
+public class MultipleIfElseBasics2 {
+
+	public static void main(String[] args) {
+
+		System.out.println("stmt-1");
+
+		if(false)
+		{
+			System.out.println("stmt-2");//  gtes executed if cond - true
+			System.out.println("stmt-3");			
+		}
+		else if(false)  //  if con- is false - else block gets executed
+		{
+			System.out.println("stmt-4");
+			System.out.println("stmt-5");	
+		}
+		else if(false)
+		{
+			System.out.println("stmt-6");
+			System.out.println("stmt-7");	
+		}
+
+		System.out.println("stmt-8");
+
+
+	}
+
+}
+
+o/p:
+---------------
+stmt-1
+stmt-8
+
+if all conditions are false --  cond-1, cond-3,cond-3 , it will  go to out of if block  and executes stmts after if block.
+
+WAP
+//  		   marks > 85  and marks<=100 	    -->  1st class
+		//  marks > 60   and marks <=85     -->  2nd class
+		// marks >=35 and marks <=60  	    -->  3rd class
+		//  else  			    -->  Fail
+
+
+package FlowControlStatement;
+
+public class ExamResults {
+
+	public static void main(String[] args) {
+
+//	   marks > 85  and marks<=100 	    -->  1st class
+	//  marks > 60   and marks <=85     -->  2nd class
+	// marks >=35 and marks <=60  	    -->  3rd class
+	//  else  			    -->  Fail
+
+
+	}
+
+}
+
+
+
+------------------------------
+Nested if :
+------------------------------ 
+writing if cond stmt with in another if cond stmt- nested if stmt.
+
+   syntax:
+--------------
+
+ if(cond-1)
+{  // 
+     if(cond-2)
+	{   //  cond -1  is true  and cond-2 is also true
+	
+	}
+
+}
+else
+{
+  if(cond-3)  //  cond-1 is false,  cond-3 is true 
+	{
+
+	}
+}
+
+
+ex: program - to check the age is >=18,  if age >=18, check  weight > 50, display msg "You are eligible to donate blood" else You are not eligible to donate blood
+else display msg "Age must be >18"
+
+-------------------------
+Switch -Conditional stmts
+-------------------------
+
+	if , else, else if ,  nested if 
+
+- switch - is k/w in java lang.
+
+it executes one statement from multiple conditions
+
+- can be used to check which condition (or) case is matched 
+
+syntax:
+----------
+  switch(int val/var  (or) char val /var (or) String val/var  (or) expression) 
+ { // // begining of switch block
+
+	case val1 :
+                     stmt1;
+                     break;
+        case val2:
+		     stmt2;
+                     break;
+
+       case val3:
+		    stmt3;
+                     break;
+
+       default :
+		stmt4;
+
+ } // //  end of swicth block
+
+stmt5;
+
+.............. 
+
+where there are multiple cases / options are available - we will go for Switch statement
+
+-  is same as multple else if() ..
+
+ ex:Write a program to check given  dayNo = 1 --> Sunday
+         				    2 --> Monday
+				            3 --> TuesDay 
+
+package IFCondStmts;
+
+public class SwitchBasics1 {
+
+	public static void main(String[] args) {
+
+ ex:Write a program to check given  dayNo = 1 --> display msg "Sunday"
+         				    2 --> display msg "Monday"
+				            3 --> display msg "TuesDay "
+					  else  -->  display msg "No case is matched"
+		
+		
+		
+		System.out.println("after switch block");
+		
+
+	}
+
+}
+
+
+ex2:  if no case is matched
+----------------------------
+
+package IFCondStmts;
+
+public class SwitchBasics1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//		 dayNo = 1 -- Sunday
+		//		         2  --> Monday
+		//			      3 --> TuesDay 
+		
+		int dayNo = 4;
+		
+		switch(dayNo)
+		{ // beginning of switch block
+		case 1:
+			  System.out.println("Sunday");
+			  break;
+		case 2:
+			 System.out.println("Monday");
+			  break;
+		case 3:
+			 System.out.println("Tuesday");
+			  break;
+//		default:
+//			System.out.println("No case is matched");			
+		} //  end of switch block
+		
+		System.out.println("after switch block");
+		
+
+	}
+
+}
+o/p:
+---
+
+Break:   is predefined word in java lang
+
+syntax: 
+--------
+     break; 
+
+// can be used to come out of switch block../  for loop, while loop... etc 
+
+if there is no break stmt in case 1 : it goes to Case 2  even if it is not matched,  it executes case 2 stmts ,,
+----
+break,default are  optional --
+
+
+default :  gets executed, when none of case is matched 
+
+
+package IFCondStmts;
+
+public class SwitchBasics1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//		 dayNo = 1 -- Sunday
+		//		         2  --> Monday
+		//			      3 --> TuesDay 
+		
+		int dayNo = 1;
+		
+		switch(dayNo)
+		{ // beginning of switch block
+		case 1:
+			  System.out.println("Sunday");
+//			  break;// if we dont write break,
+		case 2:
+			 System.out.println("Monday");
+			  break;
+		case 3:
+			 System.out.println("Tuesday");
+			  break;
+//		default:
+//			System.out.println("No case is matched");			
+		} //  end of swicth block
+		
+		System.out.println("after switch block");
+		
+
+	}
+
+}
+
+o/p:
+----
+Sunday
+Monday
+after swicth block
+------------------
+Note:
+------
+Duplicate case numbers are not allowed in Switch block
+ex:
+		case 1:
+			  System.out.println("Sunday");
+			  break;
+		case 1: // Duplicate case are not allowed 
+			  System.out.println("Sunday");
+			  break;	  
+
+
+
+package IFCondStmts;
+
+public class SwitchBasics1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//		 dayNo = 1 -- Sunday
+		//		         2  --> Monday
+		//			      3 --> TuesDay 
+		
+		int dayNo = 1;
+		
+		switch(dayNo)
+		{ // begining of switch block
+		case 1:
+			  System.out.println("Sunday");
+			  break;
+// Duplicate case are not allowed. if we write duplicate cases
+			  
+			
+		case 2:
+			 System.out.println("Monday");
+			  break;
+		case 3:
+			 System.out.println("Tuesday");
+			  break;
+//		default:
+//			System.out.println("No case is matched");			
+		} //  end of swicth block
+		
+		System.out.println("after swicth block");
+		
+
+	}
+
+}
+
+----------------------------
+        
+********************************************************************************************************
+		
+********************************************************************************************************
+
+  switch(int val/var  (or) char val /var (or) String val/var  (or) expresion) 
+
+ //   We should not use float val/var  or 
+			double val/var or 
+			boolean val/var in Switch Condi  
+
+ex:  switch(2)  --> 
+     switch(int var) --> 
+
+     switch('A')  --> 
+     switch(char var) --> 
+
+     switch("RAM")  --> 
+     switch(String var) --> 
+
+     switch(2.34f)  --> 
+     switch(float var) --> 
+
+     switch(2.34d)  --> 
+     switch(double var) --> 
+
+       switch(true)  --> 
+       switch(false)  --> 
+     switch(boolean var) --> 
+
+ex: passing float, double values in Switch ():
+-----------------------------------------------
+
+package FlowControlStatement;
+
+public class SwitchInvalidPassingFlotDoubleVals {
+
+	public static void main(String[] args) {
+
+	//  check we can pass float val, double val,  in switch()?
+			float f = 1.0f;
+			double d  =  3.4;
+			char ch ='A';
+			
+//			switch(d) // error
+			switch(d) 
+			// Cannot switch on a value of type float. . 
+			//Only convertible int values, strings or enum variables are permitted
+			{
+			case 1.0f:
+				  System.out.println("stmt-1");
+				  break;
+			case 2.0f:
+				 System.out.println("stmt-2");
+				  break;
+				  
+				default: 
+					  System.out.println("default ");	
+			
+			}
+			
+			
+			System.out.println("after switch block");
+			
+
+	}
+
+}
+
+
+ex:  Switch (char val/var)
+--------------------------
+ex: passing char value in Switch ():
+
+
+package FlowControlStatement;
+
+public class SwitchInvalidPassingCharVal {
+
+	public static void main(String[] args) {
+
+		float f = 1.0f;
+		double d  =  3.4;
+		
+		char ch ='B';
+		boolean b = true;
+		
+		String s = "Ram";
+		
+//		switch(d) // erro 
+//		switch(d) 
+//		switch(ch) 
+		//      'B'
+		switch(b) 
+//		switch(s)
+		// Cannot switch on a value of type boolean.  . 
+		//Only convertible int values, strings or enum variables are permitted
+		{
+		case  'A': // not matching
+			  System.out.println("Apple -stmt-1");
+			  break;
+		case  'B': // matching
+			 System.out.println("-Ball -stmt-2");//   yes
+			  break;// can be used to come out of swicth cond
+			  
+			default: 
+				  System.out.println("default ");	
+		
+		} //  end of swicth block
+		
+		
+		System.out.println("after switch block");
+
+	}
+
+}
+
+
+ex: passing boolean values in Switch ()
+-----------------------------------------
+package FlowControlStatement;
+
+public class SwitchInvalidPassingBooleanVal {
+
+	public static void main(String[] args) {
+
+		float f = 1.0f;
+		double d  =  3.4;
+		
+		char ch ='B';
+		boolean b = true;
+		
+		String s = "Ram";
+		
+//		switch(d) // erro 
+//		switch(d) 
+//		switch(ch) 
+		//      'B'
+		switch(b) 
+//		switch(s)
+		// Cannot switch on a value of type boolean.  . 
+		//Only convertible int values, strings or enum variables are permitted
+		{
+		case  'A': // not macthing
+			  System.out.println("Apple -stmt-1");
+			  break;
+		case  'B': // matching
+			 System.out.println("-Ball -stmt-2");//   yes
+			  break;// can be used to come out of swicth cond
+			  
+			default: 
+				  System.out.println("default ");	
+		
+		} //  end of swicth block
+		
+		
+		System.out.println("after switch block");
+			
+
+	}
+
+}
+
+--------------
+Switch (String val/ var):
+HW WAP  "Mon" -->  Monday
+         Tue ---> Tuesday
+
+
+Note:
+-----
+Is is better to write break stmt in side case block. else it executes next case block also even if case val is not matched.
+-----------------------
+Revision:
+-------
+Note :  
+Switch() - accepts int/char/string val/var
+    but not float,double, bolean val/var
+
+- Duplicate case values are not allowed
+    case 1:
+    case 1:
+
+-  break;
+- default : block gets executed ,  if no case val is matched --(or) none of case is matched
+
+---------------------------
+Loop statements:
+---------------------------
+  execute group of stmts repeatedly
+
+//		 System.out.println("stmt-1");
+//		 System.out.println("stmt-2");
+//		 System.out.println("stmt-3");
+
+
+
+
+For Loop
+While Loop
+Do while 
+
+1.for Loop:
+------------
+syntax:
+
+  for(intialisation; condi; increment/Decrement operator)
+{        1            2             4
+
+
+       3
+ 
+}
+
+1. it performs initialisation step-1
+2.it checks condition -in step -2 
+    if cond is true, it goes inside the loop, executes stmts inside loop (step-3)
+    and goes to step-4  performs increment/decrement -- again it goes to step-2
+
+     if cond (step-2) is true,again it goes inside the loop, executes stmts inside loop (step-3)
+    and goes to step-4  performs increment/decrement ---- again it goes to step-2
+
+    if cond (step-2) is true,again it goes inside the loop, executes stmts inside loop (step-3)
+    and goes to step-4  performs increment/decrement ---- again it goes to step-2
+    
+    if cond is false, control comes out of loop and   goes after out of loop, executes smts after loop
+    
+
+
+ex:
+package LoopBasics;
+
+public class ForLoop1 {
+
+	public static void main(String[] args) {
+		
+//		 System.out.println("stmt-1");
+//		 System.out.println("stmt-2");
+//		 System.out.println("stmt-3");
+//		 
+//		 System.out.println("stmt-1");
+//		 System.out.println("stmt-2");
+//		 System.out.println("stmt-3");
+//		 
+//		 System.out.println("stmt-1");
+//		 System.out.println("stmt-2");
+//		 System.out.println("stmt-3");
+		
+		// execute above stmts  for 3 times
+		
+		
+		System.out.println("out of for loop");
+
+
+	}
+
+}
+
+o/p:
+----
+
+
+ex:// display numbers 1 to 2
+
+package LoopBasics;
+
+public class Display1to2 {
+
+	public static void main(String[] args) {
+	
+			
+			System.out.println("out of for loop");
+
+
+	}
+}
+
+
+o/p:
+----
+i=1
+i=2
+i=3
+out of for loop
+-----------------
+
+display numbers   1 to 3? 
+
+
+HW display numbers  1 to 50
+
+
+---------------------
+
+---------------------
+
+Explain  for loop with flow diagram 
+
+Display numbers 2 to 5 
+
+
+package LoopBasics;
+
+public class Display2to5 {
+
+
+	public static void main(String[] args) {
+		// Display numbers 2 to 5 
+		
+		
+		System.out.println("out of for loop");
+	}
+}
+
+
+o/p:
+----
+i=2
+i=3
+i=4
+i=5
+out of for loop
+
+
+ex:  // Display numbers  3,2,1 
+		
+package LoopBasics;
+
+public class Display3to1 {
+
+
+	public static void main(String[] args) {
+		// Display numbers 3 to 1
+		
+		
+		System.out.println("out of for loop");
+	}
+}
+
+
+o/p:
+out of for loop
+
+------
+o/p for below program:
+----------------------
+
+package LoopBasics;
+
+public class ForLoopExample1 {
+
+	public static void main(String[] args) {
+		
+
+		// Display numbers  3,2,1 
+		
+		for(int i=3;i>=1;i++) // i =
+		{//         
+			//      
+			//      
+			//          // cond is always true - will never become false -- loop -  it goes to infinite loop
+			System.out.println(i); // 
+		}
+		
+		System.out.println("out of for loop");
+
+
+	}
+
+}
+
+
+o/p:
+----
+3
+4
+5
+6
+7
+....inifnite looop  - as condi is always true
+  
+
+Note :
+------
+
+1.  in ascending order  1,2,3
+   i=1;i<=3;i++
+
+
+while displaying numbers in reverse order - 3,2,1
+   i=3;i>=1;i--
+
+1. change codition   '<=' -->  to  '>=' 
+2.  use always  Decrement operator  --  dont use increment operator 
+
+ex: display numbers 5 ,4,3,2,1 
+
+
+package LoopBasics;
+
+public class Display5to1 {
+
+
+	public static void main(String[] args) {
+		// Display numbers 5,4 3,2,1 
+		
+		
+		
+				System.out.println("out of for loop");
+	}
+}
+
+
+
+HW  display numbers 5 to 2
+
+HW  display numbers 10  to 5
+
+
+We can  write  i--,  --i  or i=i-1  in for loop
+ and also   we can write i = i+2
+   or i= i+3;..etc
+
+ex:  write o/p for below program?
+
+package LoopBasics;
+
+public class ForLoopOutputWithIncrement2 {
+	
+	public static void main(String[] args) {
+
+		for(int i=1;i<=3;i= i+2)// i=
+		{//        
+			//      
+			//     
+			System.out.println(i);// 
+		}
+		
+		System.out.println("out of for loop");
+
+
+	}
+
+
+
+}
+
+o/p:
+-----
+1
+3
+out of for loop
+------------------------------
+
+while loop:
+----------
+Syntax:
+---------
+		
+//		initialisation;
+//		while(condition)
+//		{
+//		       stmt1;
+//		       stm-2;
+
+//		 Incre/Decre;
+//		}
+
+
+package LoopBasics;
+
+public class WhileLoop1to3 {
+	public static void main(String[] args) {
+		
+//		
+				int i=1;
+		while(i<=3)
+		{  //  
+			//  
+			//  
+			//  
+			
+			 System.out.println("stmt-1");// // //
+			 i++;// i =  
+		}
+		
+		System.out.println("after while loop");
+
+	}
+
+
+}
+
+
+
+HW display number 1 to 5 using while loop
+
+
+ex: //  display number 2 to 5   incrementing numbers use <= 
+		//          
+
+package LoopBasics;
+
+public class WhileLoop2to5 {
+
+	public static void main(String[] args) {
+		
+  //  display number 2 to 5   incrementing numbers use <= 
+		//                     Decrementing numbers , use >=
+	
+		
+		
+		
+		System.out.println("after while loop");//
+
+	}
+
+}
+
+
+----------
+Write o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput {
+
+	public static void main(String[] args) {
+		
+ 
+		int i=3;
+		while(i<=5)
+		{   // 
+			// 
+			//  
+			// 
+			
+			 System.out.println(i);//  
+			 i++;// i =
+		}
+		
+		System.out.println("after while loop");//
+
+	}
+
+}
+
+o/p:
+---
+3
+4
+5
+after while loop
+
+ex: Write o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput2 {
+
+	public static void main(String[] args) {
+		
+		int i=3;
+		while(i>=5)
+		{   // 
+			
+			 System.out.println(i);//  
+		}
+		
+		System.out.println("after while loop");//
+
+	}
+
+}
+
+o/p:
+----
+
+
+HW Display numbers 3 to 1 using while loop
+
+HW Display  numbers 5 to 2  using while loop
+
+
+
+ //  display number 3 to 1      reverse order 3,2,,, use >=, -- decrement operator
+		//                in normal order  1,2,3,.. , use <= ,  and ++ increment operator
+        
+********************************************************************************************************
+		
+********************************************************************************************************
+  
+Display the o/p for below program?
+-------------------------------
+
+package LoopBasics;
+
+public class WhileLoopOutput3 {
+
+	public static void main(String[] args) {
+		
+		//  display 3 to 1
+		  int i=3; //   while reversing,  we have to use decrement 
+		  while(i>=1)
+		  { //   
+			  //  
+			  // 
+//			  / /   3>=3 -True  it goes to infinite loop  as condi is always true  and i=3 always (we are not incrementing/ decrementing i val)
+			 System.out.println("i="+i); // 
+		  }
+		
+		System.out.println("after while loop");
+		
+//Note : 
+//--------
+//while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
+
+
+	}
+
+}
+
+
+
+
+
+// Display o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput4{
+
+	public static void main(String[] args) {
+		 
+	//  display 3 to 1
+			  int i=3; //   while reversing,  we have to use decrement 
+			  while(i>=1)
+			  { //   
+				  // 
+				  // 
+//				  / /   6>=3 -True  it goes to infinite loop  as condi is alwyas true  and i=3 always (we are not incrementing/ decrementing i val)
+				 System.out.println("i="+i); // 
+				 
+				 i++;//  i= 
+			  }
+			
+			System.out.println("after while loop");
+			
+//			Note : 
+//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
+	}
+
+}
+
+o/p:
+-----
+ infinte loop
+
+-----------------
+Write o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput5{
+
+	public static void main(String[] args) {
+		 
+	//  display 3 to 1
+			  int i=3; //   while reversing,  we have to use decrement 
+			  while(i>=1)
+			  { //    
+				  // 
+				  // 
+//				  / /   6>=3 -True  it goes to infinite loop  as condi is always true.
+				 System.out.println("i="+i); // 
+				 
+				 i++;//  i=
+			  }
+			
+			System.out.println("after while loop");
+			
+//			Note : 
+//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
+	}
+
+}
+
+o/p:
+----
+3
+4
+5
+.....inifnte loop
+
+ex: Display the o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput5B{
+
+	public static void main(String[] args) {
+		 
+	//  display 3 to 1
+			  int i=3; //   while reversing,  we have to use decrement 
+			  while(i>=1)
+			  { 
+				  // 
+				  // 
+				  // 
+				  // 0>=1 False-  does not enter while loop and comes out of while loop and comes after while loops
+				 System.out.println("i="+i); // 3	 2	 1 
+				 
+				 i--;//  
+			  }
+			
+			System.out.println("after while loop");
+			
+//			Note : 
+//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
+	}
+
+}
+
+o/p:
+i=3
+i=2
+i=1
+after while loop
+
+-------------------------
+HW Display numbers  5 to 1  using while loop
+HW Display numbers  10 to 1 using while loop
+
+HW Display numbers  5 to 2  using while loop
+HW Display numbers  10 to 3 using while loop
+HW Display numbers  10 to -2 using while loop
+
+Display o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput6{
+
+	public static void main(String[] args) {
+		 
+	//  display 3 to 1
+			  int i= -1 ; //   while reversing,  we have to use decrement 
+			  System.out.println(-1>=1);//  false
+			  while(i>=1)  //  
+			  { // -
+				  
+				 System.out.println("i="+i); // 
+				 
+				 i--;//  i=
+			  }
+			
+			System.out.println("after while loop");
+			
+//			Note : 
+//				while writing loop stmts,  write (be careful about) proper  increment/ decrement operators- else it goes to infinite loop
+
+	}
+
+}
+
+o/p:
+----
+false
+after while loop
+----------------------
+
+
+
+---------------------------------
+
+HW Display the o/p for below program?
+
+package LoopBasics;
+
+public class WhileLoopOutput7{
+
+	public static void main(String[] args) {
+		
+		int i=1;
+		
+		while(i<=3)
+		{   // 
+			// 
+			// 
+			System.out.println(i); // 
+			i = i+2;// i= 
+		}
+		
+		System.out.println("after while loop");
+	}
+
+}
+
+o/p:
+-----
+1
+3
+after while loop
+
+---------------------------
+Do while loop:
+------------
+	
+//		 do while 
+//		  do is predefined word (or)  k/w in java language
+		//   can be used to write do while loop  stmt
+//		syntax:
+-------------------------
+//		do 
+//		{
+//		     stmt-1;	
+//		   increment / Decrement operator;
+//		}
+//		while (condi);  //  Note :  dont forget to write ; in do while loop stmt
+
+
+ex:
+
+	int i=1;
+		do
+		{
+			System.out.println("stmt1-");//  these stmts gte executed at least once
+			i++;//
+		}
+		while(i<=3);//  at end we are checking condi
+		
+		System.out.println("after do while loop");
+
+
+
+o/p:
+----
+stmt1-
+stmt1-
+stmt1-
+after do while loop
+
+
+package LoopBasics;
+
+public class doWhileLoop1 {
+
+	public static void main(String[] args) {
+		int i=1;
+		
+		do 
+		{
+			System.out.println("i="+ i);// i=  1
+			//   do block smts gets executed at least once even if cond is false				
+			i++;// i = 
+		}
+		while(i>=3);
+		//    2>=3 False - it wont go do block
+	//     - does not enter do block  and goes after  do while loop 
+		System.out.println("after do while loop");	
+
+
+	}
+
+}
+
+o/p:
+-------
+i=1
+after do while loop
+
+----------------------
+
+
+Break, continue stmt:
+-----------------------
+                     in Switch con
+switch()
+{
+
+case a:
+       stmt1;
+       break; //  can be  used to come out of switch block
+
+
+}
+------------------
+
+
+		//  break:  is predefined k/w in java lang
+		// can be used to come out of loop stmt i.e for loop, while loop, do -while loop, Switch block also
+		
+write o/p for below program?
+
+package LoopBasics;
+
+public class break1 {
+
+	public static void main(String[] args) {
+		
+	//  for
+			int i;
+			for(i=1;i<=3;i++) // i=1 = 1+ 1 =2
+			{      // 
+				 //   
+				 System.out.println("i="+ i);// 
+				 if(i==2)
+				 { // 
+					//  
+					 break;//  -->  come out of for loop
+//					 System.out.println("after break ");//  Unreachable code
+					 // Note:  dont write any stmts after break k/w
+				 }		  
+				 System.out.println("after break ");
+			} // end of for loop
+			
+			System.out.println("after for loop");
+			
+			
+	}
+
+}
+
+o/p:
+----------
+i=1
+after break 
+i=2
+after for loop
+
+
+-------------------
+write o/p for below program?
+
+package LoopBasics;
+
+public class break2 {
+
+	public static void main(String[] args) {
+		
+		int i;
+		for(i=1;i<=3;i++) // 
+		{	//   
+			 System.out.println("i="+ i);//
+			 if(i==1)
+			 { // 
+				 break;//   come out of loop
+//				 System.out.println("after break ");//  Unreachable code
+				 // Note:  dont write any stmts after break k/w
+			 }		  
+			 System.out.println("after break ");
+		}
+		
+		System.out.println("after for loop");			
+			
+	}
+
+}
+
+o/p:
+
+i=1
+after for loop
+
+-------------------
+break in while loop:
+---------------------
+
+	package LoopBasics;
+
+public class breakInsideWhileLoop {
+
+	public static void main(String[] args) {
+		
+
+		int i=1;
+		while(i<=3)
+		{  // 
+			// 
+			System.out.println("Enters loop");// Enters loop, Enters loop,after while loop
+			if(i==2)
+			{ // 
+				// 
+				break;// come out of  while loop
+			}
+			
+			i++;// i = 
+		} //  end of while loop
+			
+			System.out.println("after while loop");
+			
+			
+	}
+
+}
+
+
+o/p:
+----------
+Enters loop
+Enters loop
+after while loop
+----------------
+HW   what is the o/p for below program?
+
+		int i=1;
+		while(i<=5)
+		{  			
+			if(i==3)
+			{
+				System.out.println("i="+ i);
+				break;
+			}
+			System.out.println("after if i="+i);
+			i++;
+		} //  end of while loop
+			
+			System.out.println("after while loop");
+
+
+----------------------------------------------------
+HW Write break stmt  inside  "do while" loop?
+
+Note:
+------
+ break can be used in switch, for , while , do while loop
+
+Switch()
+{
+
+case val:
+          stmt1;
+         break;
+case 2 :
+         stmt2;
+        break;
+
+
+}
+
+
+for()
+{
+
+    break;
+
+
+}
+
+
+while()
+{
+
+   break;
+
+}
+
+
+do 
+
+
+{
+   break;
+}
+while(cond);
+
+
+continue:  
+--------
+
+package LoopBasics;
+
+public class continue1 {
+
+	public static void main(String[] args) {
+		
+		//for loop  
+				for(int i=1;i<=3;i++) // i =
+				{     //     
+					//     
+					//      
+					if(i==2)
+					{ // 
+					//   
+						// 
+						//using continue statement  
+						continue;//it will skip the rest  of statements  
+					}  // end of if block
+					
+					System.out.println(i); // 
+				}  // end of for loop
+				 System.out.println("after loop");
+	}
+
+}
+
+o.p:
+-----
+1
+3
+after loop
+
+--------
+package LoopBasics;
+
+public class continue2{
+
+	public static void main(String[] args) {
+		
+		int i;
+		for(i=1;i<=3;i++) // i=
+		{	//   
+			 System.out.println("i="+ i);// i=
+			 if(i==1)
+			 { // 
+				 break;//   come out of loop // last executeable stmts inside loop
+//				 continue;
+				 System.out.println("after break ");// error :  Unreachable code
+				 // Note:  dont write any stmts after break k/w
+				 //   Dont  write any stmts after continue  k/w
+			 }		  
+			 System.out.println("after break ");
+		}
+		
+		System.out.println("after for loop");
+			
+			
+	}
+
+}
+
+
+---------------------
+o	Nested for
+
+
+Nested For loop:
+---------------
+Def:
+----
+
+package LoopBasics;
+
+public class NestedForLoop {
+
+	public static void main(String[] args) {
+		
+		
+
+		for(int i=1;i<=3;i++) // outer for loop i= 
+		{ //        
+			//       
+			  //      
+			//       
+			System.out.println("inside 1st for loop");// inside 1st for loop
+			for(int j=1;j<=2;j++) //  inner  for loop  j= 
+			{ //        
+				//      
+				//     
+				System.out.println("i="+ i + ",j="+j);
+				// 
+				//                                       
+				//                                       
+				//                       
+				//                      			
+			}//  end of inner loop
+			
+			System.out.println("after inner loop");// 	gets executed 		
+		}
+		
+		System.out.println("after outer loop");
+
+	}
+
+}
+
+----------------
+inside 1st for loop
+i=1,j=1
+i=1,j=2
+after inner loop
+inside 1st for loop
+i=2,j=1
+i=2,j=2
+after inner loop
+inside 1st for loop
+i=3,j=1
+i=3,j=2
+after inner loop
+after outer loop
+-----------------
+
+write o/p for below program?
+
+
+package LoopBasics;
+
+public class NestedForLoop2 {
+
+	public static void main(String[] args) {
+		
+		for(int i=2;i<=4;i++) // outer loop i=
+		{
+			for(int j=1;j<=3;j++) //  inner loop  j=
+			{				
+				System.out.println("i="+ i + ",j="+j);//
+			
+			}//  end of inner loop
+		}
+		System.out.println("after outer loop");
+
+	}
+
+}
+
+o/p:
+---
+i=2,j=1
+i=2,j=2
+i=2,j=3
+i=3,j=1
+i=3,j=2
+i=3,j=3
+i=4,j=1
+i=4,j=2
+i=4,j=3
+after outer loop
+------------------------
+
+-----------------
+HW  write o/p for below program:
+
+		
+		// nested for :  writing for loop inside for loop
+		
+		for(int i=1;i<=2;i++) // outer loop i=
+		{
+			for(int j=1;j<=3;j++) //  inner loop  j=
+			{				
+				System.out.println("i="+ i + ",j="+j);//
+			
+			}//  end of inner loop
+		}
+		System.out.println("after outer loop");
+
+
+o/p:
+
+*************************************************
+
+Revision:
+---------
+  cond stmts-  if(),  if else, if .. else if()   else if() , Switch
+
+ Loop :  for loop
+       while 
+      do while 
+     break, continue
+
+------------------------
+Array:
+------------------------
+	
+		 int a1 = 10;//  only val at a time
+		 int a2 = 20;// 
+
+		 //   store 100 vals
+		 //   declare 100 variables 
+//		 ex:  a1, a2 , a3.......a100
+//		------------------ 
+		
+		
+		// Array :    is collection of same values 
+		//  can be used to store collection of values of same data type
+//                                 store homogeneous values 
+                                         =  same type 
+
+		//       10, 20, 30 
+ 
+		//     1.1f, 2.1f, 4.3f
+
+//                         'A','B', 'C'
+
+//                       "Ram", "Sita","Raju"
+
+
+
+package ArraysBasics;
+
+		
+		// Declare array :
+----------------------------------------
+//		syntax :
+
+//		  datatype varname [] =  new datatype [size];
+                        (or)
+		datatype [] varname  =  new datatype [size];
+		
+// size = represents how many values we can store in in array 
+
+//  declare int array with name i.e arr and size of array = 3
+
+//  declare float array with name i.e farr and size of array = 3
+
+//  declare char array with name i.e farr and size of array = 3
+
+//  declare String array with name i.e farr and size of array = 3
+
+
+in array, it stores the values in index no.
+the first element of the array is stored at the indexno=0, 
+     2nd element is stored at the indexno =1
+...............................
+...............................
+		                  and so on.
+		
+Store/assign values in array:
+-----------------------------
+		//  store 10 val at index no =0
+
+                          //  10 value is stored at index no =0 in array
+		
+		//  store 20 val at index no =1
+
+		  //  20 val is stored at indexno =1 in array
+	
+		
+		// Access  values from array  based on index no = 0,1,2...etc
+		
+
+package ArrayBasics;
+
+public class intArrayBasics 
+{
+
+public static void main(String[] args) {
+
+		//   create array of int val's  and size =3
+
+		//  store max 3 values only  
+
+		//  store 10 val index no =0
+
+		//  10 value is stored at index no =0 in array
+
+//  store 20 val index no =1
+
+
+		//  20 val is stored at indexno =1 in array
+
+	//  store 30 val index no =2
+		
+			// 30  val at index no =2
+
+	// store 40 val at index no  =3  --> ???	
+		//   4  th val  size  =3  max 
+//		arr[4]  = 40 ; // error :  we dont have index no = 4 ..here arr size = 3 index from 0 to size-1 i.e 3-1 = 2
+		
+		// Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 3
+//		at ArraysBasics.intArray.main(intArray.java:62)
+		//  arr [5]  index no = 0 to 4
+		//  arr [100]           0 to 99
+		
+			
+ 
+		// display / Access  values from array 
+			// display arr val at index no =0
+//					
+			// display arr val at index no =1 
+			
+	
+			//// display arr val at index no =2 
+
+			
+
+	}
+	
+}
+
+o/p:
+----
+array val at index no = 10
+20
+30
+
+
+---------------------
+package ArraysBasics;
+
+public class floatArray {
+
+	public static void main(String[] args) {
+//		int arr[] =  new int[3];
+		// Declare float array of size =3
+
+		//   array name  - fArr 
+		// size of array =  3  - we can store max of 3 float values  
+		// index no -always starts from 0  and ends with size of arr -1. i.e  3-1 =2 
+		//    index no varies from 0 to 2  -  0,1,2
+
+		// store some float values in array
+		// store 1.2f values in float array at indexno =0 
+
+		// store 2.2f values in float array at indexno =1
+
+		// store 3.2f values in float array at indexno =2
+
+		
+//  display vals from float array
+	
+		
+		}
+
+}
+
+o/p:
+----
+float array values at index no=0 i.e 1.2
+float array values at index no=1 i.e 2.2
+float array values at index no=2 i.e 3.2
+
+HW define char array  and store char values  and display it
+
+HW Define  double array and store double values  and display it
+
+HW Define long array  and store some values  and display it
+
+HW  Define boolean array  and store boolean values  and display it
+
+
+Note:
+---------------------
+	iarr[0]  = 3.2f;// Type mismatch: cannot convert from float to int
+		//  int array - can be used store int values
+		//   floar array - can be used store decimal numbers else it throws error
+
+2.  int aray - We cannot store 1 float val + 1 double val +  1 char val +   boolean
+
+  iarr[0] = 1.23f;
+  iarr[0] =  3.2;
+ iarr[0] =  'C';
+ iarr[0] =  true;
+ iarr[0] =  "Ram";
+
+
+Display values from array using 'for' loop:
+-----------------------------------------
+	
+
+package ArrayBasics;
+
+public class DisplayValsFromIntArray {
+
+	public static void main(String[] args) {
+
+		// int array :  and store 3 values
+				
+
+//Display each values from array using index no
+
+
+//Display values from array using for loop:
+		
+
+	}
+
+}
+
+---------------------------------
+
+Array length:
+---------------
+
+package ArraysBasics;
+
+import com.sun.tools.sjavac.server.SysInfo;
+
+public class intArrayLength {
+
+	public static void main(String[] args) {
+	
+		// Declare int array  and size = 3
+
+		
+		//  creates array with name i.e arr and we can store max 3 values of int data type
+		//  store 10 val index no =0
+
+		//  10 value is stored in at index no = 0 in array
+
+		//   		//  store 20 val index no = 1
+
+		 //  20 val is stored at indexno =1 in array
+
+		//   		//  store 30 val index no =2
+
+
+// Can we store decimal no in int array
+//		arr[0]  = 3.2f;// Type mismatch: cannot convert from float to int
+		//  int array - can be used store int values
+		//   floar array - can be used store decimal numbers else it throws error
+		
+		// Access  values from array using index no
+		System.out.println("arary val at index no =0 -->" +  arr[0]);
+		
+		System.out.println("arary val at index no =1 -->" +  arr[1]);
+		
+		System.out.println("arary val at index no =2 -->" +  arr[2]);
+		
+		//   count of values in array
+		
+		
+		
+		//  dispay all values  from array  using for loop  and length of array
+		
+//		for(int i=0;i<=2;i++)
+// use length
+		
+		
+//				Values from array =10
+//				Values from array =20
+//				Values from array =30
+	
+		System.out.println("ends here");
+		
+
+	}
+
+}
+
+
+------------------------------
+Display values using for loop in float array:
+-------------------------------------------
+package ArraysBasics;
+
+public class DisplayValsFromFloatArray{
+
+	public static void main(String[] args) {
+//		int arr[] =  new int[3];
+		// Declare float array  and of size =4
+
+		//   array name  - fArr 
+		// size of array =  3  - we can store max of 3 float values  
+		// index no always starts from 0  and ends with size of arr -1. i.e  3-1 =2 
+		//    index no varies from 0 to 2  -  0,1,2
+
+		// store some float values in array 1.2f,2.2f,3.2f,4.2f in indexno = 0,1,2,3
+		
+		// Display val at index no =0,1,2
+		
+		
+		
+		//  display all vals from float arr using for loop  and use length of array
+		// length of arr
+		
+
+		
+		
+		
+//		length of array =4
+//				vals from float array =1.2
+//				vals from float array =2.2
+//				vals from float array =3.2
+//				vals from float array =4.2
+		
+
+	}
+
+}
+------------------------------------
+
+Note:
+In array, we can store same data type of values
+                        homogeneous values 
+
+	int arr   -->   store only int vaues
+	float arr -->   store only float values
+
+In General array, we can not store  1 int val  + 1 float + 1 double  +  1 char 
+      + 1 boolean  +  1  String
+
+Note:
+------
+in float array, we can store int number and char value, as it converts int no to float no and char value --> decimal no
+
+	fArr [0] = 10; // ok
+//                    10 --> 10.0f
+ 
+		fArr[1]  = 'A';//ok    no 
+//                         65 --> 65.0 
+
+//		fArr [2] = true;// Type mismatch: cannot convert from boolean to float
+		fArr [2] = "Ramu";// Type mismatch: cannot convert from String to float
+
+
+
+HW  Display all values from float array using for loop ?
+
+
+
+
+--------------------------------
+Default values in int array:
+------------------------------
+//		if We dont store any vals in array,  it will store 0 val based on array type ie. int
+
+
+package ArraysBasics;
+public class DefaultValuesIntArray2 {
+
+	public static void main(String[] args) {
+		
+		int arr []  =  new int [3];
+		
+//		if We dont store any vals in array,  it will store 0 val based on array type ie. int
+		
+// Display values from array 
+		
+			System.out.println("vals from arr =");
+		
+		
+//		vals from arr =0
+//				vals from arr =0
+//				vals from arr =0
+		
+	// store some values 11,21 into arr[0] ,arr[1]
+		
+	// Display values from array 
+		
+		
+		System.out.println("ends here");		
+
+	}
+
+}
+
+------------------
+Default values in float array :
+----------------------------
+package ArraysBasics;
+
+public class DefaultValsInFloatArray2 {
+
+	public static void main(String[] args) {
+
+		float fArr[]  =  new float [4];
+	// if we dont store any vals in float arr,  it stores 0.0   by default 
+		
+	// Display values from float array		
+
+		
+			System.out.println("vals from float array =");
+		
+//		vals from float array =0.0
+//				vals from float array =0.0
+//				vals from float array =0.0
+//				vals from float array =0.0
+
+
+	}
+
+}
+
+    true, false, true, true, --  size of array
+
+HW  what is the default vals in char array ?
+HW  what is the default vals in bolean array ?
+HW  what is the default vals in String array ?
+-----------------------------------------------
+
+Way2 : Initialise values in integer array (or) Store Values in integer Array:
+----------------------------------------------------------------------------
+
+package ArraysBasics;
+
+public class InitialseValsInArr {
+
+	public static void main(String[] args) {
+//    way 1:  Declare int array and store 3 values
+//		 int arr []  =  new int [3];
+//		
+//		arr [0] =10;
+//		arr [1] =20 ;
+
+		//  way 2: 10,20,30 
+		
+ //	vals at index        0  1  2
+		// display all vals from array using for loop
+		
+
+	}
+
+}
+
+--------------------
+Way2 : Intialise values in float array (or) Store Values in float Array:
+------------------------------------------------------------------------
+package ArraysBasics;
+
+public class InitialiseValsInFloatArray {
+
+	public static void main(String[] args) {
+		
+		//  Intialise values in float array (or) Store Values in float Array:1.2f , 2.2f, 3.3f
+		
+		// length of array
+		
+// display values from float array using length of array
+	
+//				vals from flat arr=1.2
+//				vals from flat arr=2.2
+//				vals from flat arr=3.3
+
+	}
+
+}
+
+------------------
+
+HW    define long array and store vals using  2nd way  {120,12313,24214} and display vals from arr
+HW    define double array and store vals using  2nd way  and display vals from arr
+HW    define boolean array and store vals using  2nd way and display vals from arr
+HW    define char array and store vals using 2nd way and display vals from arr
+
+
+ Way2 : Intialise values in String array (or) Store Values in String Array:
+---------------------------------------------------
+
+package ArraysBasics;
+
+public class InitialiseValsInStringArray {
+
+	public static void main(String[] args) {
+		// "ram" , "sita", "abc123" 
+
+//                                   0       1          2 
+		
+		System.out.println("1st val =" + sArr[0]); // ram
+		
+		// HW get all vals from string array using for loop
+		
+
+	}
+
+}
+********************************************************************************************************
+
+********************************************************************************************************
+ 
+For loop without conidtion:
+--------------------------
+
+for(int i=1;i<=3;i++)
+{
+
+}
+
+2.  syntax :
+
+  for(;;) //  if there is no condition  in for loop, condi-is always true
+{
+
+}
+- it goes to infinite loop
+
+----------------------------
+
+package ArrayBasics;
+
+public class ForLoopwithoutcondi {
+
+	public static void main(String[] args) {
+		
+		for(;;) 
+		{ //  no cond-  condi is always true 
+			//  no cond-  condi is always true 
+			System.out.println("stmt-1");
+			System.out.println("stmt-2");
+		}
+
+	}
+}
+
+o/p:
+----
+stmt-2
+stmt-1
+stmt-2
+stmt-1
+stmt-2
+stmt-1
+stmt-2
+....
+.....  infinite loop
+
+--------------------------
+  for Each loop:
+--------------------------
+ can be used to get vals from array / collection obj 
+
+syntax :
+--------
+	for(datatype  eachVal : arrVariableName)
+	{
+		
+	}
+
+=================================================
+Display Values from int Array using for each loop:
+=================================================
+
+package ArrayBasics;
+
+public class DisplayValsFromIntArrayUsingForEachLoop {
+
+	public static void main(String[] args) {
+	//  define int array and store 11 22 33 44
+			int arr [] =  {11,22,33,44};
+			
+			//  display all vals using for each loop
+			
+			
+			 //   gets each val from arr  and store each val in to variable i.e val
+
+	}
+
+}
+
+		
+
+
+---------------
+Display Values from float  Array using for each loop:?
+
+package ArrayBasics;
+
+public class DisplayValsFromIntArrayUsingForEachLoop {
+
+	public static void main(String[] args) {
+		
+		 float farr []  =  {1.1f,2.1f,3.1f,4.1f};
+			// display all values  for each loop
+			 
+			
+	}
+
+}
+
+			 
+		 
+		
+o/p:
+-----	
+		
+
+----------------------------
+
+HW  store some vals in long array and  gets all vals using for each loop?
+HW  store some vals in double array and  gets all vals using for each loop?
+HW  store some vals in char array and  gets all vals using for each loop?
+HW  store some vals in boolean array and  gets all vals using for each loop?
+----------------------------------------
+---------------
+HW Display Values from String Array using for each loop:
+-----------------------------------------------------
+
+package ArrayBasics;
+
+public class StringArrayUsingForEachLoop {
+
+	public static void main(String[] args) {
+		
+		String sArr []  = {"Ram", "Sita", "Raju"};
+		
+		//Display Values from String Array using for each loop:
+		
+		
+		System.out.println("After for each loop");
+
+	}
+
+}
+
+o/p:
+----
+gets vals from String array using for each loop:Ram
+gets vals from String array using for each loop:Sita
+gets vals from String array using for each loop:Raju
+After for each loop
+
+
+Note:
+-----
+--------------------
+for loop with index :
+--------------------
+- We have to write cond in for loop
+- to get values from array, we have to use index no ex:  sarr[0], sarr[1]
+- we can get vals in forward  and also in reverse direction in for loop
+
+-----------------------------
+in 'for each' loop,
+	// we dont need to write  any cond--      no cond
+		// to get vals from array using for each -loop - we dont need to use-- index no  (no index no)
+-   always get vals in forward direction but not in reverse direction 
+
+
+
+package ArrayBasics;
+
+public class DisplayValsFromStringArrayInReverse {
+
+	public static void main(String[] args) {
+		
+		String sArr []  = {"Ram", "Sita", "Raju"};
+		
+		//Display Values from String Array using for each loop:
+		
+			System.out.println("gets vals from String array using for each loop:");
+		
+		
+		System.out.println("After for each loop");
+		// display values in reverse order
+		
+		
+			System.out.println("vals from array in reverse direction = ");
+		
+
+	}
+
+}
+
+
+  single dimensional array  :
+------------------------------
+
+		 int arr[] =  new int[3];
+           ( or) int [] arr = new int [3];
+
+
+2 Dim array:
+-----------
+
+		// Declare 2 dim array
+		data can be stored in the form of rows, columns m,n 
+		
+syntax:
+
+
+//		int [] [] arr  =  new int[m] [n];
+
+//		or int arr [] [] =  new int [m][n];
+
+
+----------------------
+package ArrayBasics;
+
+public class TwoDimArr {
+
+	public static void main(String[] args) {
+		// Declare 2 dim array  and store 2 rows and 3 columns
+
+
+
+					  //  4   index no varies from  0- 3
+
+		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
+		// n -no of columns- 3  --  columms , index -  0 to 2
+
+		//  store some value	
+		
+		
+		// 10   1 1 ,  12
+		
+		
+		// display val at index  00
+		
+		
+		//display val at index  01
+
+
+//		display val at index  11
+
+		
+//		display val at index  12
+
+		
+	//  index no -3 
+
+
+
+	}
+
+}
+
+------------------------
+		// get all values from 2 dimensional array 
+//		00  01  02
+//		10  11  12
+
+
+
+package ArrayBasics;
+
+public class DisplayValsFromTwoDimArr {
+
+	public static void main(String[] args) {
+		// Declare 2 dim array
+//		data can be stored in the form of rows, columns
+//		int [] [] arr  =  new int[m] [n];
+
+//		or int arr [] [] =  new int [m][n];
+
+
+		int arr[] []  = new int [2] [3];  //  4   index no varies from  0- 3
+
+		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
+		// n -no of columns- 3  --  columms , index -  0 to 2
+
+		//  store some value	
+		arr [0] [0] = 00;
+		arr [0] [1] = 01;
+		arr [0] [2]  = 02;
+		
+		// 10   1 1 ,  12
+		arr [1] [0] = 10;
+		arr [1] [1] = 11;
+		arr [1] [2]  = 12;	
+				
+			// get all values from 2 dimensinal array using  for loop
+//		00  01  02
+//		10  11  12
+		
+		
+		 //        
+			//       
+			//    
+			
+			//         
+				//    
+				//   
+				// 
+				                                                
+			
+	
+	}
+
+}
+
+o/p:
+-----
+vals from arry using for loop=0
+vals from arry using for loop=1
+vals from arry using for loop=2
+vals from arry using for loop=10
+vals from arry using for loop=11
+vals from arry using for loop=12
+
+---------------------
+	
+
+		
+// HW  Define  2 Dim float array of size 1 , 2   and store some values and display
+
+// HW  Define  2 Dim String aray of size 3 , 4   and store some values and display
+
+note:
+
+String sArr [] =  {10, 1.3f,,'C' "abc123" };// invalid 
+// Type mismatch: cannot convert from float to String
+
+in array, we cannot store one int, float,char  ..etc
+always prefer to store same data type values	
+
+String sarr2 [] = { "10", "1.3f","C",  "abc123"} 
+                    String   String      String 	
+
+
+
+
+get 2 Dim array Rows cnt and Columns cnt :
+-------------------------------------
+
+package ArrayBasics;
+
+public class GetRowsCntColumnsCntFromTwoDimArray {
+
+	public static void main(String[] args) {
+		// Declare 2 dim array with 2 rows  cols= 3
+
+
+		// m = no of rows  - 2 respresents rows, index no  varies from 0 -1
+		// n -no of columns- 3  --  columms , index -  0 to 2
+
+		//  store some values 00,01,02	
+		
+
+		// store some values  10,   1 1 ,  12
+			
+
+		//  rows cnt  form 2 dim array
+		
+		 //          rowsCnt =       2
+		 
+
+
+		// Columns cnt  form 2 dim array
+		
+
+			// 3
+
+	}
+
+}
+
+		
+		
+
+HW  use  rows cnt and columns cnt in for loop to display all values from 2 dim array ?
+
+
+------------------------------
+FAQ SearchForGivenNoInArray :
+------------------------
+
+		// check given no is exist in array or not
+
+	package ArrayBasics;
+
+public class SearchForGivenNoInArray {
+
+	public static void main(String[] args) {
+		
+				
+	System.out.println("after for loop");
+		
+		
+
+	}
+}
+
+********************************************************************************************************
+
+********************************************************************************************************
+   
+FAQ WAP to count of given character from char array ?
+   char chArr []  = { 'r' , 'a', 'm','a'}
+
+  'a'  char count - 2  times  
+  'r'             -1   time
+
+// Given char is not found ,   cnt =0
+
+-------------
+package ArrayBasics;
+
+public class CharacterCntInArray {
+
+	public static void main(String[] args) {
+//		  char chArr []  = { 'r' , 'a', 'm','a'}
+
+//		  'a'  char count - 2  times  
+//		  'r'             -1   times
+		// Given char is not found ,   cnt =0
+
+	}
+
+}
+
+
+-----------------------------
+
+
+		// WAP  to get vowels count from char array ?
+		//  Vowels :  a e i o u 
+		
+		char chArr []  = { 'r' ,'a', 'm','a','e','i'};
+		//  vowels cnt  = 3  -
+
+package ArrayBasics;
+
+public class VowelCntInArray {
+
+	public static void main(String[] args) {
+		
+
+		 
+
+	}
+
+}
+
+
+----------------
+
+HW FAQ  WAP to get consonants count from char array ?
+      r a m a
+
+consonants cnt  = 2 
+
+-----------------------------
+
+
+HW  same program use 'for each' loop ?
+
+HW Same program use for loop and multiple if conditions
+hint:	
+			if(eachVal== 'a' )
+			{
+				vowelsCnt =  vowelsCnt + 1 ;
+			}
+			if(eachVal== 'e'  )
+			{
+				vowelsCnt =  vowelsCnt + 1 ;
+			}
+
+
+--------------------------------------------------
+TypeCasting:
+-----------
+def:
+----
+
+	// type casting : converting one Data type to another data type 
+
+ 2 types:
+---------------
+1. Widening or Implicit type casting
+2. Narrowing or Explicit type casting
+
+-------------------------------------
+1.Widening Casting (automatically) :
+--------------------------------- --
+
+converting a smaller type to a larger type size
+
+//		byte -> short -> char -> int -> long -> float -> double
+
+//. It is also known as implicit conversion or casting down
+
+//  conversion is done by compiler automatically
+
+//it is safe because there is no chance to lose data.
+
+ex: convert int --> long   , long --> float
+
+package TypeCastingBasics;
+
+public class ImplicitTypeCasting {
+
+	public static void main(String[] args) {
+//		ex: convert int --> long   , long --> float
+
+
+
+		//automatically converts the integer type into long type  
+
+
+		//automatically converts the long type into float type  
+		 
+
+		System.out.println("Before conversion, int value "+x);  
+		System.out.println("After conversion, long value "+y);  
+		System.out.println("After conversion, float value "+z);
+
+	}
+
+}
+ 
+
+o/p:
+---
+Before conversion, the value is: 7
+After conversion, the long value is: 7
+After conversion, the float value is: 7.0
+
+
+ HW ex2 :   convert int to float ?
+
+// 1. Convert int to float value ---> widening-  Compiler will do type casting by default
+		//    4  ->  4.0    -- dont lose any data
+
+
+
+
+		System.out.println("f= ");
+		// f= 4.0	
+
+
+
+
+//2.	Narrowing Casting (manually):
+----------------------------------
+
+ - converting a larger type to a smaller size type
+//		double -> float -> long -> int -> char -> short -> byte
+
+////  conversion is done by programmer
+//It is also known as explicit conversion or casting up.
+ If we do not perform casting then the compiler reports a compile-time error.
+
+ex:// convert float value to int val?	
+			
+		package TypeCasting;
+
+public class ExplicitTypeCasting1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// convert float value to int val?		
+		//   4.32f  -->  4   --  lost of data i.e decimal part value
+		
+
+		//  4B           4Bytes  
+
+	 // Type mismatch: cannot convert from float to int
+		//  i1  =      4.32 f
+		
+
+	
+			//    (int)  4.32f    // Programmer 
+			//    i1=     4 
+		System.out.println("i1="+i1);
+		// i1=4
+
+	}
+
+}
+
+
+		
+//		i = f1;// Type mismatch: cannot convert from float to int
+		// compile will now allow bigger Data type to smaller 
+		//  CE:   programmer has to do type casting explicitly
+		i = (int) f1; // 
+		//         3.5 -->  remove decimal points  3   
+		System.out.println("i="+ i);// 3 -- data lost   
+		
+
+
+
+---------------------
+
+
+HW wx3:
+//		byte -> short -> char -> int -> long -> float -> double
+		
+		// convert  byte val to char
+			// 65 --> A
+
+		
+		
+		
+	
+//		double -> float -> long -> int -> char -> short -> byte
+HW EX		// convert char to int 
+		
+		
+	
+			// 65
+		//      'A'
+		//   i= 65
+		System.out.println("i="); // 65
+		
+		//  convert int val to boolean ---not valid
+			
+//		
+
+// Type mismatch: cannot convert from int to boolean
+		
+//		b1 = (boolean)  i;// error : Cannot cast from int to boolean
+//		  10 --> true
+//		  20 --> false
+		
+			
+		// HW convert int to double value  5--> 5.0 
+		// HW convert double val to int    5.4 ---> 5   
+
+-------------------------------------------------------
+FAQ :What is type casting?
+FAQ Diff b/w Widening and narrowing?
+
+*************************
+
+Method/Function:
+-----------------
+Method :
+---------
+
+          is Collection of stmts  (or) block of stmts
+	can be used to perform specific task
+
+ex:  add  --  need 2  numbers   10 +  20  =30
+
+public static void main(String args[])
+{  //   args-   is array name
+ //  main is- method 
+	stmt1;
+	stm2;
+	stmt3;
+}
+
+
+ 2 Types of methods:
+-----------------
+1. user defined method
+
+2. Predefined method
+
+Syntax for writing method:
+------------------------- 
+Method with no arguments:
+--------------------------
+snytax:
+-----------
+
+AccessSpecifier nonAcessSpecifier returnType Methodname()// Method heading
+{  // Beginning of method
+
+   stmt-1;   //  Method body
+   stmt-2;
+   stmt-3;  
+    return val; //  optional
+} // end of method
+
+Access specifier   --> 
+non AcessSpecifier --> 
+Return type  -->   void, int , float, char, boolean,String, array..etc
+
+write add method?
+
+       //  Method name :  
+
+  stmt-1;
+  stmt-2;
+
+
+Write substraction()?
+
+//  sub
+              // Method name : substraction
+
+	
+
+
+//write method name   mul,  return type: int 
+
+
+
+Method call:
+------------
+   if we want to execute stmts inside the Method-  we must call method by it's name.
+
+    MethodName();
+
+call add () -->
+
+call substraction() -->  
+
+
+--------------------------
+
+Define M1() , M2()   and Calling M1() , M2():
+-----------------------------------------
+
+
+
+	// Define Method name M1 ()  and call below stmts	
+		System.out.println("stmt-1");
+		System.out.println("stmt-2");
+	
+		
+	//Define Method - M2 and call below stmts	
+		System.out.println("stmt-3");
+		System.out.println("stmt-4");
+	
+	public static void main(String[] args)
+	{		
+		// If we want to execute any method stmts, we must call specific method
+		//  with out calling method, we cannot execute method stmts
+		
+		// call M1 
+
+		
+		// Call M2
+
+	}
+
+
+o/p:
+------
+stmt-1
+stmt-2
+stmt-3
+stmt-4
+
+
+-We can define/ write any number of methods inside class
+     M1(),M2(), M3()...
+
+
+ex: Define add ()  and call it:
+--------------------------------
+
+---------------------------------
+Addition:
+-------------
+
+package MethodBasics;
+
+public class DefineAdditionMethodWithOutArgs {
+
+
+	//  method is defined in side the class
+	// define add() and call below stmts	
+		System.out.println("performing addition - stmt-1");
+		System.out.println("stmt-2");
+
+	
+	public static void main(String[] args) 
+	{	
+		System.out.println("in main method");
+		// Call method
+//		syntax:   methodname();		
+		
+	
+		System.out.println("after add -");		
+
+	}
+}
+
+
+---------
+
+
+--------------------
+
+----------------------------------------
+
+ex: Define add() , substraction()
+-------------------------------
+
+Note:
+-----
+We can define every method inside class only.
+We can define multiple methods inside class 
+
+
+package MethodBasics;
+
+public class AddMethodWithOutArgs3 {
+	//ex: Define add ()  and call it:
+	
+			//       
+			//    
+			System.out.println("res="+ res);
+			//                  res= 
+		
+
+//		ex3:  Define Substraction()  and call  it?
+		
+		
+			//
+			//
+			System.out.println("Result fo substrcation =");
+			
+		
+		
+		public static void main(String[] args) 
+		{
+			System.out.println("inside main()");
+			
+			// Calling add()		
+
+			
+			// call substraction()
+		
+			
+			System.out.println("after add ()");
+		}
+
+	}
+
+
+
+o/p:
+-----
+inside main()
+res=30
+Result fo substrcation =10
+after add ()
+
+ 
+
+ 
+--------------------------
+HW  Define  multiplication  method and display o/p
+---------------------------------------------
+
+HW  Define Division method  (get Quotient number - / )and display o/p ?
+
+HW  Define Remainder Method  (get remainder value - % ) and display o/p?
+
+
+
+Method with Input arguments:
+--------------------------
+Arguments :   can be used to pass some i/p's / data to method --  
+  are also called parameters
+-
+
+Syntax :
+---------------
+Method without args:
+----------------
+ --  no args -  if we dont pass any variables in side () -
+
+
+
+
+Method with 1 int args:
+--------------------
+
+    // Method with 1 argument / param
+
+
+
+
+Method with 2 args:  1 int arg  , 1 int arg
+--------------------
+    // Method with 2 arguments/ param
+  //  arguments -- i/p's to method (or)  declaring varible
+
+
+
+Method with 4 args: 
+-------------------
+//  pass any no of arguments /  parameters-  and any data type (int, float,double, char,boolean,  etc)
+
+Define Method -M1 with 1 int arg, 1 float arg, 1 char arg
+
+
+
+Pass  1 arguments / parameter in method heading  
+pass  2 arguments/  parameter in method heading  
+pass  3...
+       n  no of args in method heading  
+
+------------------------------
+
+Call Method with arguments / parameter:
+--------------------------------------
+
+M1(int a)  // M1 () contains - 1 arg/parameter
+{ 
+
+}
+
+method Call :    
+     --> 
+ M1(); --invalid method call
+
+ex2:
+  M2 (int a , int b ) // 2 args 
+{
+
+
+}
+
+method call --> 
+
+No  of arguments /parameters in method heading =  number of values in method call must be same
+if method has 2 args, in method call also, we must also pass 2 values...
+
+M2(10);// invalid   as we passed only one value  but in method heading 2 args
+if 2 args in method heading, we must pass 2 values in method call also.
+
+ex3:  
+ M3 (int a, float f, char ch) //  3 args 
+{
+
+
+}
+
+method Call -->  
+
+values in method call  and arguments in method definition must be same type.
+
+ M3 ('A', 10, true ); // -->  check valid /invalid-->
+//   VALUEs must match with data type 
+
+ M3 ('A', 10, true ); // invalid
+
+M3(10,2.3f, 'B',20);//  invalid  passing 4 vals , but  method heading contai=ns 3 args- so we must pass 3 values  only in method call  but not 4 values
+
+No of args in method heading and no of values in method call must be equal
+
+ex:
+Define Method Input arguments and call Method :
+----------------------------------------------
+	
+package MethodBasics;
+
+public class MethodWith1Arg {
+
+	// Method M1  with 1 int args 		
+	System.out.println("in M1");//
+	System.out.println("M1 -with 1 int arg");
+	// Display var a 
+	System.out.println("a= " + a);
+	//                          
+
+
+
+	public static void main(String[] args) {
+
+		// call method M1()
+
+		//  call  method M1 any no of times
+
+
+	}
+}
+
+
+********************************************************************************************************
+
+********************************************************************************************************
+	
+	
+Method call:
+---------------------
+M1(2.45f);//Error:  invalid  we should not pass float value / Decimal no  in method call  as we have M1 (int a)
+--> 
+
+Method with 2 i/p arguments and Calling method:
+---------------------------
+
+
+
+ex:
+package MethodBasics;
+
+public class MethodWith2Args {
+
+	// Define/ write M1 with 2 args  1 int, 1 int arg
+	
+		System.out.println("M1 With 2 args");
+		System.out.println("a="+ a);
+		System.out.println("b="+ b);		
+
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("in main()");
+		
+		// Call M1
+		
+		
+		System.out.println("after M1 ()");
+
+	}
+
+}
+
+o/p:
+----
+in main()
+M1 With 2 args
+a=2
+b=3
+after M1 ()
+
+
+ex: Define 'add' method with 2 i/p arguments and call add()?
+----------------------------------
+package MethodBasics;
+
+public class AddMethodWith2args 
+{
+//	ex: Define 'add' method with 2 i/p arguments and call add()?
+//			----------------------------------
+			// add()  with 2 args 
+	
+		//                       
+	
+		System.out.println("called add()");
+		
+		//           
+//		        result   = 
+		
+
+// 30
+
+
+	
+	public static void main(String[] args) {		
+		
+//		call add()  by passing 2 value
+		
+
+	}
+
+}
+
+o/p:
+----------------
+//called add()
+//Addition=30
+
+
+
+
+WAP  to define substraction  and Pass 2 arguments  and display result
+----------------------
+package MethodBasics;
+
+public class SubStractionWith2Args {
+
+//	WAP  to define substraction  and Pass 2 arguments  and display result
+	
+	
+ //                                20      10  so a =20   b= 10
+		
+		System.out.println("called Substarction()");
+
+		//           2
+		//       result =     
+		
+		System.out.println("Substraction results="+result);
+		//                                           
+
+	
+	public static void main(String[] args) {
+		
+		// Call substraction
+		  
+		// call method substraction- passing 2 values 
+
+	}
+
+}
+
+o/p:
+------
+//called Substarction()
+//Substraction results=10
+
+
+
+HW WAP  to define Multiplication and Pass 2 arguments  and display result
+
+HW WAP  to define Multiplication and Pass 3 arguments  and display result   2*3 *4
+
+HW WAP  to define Division and Pass 2 arguments  and display result
+
+
+*****************************************************
+//			add(3.5f,4);// Error : The method add(int, int) in the type MethodWith2Args is not applicable for the
+			//arguments (float, int)
+
+
+Method with return types :
+-------------------------
+
+syntax:
+--------------
+  returntype  M1()
+{
+
+  return val/var/expre;
+}
+
+return type:  void, int , float,char....
+
+when we want to get some o/p from the method, then we have to write respective data type in return type and write return stmt also.
+               return   "   ""
+
+ex :  if we want to get 'int' o/p from the method, then we have to write int data type in return type and also write  return stmt (return 10;)
+
+ex :  if we want to get 'float' o/p from the method, then we have to write float data type in return type and also write  return stmt (return 10.85f;)
+
+//  return :  is pre-defined k/w in java
+		// can be used to get the o/p from method
+		//                 return  some value from method
+Syntax:
+---------
+//		return val/var/expression;
+
+//		ex :  return 10;-->
+//		ex:   return a; -->
+//		ex3:  return a+b; -->
+
+Method return type and Return value must be same .
+
+ int M1()
+{
+
+ return 10;
+}
+
+ float M1()
+{
+
+ return 10.45f;
+}
+
+ char M1()
+{
+
+ return 'B';
+}
+
+String  M1()
+{
+
+ return "Ram";
+}
+
+-----------------------------
+// Define add() - pass 2 int -args  -perform addition and return  result ?
+
+package MethodBasics;
+
+public class AddWith2ArgsReturnResult {
+
+	// Define add() - pass 2 int -args, return type - void  -perform addition and return  result ?
+//	public static void add(int a, int b)// void method cannot return any value 
+	
+		System.out.println("Called add()");
+
+		//          
+		//             
+		//    result = 
+		System.out.println("result = "+result);	
+		//                   result =  
+		
+		return result ;
+		//   return ;  
+
+	
+	
+	public static void main(String[] args) {
+		
+//		call add  by passing 2,3   and store result into var i.e x
+		
+		//       x=     
+
+		
+		System.out.println("after add ");
+
+	}
+
+}
+
+o/p:
+Called add()
+result = 5
+x= 5
+after add 
+	
+-------------
+Return val :
+-------------
+package MethodBasics;
+
+public class AddWith2ArgsReturnResult {
+
+	// Define add() - pass 2 int -args  -perform addition and return  result ?
+//	public static void add(int a, int b)// void method cannot return any value 
+
+
+	 //                             so a=  b= 
+		
+		System.out.println("Called add()");
+
+		//           
+		//             
+		//    result = 
+		System.out.println("result = ");	
+		//                   result =  
+		
+
+		//return 25 ;//  returns o/p :  25
+		//        
+	
+	
+	
+	public static void main(String[] args) {
+		
+//		call add
+		
+
+		//       x=     
+		System.out.println("x= "+ x);//  25
+		
+		System.out.println("after add ");
+
+	}
+
+}
+
+o/p:
+
+Called add()
+result = 5
+x= 25
+after add 
+
+
+--------------------
+
+	
+              	return a+b;	// gives int o/p,   return type must be int
+		
+		//  if we are returning  float o/p,  return type must be float
+		//                        char o/p,                        char
+	
+	
+	
+-------------------
+Method ReturnType Float :
+---------------------
+
+
+package MethodBasics;
+
+
+
+package MethodBasics;
+
+public class MethodReturnTypeFloat {
+
+	// Note :  if Method return type is float, we must return float val/ float var
+	//   return type must be written just before the method name
+	//  ex"  void, int, float, char, boolean, String also
+	
+	// Define add ()  pass 2 float args  and return type float
+	
+	                     
+
+		//             
+		//            
+		//result  = 
+		
+		System.out.println("result="+ result);
+		//                            
+
+		//    
+//		return 3.45f;
+	
+	
+	
+	public static void main(String[] args) {
+			
+		// call add () - pass 2.5f and 1.5f	
+
+			//   4.0   we are not storing result  into any var 
+		
+// call add () - pass 2.5f and 1.5f  and store into int var x	
+
+		//          4.0f  error: Type mismatch: cannot convert from float to int
+			//   
+// call add () - pass 2.5f and 1.5f  and store into float var x	
+
+		//          x=   
+		// display x				
+			
+			
+	}
+
+}
+
+
+o/p:
+
+result=4.0
+result=4.0
+x=4.0
+
+-----------------------------
+Method Return Type Char :
+-----------------------
+
+package MethodBasics;
+
+public class MethodReturnCharVal {
+
+	
+	// Define add()  and return type char and return 'A'
+
+ 	// Method with return type char - so method return char val o/p
+	
+		System.out.println("in side add");
+		
+// return the result 
+
+		//  gives o/p :  'A'
+
+	
+	
+	public static void main(String[] args) {
+		
+		// call add()  and don't store result into var
+		  
+		   //  'A'
+		   
+	//	call add()  and store result into variable  i.e ch
+
+		//      
+		
+//  display result 
+
+
+	}
+
+}
+
+o/p:
+in side add
+in side add
+ch=A
+
+------------------
+// Note :  return stmt is the last executable stmt inside method
+//		System.out.println("after return stmt");//Unreachable code
+		//  once we write return stmt, dont write any stmts after return stmt
+//		return ch;// Unreachable code
+		///  1 method must have 1 return stmt 
+		// We cannot write multiple return stmts inside method
+
+return val/Var/ exp;
+stmt1;  // unreachable code 
+stm-2;
+
+	
+	public static char add() // Method with return type char - so method return char val o/p
+	{
+		System.out.println("in side add");
+		
+		return 'A';//  gives o/p :  'A'
+//		System.out.println("after return stmt-1");// Unreachable code
+//		System.out.println("after return stmt -2");//Unreachable code
+		
+//		return 'B';// Error :
+	}
+----------------------------------
+
+
+//		return 10,20,30;// in valid
+//		return ch,res;// in valid
+
+ return val/var/expression:
+
+return 10;
+
+int b=20;
+return b;  return val of variable b 
+ 
+// 
+return  a+b-2; // evaluates expression  and result is  returned
+
+ 
+
+HW WAP to define method to perform subtsraction and return the o/p  and o.p+ 200 from main()
+
+HW WAP to define method to perform division and return the o/p  
+
+HW WAP to define method to get Remainder val and return the o/p  
+
+              
+WAP  to define method i.e checkEvenNo  and pass argument as int no, 
+if it is even no, return boolean value i.e true, 
+             else retun false value and display the result in main()? 
+
+ boolean  checkEven(int no)
+{
+
+
+}
+package MethodBasics;
+
+public class EvenNo {
+
+//	WAP  to define method i.e checkEvenNo  and pass argument as int no, 
+//	if it is even no, return boolean value i.e true, 
+//	             else retun false value and display the result in main()? 
+//	
+
+
+	public static void main(String[] args) {
+		System.out.println("in side main ()");		
+		// call checkEvenNumber	  pass -2 	
+
+		//                       true  10 ,20 
+// call checkebenno ()  pass -2 and store result into some var result
+
+//		//      result    =   
+//		// this method gives o/p/ return o/p boolean value i.e  true
+
+//		//    return value i.e true will be stored in left side varible i.e result .So Result var contains true value
+
+	// display result 
+		///                                                          true
+	
+// call checkebenno ()  pass -3 and store result into some var result	
+
+			//      result    =    
+			// this method gives o/p/ return o/p boolean value i.e  false
+			//    return value i.e false will be stored in left side varible i.e result .
+		// So Result var contains false value
+// display the result 
+
+			//                                                        
+	
+	}
+
+}
+
+// Note :  if we dont know what method return value. move the mouse over 
+		// on method name i.e checkOddNumber , dispays return type i.e char
+		// so left side , we must declare char var only  but not int, float,boolean
+		
+//		Note 2: Go to method definition,  Check return type i.e char
+		// so left side  we must declare char var only  but not int, float,boolean
+		System.out.println("Method returns char value ="+result);		
+		//                                                 'N'
+	
+---------------------
+
+HW WAP  to define method   to check given no is odd no  and return some char o/p
+   if it is odd no -- return char 'Y'
+else                              'N'
+
+
+---------------------------------------
+Return type String :
+-------------------
+HW  WAP to define method i.e checkEvenNo  and pass argument as int no, 
+	//if it is even no, return "Yes" value 
+	//             else return "No" value and display the result in main()? 
+-------------------------
+
+void :  nothing
+    void method -- > return nothing 
+	                no value
+
+if method's return type is   void,  that method returns nothing i.e it does not return any value.
+void - predefined k/w in java
+can be used before method name
+
+when to use:  when we dont want to get any o/p from method -- we will go for void
+                                   return any 
+
+
+package MethodBasics;
+
+public class VoidMethodBasics 
+{
+	//define void add()  and pass 2 int args
+
+			 //  void method
+	                  //   cannot return any value // cannot give o/p
+		//                     
+		//                  a=       b=
+		
+
+		//          
+		//     res =    
+	// display result 
+
+		//  return the result   
+		                          
+		// Void methods cannot return any value
+		//  if method return type is void,   Dont write return stmt inside void method		
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//call add()  pass 2,3 
+		
+
+		// call add() ,pass 2,3 ans store result into some var  i.e result
+
+//		int res = add(2,3);//error :  this method does not return any o/p. so dont store result into left side var
+		//   if method return type is void,  dont store o/p into some var / dont declare any var left side
+		//   Type mismatch: cannot convert from void to int
+		    
+		
+		System.out.println("ends");
+
+	}
+}
+
+-----------------------
+o/p:
+res=5
+ends
+
+-----------------------------------
+nested if   -  possible
+nested for  --possible 
+nested method -   not possible --
+
+ package StringBasics;
+
+public class TestNestedMethod {
+
+	// Define M2 inside M1()
+
+	
+	
+	public static void main(String[] args) {
+		
+			
+			
+	}
+
+}
+
+2.  Duplicate method  with same data type args not allowed in java 
+  Same method signature is not allowed .
+
+Method signature -->   Method name +  parameter list 
+
+
+package MethodBasics;
+
+public class TestDuplicateMethod {
+
+	public static void main(String[] arr) { // always execution start from main () which has signature public static void   and Main() we have to pass String array...
+		
+		
+		
+	}
+
+	
+
+//public static void main(String [] args) { // error 
+//					
+//			
+//	}
+	
+//	public static int main(String args[])// error 
+//	{  
+//		//	
+//	}
+	
+	public static int main(int args[])
+	{  
+		//	
+		return 10;
+	}
+
+
+
+	
+}
+
+
+
+
+
+Types of methods:
+-----------------
+1. user defined method
+2. Predefined method
+
+1. user defined mtehod:
+--------------------------
+ if method is defined by programmer - 
+  
+ add()//  user defined method
+{
+
+
+}
+
+sub() // /  user defined method
+{
+
+}
+
+checkEvenNumber( int number)
+{
+
+}
+
+2.Predefined methods:
+---------------------
+ method is already defined by programmer in java library
+
+ Math.min(), max(), sqrt();
+
+  min()
+{
+
+}
+---------------		
+		// Math -is predefined class in java 
+		// which has some methods - to perform mathemtical operations
+		//    sqrt ,   max , min 
+		// Note :   open max() code  -Press ctrl +  move mouse over method name i.e max() .  + click open Delcaration
+		//  it goes to max()  - we can see method body
+		
+//		Tip2:  view all methods in class :   ctrl + 0 --   and also we can search for specific method name i.e min		
+		// call max
+
+		//  max() ;; max no =  
+		//         result =      
+		System.out.println("result max="+result);
+		
+		// Min ()  - pass 2,5
+		
+		//     
+
+		//                                2
+
+		// sqaure root of no -pass 4.0  --> 2.0
+
+		///     sqrtNo =  
+     
+                 // 2.0  
+	   
+//	  int no= Math.sqrt(4.0);// error 
+	  //  sqrt() return double value   but  left we declared int var..  w
+	  // so we should declare double var left side
+		// Tip:   how to know method return type :  move mouse over on method name--  left side some data type
+	
+}
+}	
+
+-----------------------
+ WAP to square given no 
+   squareNo(2);    o/p ://4
+
+package MethodBasics;
+
+public class SquareNo {
+
+//	 squareNo(2);    o/p ://4
+		 
+	public static void main(String[] args) {
+		
+
+	}
+
+}
+
+
+
+  
+return n*n; 	// this  also fine 
+
+HW square (2.0) //  4.0 
+
+HW square (2) //  4.0 
+
+****************************************
+
+****************************************
+
+	
+
+Return type Casting:
+---------------------
+
+Write o/p for ?
+
+package MethodBasics;
+
+public class ReturnTypeCasting {
+
+	public static float add(int a, int b)
+	{
+		int res= a+b;
+		//       
+		//   int  res=  
+		return res;//   returning int val 
+		//     return 5;  returning int value  --->  this val will be typacsted/ converted to float val
+		
+		//     5 --> 5.0 returns float val  but not int val.
+	}
+
+	public static void main(String[] args) 
+	{
+		//  call add() pass 2,3 
+
+		//                  but not 5
+
+		// Display the o/p
+
+		// val                   5.0
+	}
+
+}
+
+----------------------------
+
+-------------------------
+package MethodBasics;
+
+public class ReturnTypeCasting2 {
+
+	//
+	public static int add(int a, int b)
+	{ //                    2        3
+		//                a=2   b =3
+		float res= a+b;
+		//       
+		//   int  res=  5  // Implicit  type casting
+		//       conver int --> float
+		//          5 --> 5.0
+		System.out.println("res="+res);//  5.0
+		return  res;//   type mismatch: cannot convert from float to int
+		//return (int)res;
+		//     return (int) 5.0;
+		//              5 
+	}
+
+	public static void main(String[] args) 
+	{
+
+		int val=   add(2,3);
+		//             // 5 
+
+		System.out.println("val ="+val);
+		//                  val =5
+	}
+}
+
+
+-----------------------
+ 
+
+
+-----------------	
+note:
+ void squareGivenNoNew(4)
+{
+//   dont write return stmt inside method 
+}
+
+//	void v=	 squareGivenNoNew(4);// invalid  dont use like this
+void method -- cannot  return any val/   wont give o/p
+int a  =  squareGivenNoNew(4);// CE: 
+
+
+package MethodBasics;
+
+public class SquareGivenNo2 {
+
+		// Define -squareGivenNo()  pass int arg  and return type -void
+
+	
+		//   n * n
+	
+	
+	
+	public static void main(String[] args) {
+		
+		 int sqr =  squareGivenNo(3);// Type mismatch: cannot convert from void to int
+		 // error :      gives nothing as method return type is void
+		 //  We cannot store  result into some variable
+		                          
+		 System.out.println("sqr="+sqr);
+		 
+	
+		 
+		 
+	}
+
+}
+
+-------------------------
+
+Method returns array:
+-----------------------
+By using Method - we can return int val (or) int var
+ 				float val (or) float var
+				char val (or) char var
+				String val (or) String val
+
+				Array var name
+
+return 10,20,30; // invalid 
+return a,b,c; // invalid 
+return val/ var/ expression; 
+
+return arrayName;
+------------------
+
+package MethodBasics;
+
+package MethodBasics;
+
+public class MethodReturnsIntArray {
+
+	//define M1() Method  return int array
+			 // method return type int[] - int array 
+		int a ;
+		int []  iarr =   new int [3];
+		
+		iarr [0] = 10;
+		iarr [1] = 20;
+		iarr [2] = 30;
+		//  return arrayName;
+			
+		// Type mismatch: cannot convert from int[] to int
+		//   [10,20,30]
+	
+
+
+	public static void main(String[] args) {
+		// call M1()
+
+		//   int[]  resArr  =rturn array [10,20,30]
+		//                                0   1   2   indexno 
+		// display array values 
+	
+			
+
+	}
+
+}
+
+
+-------------------------	
+	// Ex
+//	public static float[]  display()
+	//             char []
+	//             boolean  []
+	{
+//	        floar farr[]
+//		char charr[] 
+//		boolean barr
+
+	}
+	
+	}
+
+o/p:	
+
+HW  WAP to Define method  and return float array    and display array values  in main()
+HW  WAP to Define method  and return char array    and display array values  in main()
+HW  WAP to Define method  and return String array    and display array values  in main()
+
+-----------------------------------------
+
+
+// String :
+------------
+		 is collection of characters
+                    group of characters which must be enclosed in dbl quotes ""
+//ex: 
+      "abv123@#$", "123", "abc123"
+
+// Declare String:
+-------------------
+Declare int var i.e a -->
+Declare float var i.e f --> 
+Declare String var i.e s --> 
+
+		String  s;//  String is predefined class in java
+		//  usually it is used in the form data type
+		
+		// Store some val in String var
+
+
+
+-----------------
+
+	package StringBasics;
+
+public class StringBasics1 {
+
+	public static void main(String[] args) {
+
+		// Declare String var i.e s
+		
+
+		// Assign / store "Rama" val into var s
+
+		
+		// display var val 
+		
+		//                  S= 
+
+		//Can we store   int number in String var
+
+		//		  s =  123;// CE:  Type mismatch: cannot convert from int to String
+		//  String value  must be enlosed in ""
+
+		s= "123"; // Valid  ,,   we are writing the val into dbl quotes 
+
+		// even though it  looks like number . but it is string value "123"
+		System.out.println("String val =" +  s);	// 
+
+		//Note:  
+		//			123 - int no
+		//			"123"  -string value 
+
+		// Decmial nos
+		//		  s  =  1.45f;// CE: Type mismatch: cannot convert from float to String
+
+		
+
+
+
+	}
+
+}
+
+-------------------
+//HW Can we store double  's' into String variable ?
+
+		//			HW Can we store char value 's' into String variable ?
+
+
+		//HW  Can we store boolean  value (true/false) into String variable ?
+		// Note :  true -- boolean value
+		//   "true"  -- string val 
+
+-------------------------
+String class Methods:
+-------------------
+
+class String 
+{
+    
+	int Length()
+{
+
+}
+ 
+toUpperCase()
+{
+
+}
+
+
+
+}
+
+
+package StringBasics;
+
+public class LengthOfString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// Declare String String var and store "RaMa" val 
+		
+
+
+		// length of string 
+
+		//     l=     
+
+		//          return / gives length of String i.e how many character are there in String i.e 
+		//      value will be stored in left side var i.e l 
+		//  so l contains 4 value 
+
+		// display length
+
+	//  
+
+		//		HW   s = "Ram" ; length= 3 ?
+
+		//		HW    s=  "Rama rao";//  8   count space char also 
+
+
+		//String  toUppercase():
+		//                convert the given String to Upper case and return String value
+		//              "RaMa" --> 
+		//              RAMA   -->  
+
+
+		// sUppercase  = RAMA"
+
+		//ucaseString  == "RAMA"
+
+//				"RAMA"
+
+		// HW  s = "sita"     convert into upper case?
+		
+
+
+		// s.toLowerCase()
+		s= "RaMa";
+
+		  //   rama
+		//                  "RaMa" //  covert the given String to lower case
+		//                   rama
+
+
+		//                                    rama
+
+	}
+
+}
+ 
+HW:  		
+		// Declare String  var
+		String s ;
+		 s= "RaMa rao";
+		 //  1234
+		 //HW  length of  string 
+		
+	// HW  convert to upper case and lower case?
+	
+		
+	
+
+o/p:
+------------
+
+----------------------------------
+charAt(int indexno) :
+-----------------------
+ char    charAt(int indexno)
+{
+
+
+}
+
+   is predefined method in java lang.
+- can be used to get char val at given index no (0,1,2.. etc)
+-                return char val at given index no 
+-return type-char 
+-----------------
+
+package StringBasics;
+
+public class CharAtBasics {
+
+	public static void main(String[] args) {
+		
+		 String s = "RAM"; // length =  3
+		 //          01234567  indexno 
+		 
+		 // get char at index no =0  i.e 'R'
+
+		 //          ch0  =     
+
+//  'R'
+		 
+		// get char at index no =1  i.e 'A'
+
+		 // ch1=    
+
+		 
+//		 HW get char at index no =2  i.e 'M'
+		 
+//		 get char at index no =3  ????
+
+		// display char 
+
+		// Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 3
+		 
+		// get each Char  from String and display using for loop
+				System.out.println("***************");
+				
+
+			
+				System.out.println("after for loop");
+//				                ch=R
+//						ch=A
+//						ch=M
+				
+		 
+
+	}
+
+}
+
+-----------------
+indexOf():
+---------------------
+
+String s = "RAMA";
+//          0123
+
+  get index no of given String i.e R
+ if given string is not there in main String , it returns -1.
+
+
+
+package StringBasics;
+
+public class indexOfBasics1 {
+
+	public static void main(String[] args) {
+			String s = "RAMA";
+			//          0123
+//   get index no of given String i.e R
+			
+		// can be used to get index no of given String val i.e "R"  -  0
+			//     indexNoOfR  =          0
+
+		
+
+		//  index no of given  value "A"
+	//     
+		// can be used to get index no of given String val 'A'  i.e 1
+		//      indexOfA =               
+
+		//                                 1
+   
+		//HW   get index no of given String val 'M'  i.e 2
+
+
+		//  -ve   if given String val is not there i.e "P" in main string,  this method return -1 
+
+		//                   
+		 // indexOfP   = 
+		 System.out.println("indexOfP="+indexOfP);
+		 //                              		
+
+		// Note :  if duplicates charcters are there in String i.e "A ",   it always gets the first matched index no
+
+		 //  indexOfA1   ==  1
+
+		//                                   1
+
+	}
+
+}
+		
+---------------------------------------------		
+//  substr() :  
+------------
+ can be used to get sub part or some part of string from given index no to till last index no
+		String s = "RAMA";
+		//          0123
+
+String s0 = s.substring(0);
+		//                       get string values from index no 0  to all
+
+
+package StringBasics;
+
+public class SubStringWith1Arg {
+
+	public static void main(String[] args) {
+
+		//  substr() :   can be used to get sub part or some part of string from given index no to till last index no
+
+
+		String s = "RAMA";
+		//          0123
+		//  substr(int index) :   can be used to get sub part or some part of string from given index no to till last index no
+// get string values from index no 0  to all
+
+		//                       get string values from index no 0  to all
+		//          
+
+		//                         
+
+//		//  get string values from index no = 1  to all
+
+
+		//    s1=         "
+
+		//                       
+		//HW    get string values from index no = 2  to all
+
+	
+		//  HW get string values from index no = 3  to all
+
+		//   get string values from index no = 4  to all
+
+		//  Note :  it does not throw error
+		//   it displays empty value subStr4=  
+
+
+	}
+
+}
+
+
+
+
+------------------
+Substring with 1 arg:
+-----------------------------
+
+substring(int startIndexNo)
+substring(int startIndexNo , int endingindexNo)
+------------------------------------------------
+		String s = "RAMA";
+		//          0123
+
+//  substring(0,n)  -->   get values from o to n-1 indexno i.e 
+//  substring(0,1)  -->   get values from o to     indexno i.e
+//  substring(0,2)  -->   get values from o to     indexno i.e
+//  substring(0,3)  -->   get values from o to     indexno i.e
+
+package StringBasics;
+
+public class SubStringWith2Args {
+
+	public static void main(String[] args) {
+		String s = "RAMA";
+		//          0123
+		 
+		//get string values from index no =0  to 0 indexno i.e R
+		String s01 = s.substring(0, 1); //0,0
+		//    s01=               get string values from index no =0  to n-1 indexno 
+
+		//                          
+
+//  get string vals from index no =0  to 1 =
+		String s02=s.substring(0, 2);//  get string vals from index no =0  to 2-1 =  1 
+		//                     
+		//             	
+
+		//                         
+
+
+		//HW   get all string values from 0 to 2 o/p: RAM
+		
+		// HW get all String values from 0 to 3   o/p: RAMA 
+
+	}
+
+}
+
+
+
+
+---------------
+
+package StringBasics;
+
+public class SubStringWith2Args2 {
+
+	public static void main(String[] args) {
+		String s = "RAMA";
+		//          0123
+		//   subString( beginindex, end index)
+		//              1,n  -   values from 1 to n-1 indexno 
+
+		
+		String s12=s.substring(1, 2);//  get string values from indexno =1  to 2-1  i.e 1,1
+
+		//                        
+
+		String s13= s.substring(1, 3);
+		//           get string vals from index no =1 to 3-1 =2     1,2
+
+		//                     
+
+//
+		String s11= s.substring(1, 1);//  get string vals from indexno =1 to 1-1 = 0 
+
+		 //  empty val ***
+		
+	}
+
+}
+
+		
+
+o/p:
+----
+
+----------------------
+HW  Write o/p for below program String s = "RAMA Rao"; display ?
+
+s.substring(2, 3);		
+s.substring(2, 4);
+s.substring(2, 5);
+
+HW  Write o/p for below program String s = "RAMA Rao"; display ?
+
+s.substring(3, 6);		
+s.substring(3, 5);
+s.substring(3, 4);
+
+		
+****************************************************
+
+LastIndexOf():
+---------------
+ gets last index no of given string
+
+		String s = "rama";
+		//          0123
+		
+		// s.indexOf("a");
+s.lastIndexOf("a");
+ 
+
+package StringBasics;
+
+public class LastIndexOf {
+
+	public static void main(String[] args) {
+		String s = "rama";
+		//          0123
+		
+		// s.indexOf("a");	//         
+		// returns /gives index no  go given String "a" -- first matched index no = 1
+		
+		
+		// get last index no of given String 'a'
+
+
+
+		//                  
+
+		// Last index no of given String value 'a' =3	
+		
+	}
+
+}
+
+------------------------------
+
+s= "CNo: '123'  is created succcesfully"
+Get number from  123 which is enclosed in '' 
+
+
+package StringBasics;
+
+public class GetNumberFromStringinSingleQuotes {
+
+	public static void main(String[] args) {
+
+		////		s= "CNo: '123'  is created succcesfully"
+		//				s= "CNo: '25065'  is created succcesfully"
+		//				get numbers  in single quotes ''  
+		//				o/p:  123
+		//				25065
+
+		
+//		String s="CNo:'123'  is created succcesfully";
+//                        0123456789
+		String s="CNo:'25065'  is created succcesfully";
+		//        0123456789
+		// get numbers from single quotes 
+		
+		
+	//  get indexno of first single quotes
+		
+
+		// get index no of last single quotes '
+		
+
+
+	}
+}
+-----------------------------
+HW  get 182 from string s= "Inbox (182)";
+s= "Inbox (2000)";
+ o/p :   182 
+
+Hw get 123 from String "order: 123 created"
+o/p: 123
+**************************************
+
+***************************************
+----------------------------
+// Note:
+		//  ==    Relational operator ==,<,><=, >=, !=
+		// ==    operator can be used to compare the numbers   but not string values
+		//  ex:    10 == 10  -->
+			   10 == 30  -->
+		//  If We want to compare 2 String values- we have to use Equals().
+		Don't use ==  to compare string values or content
+
+
+		// Equals() method - can  be used to check 2 given String Values are equal or not 
+		//  if 2 string values are equal -  this method returns true
+		//                                              else false
+
+package StringBasics;
+
+public class Equals {
+
+	public static void main(String[] args) {
+
+		String s1 = "Ram";
+		String s2= "Ram";
+		String s3 ="sita";
+		
+		// check s1 equals s2
+
+		//                    "Ram"       "Ram"  --  
+		//           s1s2result=      
+
+// true 
+		// check s1 equals s3
+
+		//                   "Ram"      "sita"
+		//                          
+		//s1s3result  = 
+
+// false
+
+
+	}
+}
+
+
+-------------------------
+concat():
+---------
+ +  --> addition operator
+ +  --> concatenation operator  -- join values if any one val is String 
+
+  can be used to join 2 string values, concatenation operations
+
+
+package StringBasics;
+
+public class ConcatenationBasics{
+
+	public static void main(String[] args) {
+
+		String s1 = "Ram";
+		String s2= "Ram";
+		String s3 ="sita";
+		
+		
+		//  join s1 and s3  "Ram"  "Sita" --> "RamSita"
+		
+
+// 
+		// join s1 and s2
+		
+		//          
+		//           
+// res
+		
+
+
+	}
+}
+
+		
+
+------------------------
+Note:
+------
+		System.out.println("s5="+s5);// s5=ramsitaLakshman
+//		s3.concat(10);// error : 
+		//The method concat(String) in the type String is not applicable for the arguments (int)
+We must pass String value in concat(Sting) but not int no
+
+-------------------
+s1.contains(String s2):
+--------------------
+  can be used to check s1 contains s2.
+ if s1 contains s2, this method returns true 
+  else                          returns false
+------------------------------------------
+		
+	package StringBasics;
+
+public class containsBasics {
+
+	public static void main(String[] args) {
+		
+		
+		String s1 = "ramsitaLakshman";
+		String s2 = "ram";
+		
+		// check s1 contain s2 value --  true else false
+
+		//           
+		 //               
+		 //  res= 
+
+		 
+		 		
+		//  check s1 contains "Hanuman"
+
+		//    
+		//         
+		/// res2 =		
+
+
+	}
+}
+
+
+---------------
+// Trim() - can be used to remove spaces in String from both sides
+    "  Ram sita "
+		
+package StringBasics;
+
+public class TrimBasics {
+
+	public static void main(String[] args) {
+		
+		
+		// Trim() - used to remove spaces in String from both sides
+		
+		
+				String s1 = "  ram sita Lakshman      ";
+				System.out.println("before Trim -s1="+ s1);//  ram sita Lakshman      
+				
+				// remove spaces in String
+
+
+				System.out.println("after trim s1=";
+		
+	}
+}
+
+	
+o/p:
+----	
+
+
+ ToCharArray():
+---------------
+  it converts String to char array 
+ - return type is char array
+
+		
+package StringBasics;
+
+public class TocharArrayBasics {
+
+	public static void main(String[] args) {
+		// ToCharArray
+
+		String s = "ram";
+		
+// convert string to char array
+		
+//		char chArr = s.toCharArray();
+		// Type mismatch: cannot convert from char[] to char
+		//  left side we must declare char array using []
+		
+
+		// get vals from char array by index no =0,1
+
+// r 
+
+// a
+
+		//HW  get all values from char array use for loop with int indexno
+		
+
+		// Hw get all values from char array use foreach loop 	
+	}
+
+}
+		
+
+
+-------------
+s1.startswith(s2):
+----------------
+String s1 = "Ram sita lakshman";
+// chheck S1 startswith "Ram"
+
+
+	-->
+can be used to check String s1 starts with given value- it returns true else false
+
+check s1.startswith  '';
+
+boolean s1startsWithRam= s1.startsWith("Sita");
+ //  -->                    
+
+
+package StringBasics;
+
+public class StratsWithEndsWith {
+
+	public static void main(String[] args) {
+		
+	
+		String s1 = "Ram sita lakshman";
+		// check s1 starts with "Ram"
+	
+		//                            
+	// 
+		// check s1 starts with "Sita"
+		
+		//                            
+		// false
+		// check s1 starts with "ram"
+		
+		//                 
+		//                   
+		// 
+		
+		
+
+
+	}
+
+}
+
+
+		
+//HW WAP to check  String s1 = "Ram sita lakshman"   ends with laskhman 
+check s1 ends with sita
+
+check s1 ends with "Lakshman"
+
+		
+
+----------------------------
+
+//Replace("old val", "new val"):
+--------------------------------
+   can be used to replace old value with new value
+
+String s = "ram-sita-laskhman";
+//   replace  - eifen --> by  comma  ,
+ --> 
+
+
+package StringBasics;
+
+public class ReplaceBasics{
+
+	public static void main(String[] args) {
+		
+		//Replace
+				String s = "ram-sita-laskhman";
+				//   replace  - eifen --> by  comma  ,
+
+				//       
+				// s1=ram,sita,laskhman
+				
+				//  in s1, replace  comma ,   by spaces
+
+				//     --> 
+				 // 
+				
+// in String S , replace "ram" by "Amar"
+				
+				//  "ram-sita-laskhman";--> 
+
+		
+
+
+	}
+
+}
+
+------------
+
+Split("String val") Basics :
+---------------
+to split the values based on given String value i.e - ,  and it stores all values in String array
+-return type is string array
+
+		String s = "10-20-30";
+
+
+package StringBasics;
+
+public class SplitBasics {
+
+	public static void main(String[] args) {
+
+
+		String s = "10-20-30";
+		//  split the values based on given String value i.e - ,  and it stores all values in String array
+		// return type - string [] array
+		// split by "-"
+
+		// display values
+
+		//sArr[0]=
+//		sArr[1]=
+		
+  		// HW display all vals from  sArr using for loop
+
+  		// HW display all vals from  sArr using for each loop
+		
+
+
+	}
+
+}
+--------------------------------
+
+		//  HW Split the String with ,  and display  array values
+		// String s1 = "11,22,33,44"
+		
+		//HW  Split String by space   and display  array values
+//		String s3 = "Ram sita lakhman";
+		
+
+
+//HW  get   only  100.00  from "$ 100.00"
+		String s4 = "$ 100.00";
+		//             100.00
+	Hint : use replace  or substring()?	
+	
+				
+// HW  get 100.00  from "100.00 $" use Substring  and index no 
+		
+
+-------------------------------
+IP: FAQ  "Ram is good boy";  Count of words in String ?
+		
+		String s = "Ram is good boy";		
+
+o/p: 4
+
+package StringBasics;
+
+public class CountofWrodsFromString {
+
+	public static void main(String[] args) {
+
+		// FAQ  "Ram is good boy";
+				//  Count of words in String ?  4 
+		
+		String s= "Ram is good boy";
+//		String s= "Ram is good boy. Sita is from Srilanka.";
+		
+			// split by space 
+
+		
+		// count of array
+		
+		
+
+		// count of words=
+		
+	// display 1st,2nd word 
+		
+
+		
+		//  display all values from array  using with for loop with index no 
+		
+		
+		
+		// Hw display all values from array using 'for each' loop
+				
+		
+
+	}
+
+}
+	
+		
+	--------------------
+IP : FAQ VImp :  Reverse of String   ?
+   i/p:  RAM
+   o/p:  MAR
+
+Sita 
+atiS
+
+way1-: using charAt():
+--------------------------------
+package StringBasics;
+
+public class ReverseOFStringUsingCharAt {
+
+	public static void main(String[] args) {
+
+		String s = "RAM"; // sl.length() ; //5
+		//          012
+		// o/p:   MAR
+
+		//way1-: using charAt()
+		//--------------------------------
+		
+//  AMAR
+
+	}
+
+}
+
+
+--------------------------
+Way2 using to chararay():
+--------------------
+package StringBasics;
+
+public class ReverseOfStringUsingCharArray {
+
+	public static void main(String[] args) {
+
+		String s = "RAM"; // sl.length() ; //5
+		//          01234
+		// o/p:   MAR		
+		
+	}
+
+}
+
+
+-------------------------
+Way 3:
+package StringBasics;
+
+public class ReverseOFStringUsingCharAt2 {
+	
+	// Define method reverseOfString  and pass String var
+	public static String reverseOfString(String s)
+	{                            //       RAM
+		
+	}
+	
+
+	public static void main(String[] args) {
+
+		String s = "RAMA"; // sl.length() ; //5
+		//          01234
+		// o/p:   MAR
+		
+		// call reverseOfString() and display the o/p
+
+	}
+
+}
+
+
+******************Reviewed 24 Oct 2025
+
+
+
+
+
+
+
+
+
+
+
